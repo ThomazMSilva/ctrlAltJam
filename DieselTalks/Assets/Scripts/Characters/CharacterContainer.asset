@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ede9fb433a9f9642ad43a2f32396a0f, type: 3}
+  m_Name: CharacterContainer
+  m_EditorClassIdentifier: 
+  characters:
+  - characterName: 3
+    characterVoiceAudioClip: {fileID: 8300000, guid: dc43491a690a4214fb7575ae62ece5ae, type: 3}
+    voicePitchVariation: 0.067
+    characterHappyIMG: {fileID: 21300000, guid: 2e12177860ce4bc419278bff724c8fc0, type: 3}
+    characterNeutralIMG: {fileID: 21300000, guid: dafcd62b08dd3b34a8ed808dbc8cd1d8, type: 3}
+    characterUpsetIMG: {fileID: 21300000, guid: ba4a938b424d39b4782ee98288ab3115, type: 3}
+  - characterName: 1
+    characterVoiceAudioClip: {fileID: 8300000, guid: dc43491a690a4214fb7575ae62ece5ae, type: 3}
+    voicePitchVariation: 0.067
+    characterHappyIMG: {fileID: 21300000, guid: 2e12177860ce4bc419278bff724c8fc0, type: 3}
+    characterNeutralIMG: {fileID: 21300000, guid: dafcd62b08dd3b34a8ed808dbc8cd1d8, type: 3}
+    characterUpsetIMG: {fileID: 21300000, guid: ba4a938b424d39b4782ee98288ab3115, type: 3}
