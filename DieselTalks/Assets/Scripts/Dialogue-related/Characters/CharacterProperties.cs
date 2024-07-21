@@ -5,8 +5,7 @@ public class CharacterProperties
 {
     public CharacterKey characterName;
     public AudioClip characterVoiceAudioClip;
-    [Range(0f, 0.5f)]
-    public float voicePitchVariation;   
+    [Range(0f, 0.5f)] public float voicePitchVariation;   
     public Sprite
         characterHappyIMG,
         characterNeutralIMG,

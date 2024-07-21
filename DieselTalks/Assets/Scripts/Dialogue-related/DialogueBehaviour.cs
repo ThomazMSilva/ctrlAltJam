@@ -42,6 +42,34 @@ public class DialogueBehaviour : MonoBehaviour
 
     public UnityEvent OnTextFinished;
 
+
+    private void Awake()
+    {
+        CanvasReference reference = FindAnyObjectByType<CanvasReference>();
+        textMeshPro = reference.tmp;
+        characterIMG = reference.image;
+        audioSource = reference.audioSource;
+    }
+
+    private void OnEnable()
+    {
+        TextMeshProClickHandler.OnTextClickedEvent += ChangeText;
+
+        textMeshPro.gameObject.SetActive(true);
+        characterIMG.gameObject.SetActive(true);
+
+        currentIndex = 0;
+        StartTypingCurrentDialogue();
+    }
+
+    private void OnDisable()
+    {
+        TextMeshProClickHandler.OnTextClickedEvent -= ChangeText;
+        
+        textMeshPro.gameObject.SetActive(false);
+        characterIMG.gameObject.SetActive(false);
+    }
+
     public void ChangeText()
     {
         StopAllCoroutines();
@@ -63,31 +91,9 @@ public class DialogueBehaviour : MonoBehaviour
                 StartTypingCurrentDialogue();
             }
             else
-            {
                 OnTextFinished?.Invoke();
-            }   
 
         }
-    }
-
-    private void OnEnable()
-    {
-        TextMeshProClickHandler.OnTextClickedEvent += ChangeText;
-
-        textMeshPro = CanvasReference.instance.tmp;
-        characterIMG = CanvasReference.instance.image;
-        audioSource = CanvasReference.instance.audioSource;
-
-        textMeshPro.gameObject.SetActive(true);
-
-        currentIndex = 0;
-        StartTypingCurrentDialogue();
-    }
-
-    private void OnDisable()
-    {
-        TextMeshProClickHandler.OnTextClickedEvent -= ChangeText;
-        //textMeshPro.gameObject.SetActive(false);
     }
 
     private IEnumerator TypeText(string newText, float typingInterval = 0.1f, bool hasBackground = false, CharacterKey characterKey = CharacterKey.Barman, CharacterExpression characterMood = CharacterExpression.happy)
@@ -107,7 +113,8 @@ public class DialogueBehaviour : MonoBehaviour
             }
             else
             {
-                PlaySound(characterKey);
+                if (newText[i] != ' ')
+                    PlaySound(characterKey);
                 textMeshPro.text += newText[i];
             }
 
