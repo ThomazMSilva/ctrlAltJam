@@ -1,18 +1,24 @@
-﻿using System.Collections;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace Assets.Scripts.Bartending
 {
-    public class NewClient : MonoBehaviour
+    public class NewClient : MonoBehaviour, IDataHandler
     {
+        public CharactersManager characterManager;
+        public CharacterKey charaterName;
         public Texture desiredTexture;
         public Taste desiredTaste;
+        public int proximityLevel = 0;
 
         public void CheckEnjoymentLevel(Texture tex, Taste tas)
         {
             int i = 0;
             if (tex == desiredTexture) i++;
             if (tas == desiredTaste) i++;
+
+            characterManager.characterList.TryGetValue(charaterName, out int charCurrLevel);
+
+            characterManager.ChangeProximityLevel(charaterName, charCurrLevel + i);
 
             switch (i)
             {
@@ -38,9 +44,20 @@ namespace Assets.Scripts.Bartending
                     break;
             }
         }
+
+        public void LoadData(SavedData data)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public void SaveData(ref SavedData data)
+        {
+            throw new System.NotImplementedException();
+        }
+
         private void OnMouseDown()
         {
-            CheckEnjoymentLevel(DrinkManager.GetTexture(), DrinkManager.GetTaste());
+            CheckEnjoymentLevel(DrinkManager.GetTexture, DrinkManager.GetTaste);
         }
     }
 }

@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 namespace Assets.Scripts.Bartending
 {
@@ -6,15 +7,52 @@ namespace Assets.Scripts.Bartending
     public enum Texture { smooth, rough, creamy, dry }
     [System.Serializable]
     public enum Taste { sour, bitter, sweet, salty }
+
     public class DrinkManager : MonoBehaviour
     {
-        private static readonly int[,] effectIndices = new int[,]
+        public static Texture GetTexture => currentDrink.drinkTexture;
+
+        public static Taste GetTaste => currentDrink.drinkTaste;
+
+        
+        [SerializeField] private NewDrink[] drinks;
+        
+        public static NewDrink currentDrink;
+
+        public static void SetCurrentDrinkTexture(Texture tex) => currentDrink.drinkTexture = tex;
+
+        public static void SetCurrentDrinkTaste(Taste tas) => currentDrink.drinkTaste = tas;
+
+        /*private static readonly int[,] effectIndices = new int[,]
         {
             { 0, 1, 2, 3 },  // smooth
             { 4, 5, 6, 7 },  // rough
             { 8, 9, 10, 11 },// creamy
             { 12, 13, 14, 15}// dry
-        };
+        };*/
+
+        private static int[,] EffectIndices
+        {
+            get
+            {
+                int
+                    textureLength = Enum.GetValues(typeof(Texture)).Length,
+                    tasteLength = Enum.GetValues(typeof(Taste)).Length;
+
+                int[,] array = new int[textureLength, tasteLength];
+
+                int index = 0;
+                for (int y = 0; y < tasteLength; y++)
+                {
+                    for (int x = 0; x < textureLength; x++)
+                    {
+                        array[x, y] = index;
+                        index++;
+                    }
+                }
+                return array;
+            }
+        }
 
         /// <summary>
         /// (sour; bitter; sweet; salty)
@@ -55,27 +93,27 @@ namespace Assets.Scripts.Bartending
         ///     </item>
         /// </list>
         /// </summary>
-        public static int GetEffectIndex(Texture tex, Taste tas)
-        {
-            return effectIndices[(int)tex, (int)tas];
-        }
-
-        [SerializeField] private NewDrink[] drinks;
-        public static NewDrink currentDrink;
-
-        public static void SetCurrentDrinkTexture(Texture tex) => currentDrink.drinkTexture = tex;
-
-        public static void SetCurrentDrinkTaste(Taste tas) => currentDrink.drinkTaste = tas;
-
-        public static Texture GetTexture(){return currentDrink.drinkTexture;}
-        public static Taste GetTaste(){return currentDrink.drinkTaste;}
-
-
+        public static int GetEffectIndex(Texture tex, Taste tas) => EffectIndices[(int)tex, (int)tas];
 
         private void Start()
         {
-            currentDrink = drinks[LevelManager.Instance.level];
+            UpdateCurrentDrink();
             currentDrink.gameObject.SetActive(true);
+        }
+
+        private void OnEnable()
+        {
+            LevelManager.Instance.OnLevelUp += UpdateCurrentDrink;
+        }
+
+        private void OnDisable()
+        {
+            LevelManager.Instance.OnLevelUp -= UpdateCurrentDrink;
+        }
+
+        public void UpdateCurrentDrink()
+        {
+            currentDrink = drinks[LevelManager.Instance.level];
         }
     }
 }

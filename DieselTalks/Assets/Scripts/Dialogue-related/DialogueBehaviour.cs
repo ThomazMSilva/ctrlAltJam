@@ -1,13 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using System.Runtime.InteropServices;
 using TMPro;
-using UnityEditor.SearchService;
 using UnityEngine;
 using UnityEngine.Events;
-using UnityEngine.EventSystems;
-using UnityEngine.UIElements;
-
 
 public enum CharacterExpression
 {
@@ -28,7 +23,7 @@ public class Dialogue
 
 public class DialogueBehaviour : MonoBehaviour
 {
-    [SerializeField] CharacterManager characterManager;
+    [SerializeField] CharacterContainer characterManager;
 
     public List<Dialogue> dialogueList = new();
 

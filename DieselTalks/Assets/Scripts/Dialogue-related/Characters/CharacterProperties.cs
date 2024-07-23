@@ -12,6 +12,7 @@ public class CharacterProperties
         characterUpsetIMG;
 }
 
+[System.Serializable]
 public enum CharacterKey
 {
     JoseFusquinha,

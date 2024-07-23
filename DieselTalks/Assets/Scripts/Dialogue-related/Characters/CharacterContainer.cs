@@ -3,12 +3,14 @@ using UnityEngine;
 
 
 [CreateAssetMenu]
-public class CharacterManager : ScriptableObject
+public class CharacterContainer : ScriptableObject
 {
     public List<CharacterProperties> characters = new();
 
     public CharacterProperties GetCharacter(CharacterKey key)
     {
-        return characters.Find(obj => obj.characterName == key); 
+        CharacterProperties ch = characters.Find(obj => obj.characterName == key);
+
+        return ch ?? characters[0];
     }
 }

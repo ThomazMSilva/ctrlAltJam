@@ -14,7 +14,6 @@ public class NewIngredientInspector : Editor
     {
         textureProperty = serializedObject.FindProperty("ingredientTexture");
         tasteProperty = serializedObject.FindProperty("ingredientTaste");
-
     }
     public override void OnInspectorGUI()
     {
