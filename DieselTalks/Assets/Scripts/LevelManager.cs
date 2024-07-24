@@ -3,10 +3,8 @@ using UnityEngine;
 
 namespace Assets.Scripts
 {
-    public class LevelManager : MonoBehaviour, IDataHandler
+    public class LevelManager : MonoBehaviour, ISavable
     {
-        public static LevelManager Instance;
-
         public int level = 0;
 
         public delegate void LevelUp();
@@ -18,18 +16,13 @@ namespace Assets.Scripts
             OnLevelUp?.Invoke();
         }
 
-        private void Awake()
-        {
-            Instance = this;
-            DontDestroyOnLoad(Instance);
-        }
-
-        void IDataHandler.LoadData(SavedData data)
+       
+        void ISavable.LoadData(SavedData data)
         {
             this.level = data.level;
         }
 
-        void IDataHandler.SaveData(ref SavedData data)
+        void ISavable.SaveData(ref SavedData data)
         {
             data.level = this.level;
         }

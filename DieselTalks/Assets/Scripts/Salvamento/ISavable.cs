@@ -1,5 +1,5 @@
 ﻿
-public interface IDataHandler
+public interface ISavable
 {
     public void LoadData(SavedData data);
 

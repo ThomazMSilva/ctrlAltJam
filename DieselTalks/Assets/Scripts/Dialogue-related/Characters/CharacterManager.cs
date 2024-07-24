@@ -1,10 +1,7 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEditor;
 using UnityEngine;
 
-public class CharactersManager : MonoBehaviour, IDataHandler
+public class CharacterManager : MonoBehaviour, ISavable
 {
     public SerializableDictionary<CharacterKey, int> characterList;
 
@@ -19,6 +16,7 @@ public class CharactersManager : MonoBehaviour, IDataHandler
     public void ChangeProximityLevel(CharacterKey character, int level)
     {
         characterList[character] = level;
+        Debug.Log($"Mudou a proximidade de {character} em {level}. Agora é {characterList[character]}");
     }
 
     public void LoadData(SavedData data)

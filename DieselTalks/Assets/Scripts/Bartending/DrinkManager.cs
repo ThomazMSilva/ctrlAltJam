@@ -10,26 +10,15 @@ namespace Assets.Scripts.Bartending
 
     public class DrinkManager : MonoBehaviour
     {
-        public static Texture GetTexture => currentDrink.drinkTexture;
 
-        public static Taste GetTaste => currentDrink.drinkTaste;
+    //Propriedades
+        public static Texture GetTexture => CurrentDrink.drinkTexture;
 
+        public static Taste GetTaste => CurrentDrink.drinkTaste;
+
+        [SerializeField] private DrinkMix[] drinks;
         
-        [SerializeField] private NewDrink[] drinks;
-        
-        public static NewDrink currentDrink;
-
-        public static void SetCurrentDrinkTexture(Texture tex) => currentDrink.drinkTexture = tex;
-
-        public static void SetCurrentDrinkTaste(Taste tas) => currentDrink.drinkTaste = tas;
-
-        /*private static readonly int[,] effectIndices = new int[,]
-        {
-            { 0, 1, 2, 3 },  // smooth
-            { 4, 5, 6, 7 },  // rough
-            { 8, 9, 10, 11 },// creamy
-            { 12, 13, 14, 15}// dry
-        };*/
+        public static DrinkMix CurrentDrink { get; private set; }
 
         private static int[,] EffectIndices
         {
@@ -95,25 +84,31 @@ namespace Assets.Scripts.Bartending
         /// </summary>
         public static int GetEffectIndex(Texture tex, Taste tas) => EffectIndices[(int)tex, (int)tas];
 
+
+    //Setter
+        public static void SetCurrentDrinkTexture(Texture tex) => CurrentDrink.drinkTexture = tex;
+
+        public static void SetCurrentDrinkTaste(Taste tas) => CurrentDrink.drinkTaste = tas;
+
+        private void UpdateCurrentDrink() => CurrentDrink = drinks[GameManager.Instance.LevelManager.level];
+
+        
+    //Metodos MonoBehaviour
         private void Start()
         {
             UpdateCurrentDrink();
-            currentDrink.gameObject.SetActive(true);
+            CurrentDrink.gameObject.SetActive(true);
+            GameManager.Instance.LevelManager.OnLevelUp += UpdateCurrentDrink;
         }
 
-        private void OnEnable()
+        /*private void OnEnable()
         {
-            LevelManager.Instance.OnLevelUp += UpdateCurrentDrink;
+            GameManager.Instance.LevelManager.OnLevelUp += UpdateCurrentDrink;
         }
 
         private void OnDisable()
         {
-            LevelManager.Instance.OnLevelUp -= UpdateCurrentDrink;
-        }
-
-        public void UpdateCurrentDrink()
-        {
-            currentDrink = drinks[LevelManager.Instance.level];
-        }
+            GameManager.Instance.LevelManager.OnLevelUp -= UpdateCurrentDrink;
+        }*/
     }
 }
