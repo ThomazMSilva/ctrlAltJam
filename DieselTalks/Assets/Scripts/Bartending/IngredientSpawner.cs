@@ -19,24 +19,15 @@ namespace Assets.Scripts.Bartending
         }
 
 
-        public void OnPointerExit(PointerEventData eventData)
-        {
-            Debug.Log("Saiu");
-            rectTransform.localScale = transformScale; 
-        }
+        public void OnPointerExit(PointerEventData eventData) => rectTransform.localScale = transformScale;
 
-        public void OnPointerEnter(PointerEventData eventData)
-        {
-            Debug.Log("Entrou");
-            rectTransform.localScale = transformScale * 1.1f;
-        }
+        public void OnPointerEnter(PointerEventData eventData) => rectTransform.localScale = transformScale * 1.1f;
 
         public void OnPointerDown(PointerEventData eventData)
         {
-            Debug.Log("Clicked");
-            GameObject go = Instantiate(ingredientPrefab, rectTransform);
-            Debug.Log($"Instanciou {go.name}");
-            go.transform.parent = parent;
+            parent.gameObject.SetActive(false);
+            Instantiate(ingredientPrefab, parent);
+            parent.gameObject.SetActive(true);
         }
     }
 }

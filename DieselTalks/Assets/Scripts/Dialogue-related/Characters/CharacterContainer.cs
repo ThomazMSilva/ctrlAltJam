@@ -9,8 +9,8 @@ public class CharacterContainer : ScriptableObject
 
     public CharacterProperties GetCharacter(CharacterKey key)
     {
-        CharacterProperties ch = characters.Find(obj => obj.characterName == key);
+        CharacterProperties character = characters.Find(obj => obj.characterName == key);
 
-        return ch ?? characters[0];
+        return character ?? characters[0];
     }
 }

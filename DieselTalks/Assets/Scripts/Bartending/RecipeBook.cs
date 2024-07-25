@@ -5,40 +5,39 @@ namespace Assets.Scripts.Bartending
 {
     public class RecipeBook : MonoBehaviour, ISavable
     {
-        public GameObject[] drinks;
+        public GameObject[] drinkPrefabs;
+        public GameObject[] drinksInRecipeBook;
         public bool[] drinkStates;
 
-        public void ActivateDrink(int drinkIndex)
+        public void UnlockDrink(int drinkIndex)
         {
-            if (drinkIndex < drinks.Length)
+            if (drinkIndex < drinksInRecipeBook.Length)
             {
-                drinks[drinkIndex].SetActive(true);
+                drinksInRecipeBook[drinkIndex].SetActive(true);
                 drinkStates[drinkIndex] = true;
             }
-            else
-            {
-                Debug.Log("Tentando ativar uma bebida de índice não-presente no array 'Drinks' do livro de receitas");
-            }
+            else { Debug.Log("Tentando ativar uma bebida de índice não-presente no array 'Drinks' do livro de receitas"); }
+
         }
 
         public void ActivateSavedDrinks()
         {
-            for (int i = 0; i < drinks.Length; i++)
+            for (int i = 0; i < drinksInRecipeBook.Length; i++)
             {
-                drinks[i].SetActive(drinkStates[i]);
+                drinksInRecipeBook[i].SetActive(drinkStates[i]);
             }
         }
 
         public void LoadData(SavedData data)
         {
-            drinks = data.savedDrinks;
+            drinksInRecipeBook = data.savedDrinks;
             drinkStates = data.drinkStates;
             ActivateSavedDrinks();
         }
 
         public void SaveData(ref SavedData data)
         {
-            data.savedDrinks = drinks;
+            data.savedDrinks = drinksInRecipeBook;
             data.drinkStates = drinkStates;
         }
     }

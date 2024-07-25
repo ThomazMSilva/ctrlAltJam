@@ -8,16 +8,15 @@ namespace Assets.Scripts.Bartending
         public CharacterKey charaterName;
         public Texture desiredTexture;
         public Taste desiredTaste;
-        public int proximityLevel = 0;
         public GameObject[] responses;
 
-        public void CheckEnjoymentLevel(Texture tex, Taste tas)
+        public void ChangeEnjoymentLevel(Texture tex, Taste tas)
         {
             int i = 0;
             if (tex == desiredTexture) i++;
             if (tas == desiredTaste) i++;
 
-            Debug.Log(characterManager.characterList.TryGetValue(charaterName, out int a));
+            //Debug.Log(characterManager.characterList.TryGetValue(charaterName, out int a));
             characterManager.characterList.TryGetValue(charaterName, out int charCurrLevel);
 
             characterManager.ChangeProximityLevel(charaterName, charCurrLevel + i);
@@ -54,11 +53,6 @@ namespace Assets.Scripts.Bartending
         private void Awake()
         {
             characterManager = GameManager.Instance.CharacterManager;
-        }
-
-        private void OnMouseDown()
-        {
-            CheckEnjoymentLevel(DrinkManager.GetTexture, DrinkManager.GetTaste);
         }
     }
 }

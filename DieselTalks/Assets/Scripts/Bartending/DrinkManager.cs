@@ -90,14 +90,19 @@ namespace Assets.Scripts.Bartending
 
         public static void SetCurrentDrinkTaste(Taste tas) => CurrentDrink.drinkTaste = tas;
 
-        private void UpdateCurrentDrink() => CurrentDrink = drinks[GameManager.Instance.LevelManager.level];
+        private void UpdateCurrentDrink()
+        {
+            if(CurrentDrink != null) CurrentDrink.gameObject.SetActive(false);
+            CurrentDrink = drinks[GameManager.Instance.LevelManager.level];
+            CurrentDrink.gameObject.SetActive(true);
+        }
 
         
     //Metodos MonoBehaviour
         private void Start()
         {
             UpdateCurrentDrink();
-            CurrentDrink.gameObject.SetActive(true);
+         
             GameManager.Instance.LevelManager.OnLevelUp += UpdateCurrentDrink;
         }
 

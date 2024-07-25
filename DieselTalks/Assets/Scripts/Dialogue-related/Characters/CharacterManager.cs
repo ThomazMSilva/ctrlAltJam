@@ -13,19 +13,19 @@ public class CharacterManager : MonoBehaviour, ISavable
         }
     }
 
-    public void ChangeProximityLevel(CharacterKey character, int level)
+    public void ChangeProximityLevel(CharacterKey character, int proximityLevel)
     {
-        characterList[character] = level;
-        Debug.Log($"Mudou a proximidade de {character} em {level}. Agora é {characterList[character]}");
+        characterList[character] = proximityLevel;
+        Debug.Log($"Mudou a proximidade de {character} em {proximityLevel}. Agora é {characterList[character]}");
     }
 
     public void LoadData(SavedData data)
     {
-        characterList = data.characterLevels;
+        characterList = data.characterProximityLevels;
     }
 
     public void SaveData(ref SavedData data)
     {
-        data.characterLevels = characterList;
+        data.characterProximityLevels = characterList;
     }
 }

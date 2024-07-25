@@ -33,9 +33,11 @@ public class DialogueBehaviour : MonoBehaviour
 
     private TextMeshProUGUI textMeshPro;
     private UnityEngine.UI.Image characterIMG;
+    private ImageFade imageFade;
     private AudioSource audioSource;
-
+    public bool hidesImageOnDisable;
     public UnityEvent OnTextFinished;
+    public bool LevelUpAfter;
 
 
     private void Awake()
@@ -43,26 +45,33 @@ public class DialogueBehaviour : MonoBehaviour
         CanvasReference reference = FindAnyObjectByType<CanvasReference>();
         textMeshPro = reference.tmp;
         characterIMG = reference.image;
+        imageFade = characterIMG.GetComponent<ImageFade>();
         audioSource = reference.audioSource;
     }
 
     private void OnEnable()
     {
-        TextMeshProClickHandler.OnTextClickedEvent += ChangeText;
+        TextMeshProHandler.OnTextClickedEvent += ChangeText;
 
         textMeshPro.gameObject.SetActive(true);
         characterIMG.gameObject.SetActive(true);
 
         currentIndex = 0;
         StartTypingCurrentDialogue();
+
+        if (LevelUpAfter) OnTextFinished.AddListener(GameManager.Instance.LevelManager.IncreaseLevel);
     }
 
     private void OnDisable()
     {
-        TextMeshProClickHandler.OnTextClickedEvent -= ChangeText;
+        TextMeshProHandler.OnTextClickedEvent -= ChangeText;
         
         textMeshPro.gameObject.SetActive(false);
-        characterIMG.gameObject.SetActive(false);
+        
+        if(hidesImageOnDisable)
+            imageFade.DisableImage();
+
+        if (LevelUpAfter) OnTextFinished.RemoveListener(GameManager.Instance.LevelManager.IncreaseLevel);
     }
 
     public void ChangeText()

@@ -1,9 +1,10 @@
 ﻿using System.Collections;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 namespace Assets.Scripts.Bartending
 {
-    public class Ingredient : MonoBehaviour
+    public class Ingredient : MonoBehaviour, IPointerClickHandler
     {
         public Texture ingredientTexture;
         public Taste ingredientTaste;
@@ -48,7 +49,7 @@ namespace Assets.Scripts.Bartending
             rectTransform = GetComponent<RectTransform>();
             canvas = FindObjectOfType<CanvasReference>().canvas;
             mainCamera = Camera.main;
-            Debug.Log("Spawnou");
+            //Debug.Log("Spawnou");
             StartCoroutine(FollowCursor());
         }
 
@@ -191,6 +192,12 @@ namespace Assets.Scripts.Bartending
                 Debug.Log($"Adicionando gosto {ingredientTaste} ao drink Ò-Ó");
                 DrinkManager.SetCurrentDrinkTaste(ingredientTaste);
             }
+        }
+
+        public void OnPointerClick(PointerEventData eventData)
+        {
+            if(circuloAtual == null) return;
+            circuloAtual.EmptyCircle(this);
         }
     }
 

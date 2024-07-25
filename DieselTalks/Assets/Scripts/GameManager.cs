@@ -25,6 +25,7 @@ public class GameManager : MonoBehaviour
             Debug.LogError("Ja existe uma instancia de LevelManager e ta tentando instanciar uma no Awake");
             Destroy(gameObject);
         }
+        LevelManager.OnLevelUp += Fade;
 
         //originalColor = transitionScreen.color;
     }
@@ -48,26 +49,38 @@ public class GameManager : MonoBehaviour
     [SerializeField]Color originalColor;
     [SerializeField, Range(.1f, 5)] float transitionTime;
 
+    public void Fade()
+    {
+        StopAllCoroutines();
+        StartCoroutine(FadeTransition(transitionTime));
+    }
+
+    public void LoadScene(int sceneIndex)
+    {
+        StopAllCoroutines();
+        StartCoroutine(LoadSceneAsynchronously(sceneIndex));
+    }
+
     IEnumerator FadeTransition(float tempoTransicaoGeral)
     {
-        print("Comecou Transicao");
+        
         float
             tempoTransicaoDividido = tempoTransicaoGeral * .5f,
             multiplicadorTempo = 1 / tempoTransicaoDividido;
 
-        print($"Alpha original: {transitionScreen.color.a}");
+        
         
         Color currentColor = originalColor; currentColor.a = 0;
         transitionScreen.color = currentColor;
 
         transitionScreen.gameObject.SetActive(true);
-        print("ativou " + transitionScreen.gameObject.name);
+        
 
         while (transitionScreen.color.a < originalColor.a)
         {
             currentColor.a += originalColor.a * (Time.deltaTime * multiplicadorTempo);
             transitionScreen.color = currentColor;
-            print($"Alpha aumentando: {transitionScreen.color.a}");
+        
             yield return null;
         }
 
@@ -81,7 +94,7 @@ public class GameManager : MonoBehaviour
             
             yield return null;
         }
-        print("Acabou");
+        
         transitionScreen.gameObject.SetActive(false);
         yield return null;
     }
@@ -89,7 +102,7 @@ public class GameManager : MonoBehaviour
     [Space(8f), Header("Tela de Carregamento"), Space(5f)]
     [SerializeField] GameObject loadingBackground;
     [SerializeField] UnityEngine.UI.Image loadingBar;
-    IEnumerator LoadScene(int scene)
+    IEnumerator LoadSceneAsynchronously(int scene)
     {
         AsyncOperation sceneLoading = SceneManager.LoadSceneAsync(scene);
 
