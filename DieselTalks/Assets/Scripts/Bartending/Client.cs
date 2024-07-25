@@ -4,15 +4,12 @@ namespace Assets.Scripts.Bartending
 {
     public class Client : MonoBehaviour
     {
-        public CharacterManager characterManager;
+        private CharacterManager characterManager;
         public CharacterKey charaterName;
         public Texture desiredTexture;
         public Taste desiredTaste;
         public int proximityLevel = 0;
-        public GameObject
-            badResponse,
-            neutralResponse,
-            goodResponse;
+        public GameObject[] responses;
 
         public void CheckEnjoymentLevel(Texture tex, Taste tas)
         {
@@ -25,11 +22,12 @@ namespace Assets.Scripts.Bartending
 
             characterManager.ChangeProximityLevel(charaterName, charCurrLevel + i);
 
+            responses[i].SetActive(true);
             switch (i)
             {
                 case 0:
                     Debug.Log("Uma merda. Eu abomino você e seus pares, e jamais respirarei os ares de sua cólera novamente.");
-                    badResponse.SetActive(true);
+                    //badResponse.SetActive(true);
                     break;
 
                 case 1:
@@ -39,7 +37,7 @@ namespace Assets.Scripts.Bartending
                         "Sinto que você ignorou alguma coisa que eu falei, mas ta valendo. " +
                         "Não quero vomitar."
                     );
-                    neutralResponse.SetActive(true);
+                    //neutralResponse.SetActive(true);
                     break;
 
                 case 2:
@@ -48,14 +46,14 @@ namespace Assets.Scripts.Bartending
                         "Vós sois o ídolo de bronze no templo de minha impotência. " +
                         "Curvo-me humildemente, e aguardo a penitência."
                     );
-                    goodResponse.SetActive(true);
+                    //goodResponse.SetActive(true);
                     break;
             }
         }
 
         private void Awake()
         {
-            characterManager = FindObjectOfType<CharacterManager>();
+            characterManager = GameManager.Instance.CharacterManager;
         }
 
         private void OnMouseDown()

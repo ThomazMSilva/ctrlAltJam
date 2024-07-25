@@ -15,10 +15,9 @@ public class CharacterProperties
 [System.Serializable]
 public enum CharacterKey
 {
-    JoseFusquinha,
-    MariaFumaca,
-    Robocopson,
-    Robualdo,
+    Sonia,
+    Draculauro,
+    Morte,
     Barman
 }
 

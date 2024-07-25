@@ -1,10 +1,11 @@
 ﻿using System.Collections;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 namespace Assets.Scripts.Bartending
 {
-    public class IngredientSpawner : MonoBehaviour
+    public class IngredientSpawner : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerDownHandler
     {
         RectTransform rectTransform;
         Vector3 transformScale;
@@ -17,20 +18,25 @@ namespace Assets.Scripts.Bartending
             transformScale = rectTransform.localScale;
         }
 
-        public void OnMouseEnter()
+
+        public void OnPointerExit(PointerEventData eventData)
         {
-                rectTransform.localScale = transformScale * 1.1f;
-        }
-        public void OnMouseExit()
-        {
-                rectTransform.localScale = transformScale;
+            Debug.Log("Saiu");
+            rectTransform.localScale = transformScale; 
         }
 
-        private void OnMouseDown()
+        public void OnPointerEnter(PointerEventData eventData)
         {
+            Debug.Log("Entrou");
+            rectTransform.localScale = transformScale * 1.1f;
+        }
+
+        public void OnPointerDown(PointerEventData eventData)
+        {
+            Debug.Log("Clicked");
             GameObject go = Instantiate(ingredientPrefab, rectTransform);
+            Debug.Log($"Instanciou {go.name}");
             go.transform.parent = parent;
-
         }
     }
 }

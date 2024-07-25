@@ -46,9 +46,9 @@ namespace Assets.Scripts.Bartending
         private void Start()
         {
             rectTransform = GetComponent<RectTransform>();
-            canvas = FindObjectOfType<Canvas>();
+            canvas = FindObjectOfType<CanvasReference>().canvas;
             mainCamera = Camera.main;
-
+            Debug.Log("Spawnou");
             StartCoroutine(FollowCursor());
         }
 
@@ -64,19 +64,16 @@ namespace Assets.Scripts.Bartending
         {
             if (!colidido.CompareTag("Magic Circle"))
             {
-                Debug.Log("n foi 1!");
+                //Debug.Log("n foi 1!");
                 return;
             }
 
             if (colidido == colisorCirculoAtual)
             {
-                Debug.Log("n foi 2!");
+                //Debug.Log("n foi 2!");
                 return;
             }
-                
-
-            Debug.Log("Iupii!");
-
+            //Debug.Log("Colidiu com Magic Circle");
             circuloColidido = colidido.GetComponent<DrinkMix>();
             colisorCirculoColidido = colidido;
 
@@ -88,6 +85,7 @@ namespace Assets.Scripts.Bartending
             {
                 circuloColidido = null;
                 colisorCirculoColidido = null;
+                //Debug.Log("Saiu do Magic Circle");
             }
         }
 
@@ -96,7 +94,7 @@ namespace Assets.Scripts.Bartending
         {
             if (!isDragged)
             {
-                Debug.Log("is not dragged");
+                //Debug.Log("is not dragged");
                 return;
             }
 
@@ -107,7 +105,7 @@ namespace Assets.Scripts.Bartending
 
             if (circuloColidido != null)
             {
-                Debug.Log("Circul colidido: "+circuloColidido.name);
+                //Debug.Log("Circul colidido: "+circuloColidido.name);
                 circuloAtual = circuloColidido;
                 colisorCirculoAtual = colisorCirculoColidido;
 
@@ -132,21 +130,46 @@ namespace Assets.Scripts.Bartending
             isCoroutineRunning = true;
             isDragged = true;
 
-            //rectTransform.SetAsLastSibling();
+            //Debug.Log($"Camera: {mainCamera.name}; canvas: {canvas.name}; rectTransform: {rectTransform}");
+
             float tempoAtual = 0;
 
             while (tempoAtual < holdTime && isDragged) { tempoAtual += Time.deltaTime; yield return null; }
+            
+            RectTransform canvasRect = canvas.GetComponent<RectTransform>();
 
             while (isDragged)
             {
-                RectTransformUtility.ScreenPointToLocalPointInRectangle(canvas.transform as RectTransform, Input.mousePosition, mainCamera, out pointerScreenPointToCanvas);
+                RectTransformUtility.ScreenPointToLocalPointInRectangle
+                (
+                    canvasRect, 
+                    Input.mousePosition, 
+                    mainCamera, 
+                    out pointerScreenPointToCanvas
+                );
 
-                //rectTransform.anchoredPosition = pointerScreenPointToCanvas;
-
-                Vector3 posicaoSeguir = canvas.transform.TransformPoint(pointerScreenPointToCanvas); ;
-                transform.position = posicaoSeguir; ;
-
+                rectTransform.anchoredPosition = pointerScreenPointToCanvas;
                 yield return null;
+
+                /*Debug.Log
+                (
+                    $"canvasrect: {canvasRect};" +
+                    $" mousepos: {Input.mousePosition};" +
+                    $" camera: {mainCamera};" +
+                    $" rendermode: {canvas.renderMode}" +
+                    $" out: {pointerScreenPointToCanvas}"
+                );
+
+
+
+                Vector3 followPosition = canvas.transform.TransformPoint(pointerScreenPointToCanvas);
+
+                Debug.Log($"pointerScreenPointToCanvas: {pointerScreenPointToCanvas}");
+                Debug.Log($"followPosition: {followPosition}");
+                Debug.Log($"rectTransform.position: {rectTransform.position}");
+                Debug.Log($"rectTransform.anchoredPosition: {rectTransform.anchoredPosition}");
+
+                rectTransform.anchoredPosition = followPosition;*/
             }
         }
 

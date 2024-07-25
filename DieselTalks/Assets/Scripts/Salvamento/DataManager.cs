@@ -4,7 +4,7 @@ using System.Linq;
 
 public class DataManager : MonoBehaviour
 {
-    [SerializeField] string fileName;
+    [SerializeField] string fileName = "dados-salvos.json";
     private FileHandler fileHandler;
     private SavedData gameData;
     private List<ISavable> dataHandlers;
