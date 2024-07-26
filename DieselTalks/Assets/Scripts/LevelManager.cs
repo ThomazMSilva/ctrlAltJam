@@ -13,6 +13,7 @@ namespace Assets.Scripts
         public void IncreaseLevel()
         {
             level++;
+            Debug.Log($"subiu pro lvl {level} (o primeiro eh o 0)");
             OnLevelUp?.Invoke();
         }
 

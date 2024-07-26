@@ -52,6 +52,7 @@ public class DataManager : MonoBehaviour
     List<ISavable> FindAllDataHandlers()
     {
         IEnumerable<ISavable> dataHandlers = FindObjectsOfType<MonoBehaviour>().OfType<ISavable>();
+
         return new List<ISavable>(dataHandlers);
     }
 }

@@ -35,6 +35,7 @@ public class DialogueBehaviour : MonoBehaviour
     private UnityEngine.UI.Image characterIMG;
     private ImageFade imageFade;
     private AudioSource audioSource;
+    public bool disablesSelfOTF;
     public bool hidesImageOnDisable;
     public UnityEvent OnTextFinished;
     public bool LevelUpAfter;
@@ -57,6 +58,7 @@ public class DialogueBehaviour : MonoBehaviour
         characterIMG.gameObject.SetActive(true);
 
         currentIndex = 0;
+        Debug.Log($"Chamou {gameObject.name}");
         StartTypingCurrentDialogue();
 
         if (LevelUpAfter) OnTextFinished.AddListener(GameManager.Instance.LevelManager.IncreaseLevel);
@@ -65,10 +67,12 @@ public class DialogueBehaviour : MonoBehaviour
     private void OnDisable()
     {
         TextMeshProHandler.OnTextClickedEvent -= ChangeText;
-        
-        textMeshPro.gameObject.SetActive(false);
-        
-        if(hidesImageOnDisable)
+
+        //textMeshPro.gameObject.SetActive(false);
+        textMeshPro.text = "";
+
+
+        if (hidesImageOnDisable)
             imageFade.DisableImage();
 
         if (LevelUpAfter) OnTextFinished.RemoveListener(GameManager.Instance.LevelManager.IncreaseLevel);
@@ -95,7 +99,11 @@ public class DialogueBehaviour : MonoBehaviour
                 StartTypingCurrentDialogue();
             }
             else
+            {
                 OnTextFinished?.Invoke();
+                if (disablesSelfOTF) gameObject.SetActive(false);
+            }
+                
 
         }
     }
@@ -131,6 +139,7 @@ public class DialogueBehaviour : MonoBehaviour
 
     private void StartTypingCurrentDialogue()
     {
+        Debug.Log($"Comecou a digitar uma fala de {gameObject.name}");
         Dialogue currentDialogue = dialogueList[currentIndex];
 
         StartCoroutine(

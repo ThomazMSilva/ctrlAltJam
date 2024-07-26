@@ -13,13 +13,25 @@ MonoBehaviour:
   m_Name: CharacterConfigs
   m_EditorClassIdentifier: 
   characters:
-  - characterName: 3
+  - characterName: 0
     characterVoiceAudioClip: {fileID: 8300000, guid: dc43491a690a4214fb7575ae62ece5ae, type: 3}
     voicePitchVariation: 0.095
-    characterHappyIMG: {fileID: 21300000, guid: 2e12177860ce4bc419278bff724c8fc0, type: 3}
-    characterNeutralIMG: {fileID: 21300000, guid: dafcd62b08dd3b34a8ed808dbc8cd1d8, type: 3}
-    characterUpsetIMG: {fileID: 21300000, guid: ba4a938b424d39b4782ee98288ab3115, type: 3}
+    characterHappyIMG: {fileID: 21300000, guid: c50ada1cc5635ef4fa0330a0c5e0f624, type: 3}
+    characterNeutralIMG: {fileID: 21300000, guid: f741b49b0794b0946aff05c7db381a18, type: 3}
+    characterUpsetIMG: {fileID: 21300000, guid: 06119035db55a174582b15b2ce807de1, type: 3}
   - characterName: 1
+    characterVoiceAudioClip: {fileID: 8300000, guid: dc43491a690a4214fb7575ae62ece5ae, type: 3}
+    voicePitchVariation: 0.067
+    characterHappyIMG: {fileID: 21300000, guid: 135d41a72e6865e4fa1d4a2d0730c0dd, type: 3}
+    characterNeutralIMG: {fileID: 21300000, guid: 24fdcfe7d4913374eaf2d5860f4afa4a, type: 3}
+    characterUpsetIMG: {fileID: 21300000, guid: d3f9a2a181b61a54d8eb559ef40f0110, type: 3}
+  - characterName: 2
+    characterVoiceAudioClip: {fileID: 8300000, guid: dc43491a690a4214fb7575ae62ece5ae, type: 3}
+    voicePitchVariation: 0.067
+    characterHappyIMG: {fileID: 21300000, guid: 374a8b36f26f2cd489fefa3e59785414, type: 3}
+    characterNeutralIMG: {fileID: 21300000, guid: 3c5b0eaee5f8a594fa9adbc118f275e7, type: 3}
+    characterUpsetIMG: {fileID: 21300000, guid: a5fe24f12c06c9946a0fa62d619bbbd3, type: 3}
+  - characterName: 3
     characterVoiceAudioClip: {fileID: 8300000, guid: dc43491a690a4214fb7575ae62ece5ae, type: 3}
     voicePitchVariation: 0.067
     characterHappyIMG: {fileID: 21300000, guid: 2e12177860ce4bc419278bff724c8fc0, type: 3}

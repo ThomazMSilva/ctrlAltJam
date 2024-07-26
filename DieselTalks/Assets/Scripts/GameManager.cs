@@ -27,27 +27,29 @@ public class GameManager : MonoBehaviour
         }
         LevelManager.OnLevelUp += Fade;
 
-        //originalColor = transitionScreen.color;
+        originalColor = transitionScreen.color;
     }
 
-    /*private void Update()
+    private void Update()
     {
         if (Input.GetKeyDown(KeyCode.G))
         {
-            StopAllCoroutines();
-            StartCoroutine(FadeTransition(transitionTime));
+            Fade();
         }
         if (Input.GetKeyDown(KeyCode.S))
         {
-            StopAllCoroutines();
-            StartCoroutine(LoadScene(1));
+            LoadScene(1);
         }
-    }*/
+    }
 
     [Space(8f), Header("Transição em Fade"), Space(5f)]
     [SerializeField] UnityEngine.UI.Image transitionScreen;
     [SerializeField]Color originalColor;
     [SerializeField, Range(.1f, 5)] float transitionTime;
+    [SerializeField] float transitionHold = .5f;
+
+    public delegate void MidFade();
+    public event MidFade OnMidFade;
 
     public void Fade()
     {
@@ -63,7 +65,7 @@ public class GameManager : MonoBehaviour
 
     IEnumerator FadeTransition(float tempoTransicaoGeral)
     {
-        
+        //Debug.Log("Ta dando fade");
         float
             tempoTransicaoDividido = tempoTransicaoGeral * .5f,
             multiplicadorTempo = 1 / tempoTransicaoDividido;
@@ -74,10 +76,11 @@ public class GameManager : MonoBehaviour
         transitionScreen.color = currentColor;
 
         transitionScreen.gameObject.SetActive(true);
-        
+        //Debug.Log($"TransitionScreen Starting Color: {transitionScreen.color}; Starting Alpha: {transitionScreen.color.a}");
 
         while (transitionScreen.color.a < originalColor.a)
         {
+            //Debug.Log($"Fading In - TransitionScreen Color: {transitionScreen.color}; Alpha: {transitionScreen.color.a}");
             currentColor.a += originalColor.a * (Time.deltaTime * multiplicadorTempo);
             transitionScreen.color = currentColor;
         
@@ -86,15 +89,18 @@ public class GameManager : MonoBehaviour
 
         //Faz algo aqui no meio s quise
         //yield return StartCoroutine(LoadScene(1));
+        OnMidFade?.Invoke();
+        yield return new WaitForSeconds(transitionHold);
 
         while (transitionScreen.color.a > 0)
         {
+            //Debug.Log($"Fading Out - TransitionScreen Color: {transitionScreen.color}; Alpha: {transitionScreen.color.a}");
             currentColor.a -= originalColor.a * (Time.deltaTime * multiplicadorTempo);
             transitionScreen.color = currentColor;
             
             yield return null;
         }
-        
+        //Debug.Log("Ended");
         transitionScreen.gameObject.SetActive(false);
         yield return null;
     }
