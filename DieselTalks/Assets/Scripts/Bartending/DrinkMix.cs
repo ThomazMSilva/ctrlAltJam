@@ -20,9 +20,9 @@ namespace Assets.Scripts.Bartending
             ingredientA,
             ingredientB;
         
-        [SerializeField] RecipeBook recipeBook;
+        //[SerializeField] RecipeBook recipeBook;
         [SerializeField] ClientManager clientManager;
-        [SerializeField] MenuManager menuManager;
+        [SerializeField] UIManager menuManager;
 
         [SerializeField] GameObject
             buttons;
@@ -75,8 +75,12 @@ namespace Assets.Scripts.Bartending
             EmptyCircle(ingredientB);
 
             int i = DrinkManager.GetEffectIndex(drinkTexture, drinkTaste);
-            recipeBook.UnlockDrink(i);
-            drink = Instantiate(recipeBook.drinkPrefabs[i], buttons.transform);
+
+            //Debug.Log($"Criou drink com textura {drinkTexture} e gosto {drinkTaste}. Numero {i}. Sour + Smooth = 0, bitter + smooth = 1");
+
+            RecipeBook book = GameManager.Instance.recipeBook;
+            book.UnlockDrink(i);
+            drink = Instantiate(book.drinkPrefabs[i], buttons.transform);
 
             buttons.SetActive(true);
         }

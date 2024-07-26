@@ -31,11 +31,11 @@ namespace Assets.Scripts.Bartending
                 int[,] array = new int[textureLength, tasteLength];
 
                 int index = 0;
-                for (int y = 0; y < tasteLength; y++)
+                for (int texture = 0; texture < textureLength; texture++) //x
                 {
-                    for (int x = 0; x < textureLength; x++)
+                    for (int taste = 0; taste < tasteLength; taste++) //y
                     {
-                        array[x, y] = index;
+                        array[texture, taste] = index;
                         index++;
                     }
                 }
@@ -104,6 +104,10 @@ namespace Assets.Scripts.Bartending
             UpdateCurrentDrink();
          
             GameManager.Instance.LevelManager.OnLevelUp += UpdateCurrentDrink;
+        }
+        private void OnDestroy()
+        {
+            GameManager.Instance.LevelManager.OnLevelUp -= UpdateCurrentDrink;
         }
 
         /*private void OnEnable()

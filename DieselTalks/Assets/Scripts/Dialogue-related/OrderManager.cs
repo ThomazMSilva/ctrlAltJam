@@ -12,7 +12,7 @@ namespace Assets.Scripts.Dialogue_related
         public OrderDialogue currentOrderDialogue;
 
         // Use this for initialization
-        void Start()
+        private void Start()
         {
             var list = FindObjectsOfType<OrderDialogue>(true);
             orderList = list.OrderBy(o => o.orderIndex).ThenBy(o => o.orderingCharacter).ToList();
@@ -23,8 +23,15 @@ namespace Assets.Scripts.Dialogue_related
 
             GameManager.Instance.LevelManager.OnLevelUp += UpdateCurrentOrderDialogue;
 
-            GameManager.Instance.OnMidFade += () => currentOrderDialogue.gameObject.SetActive(true);
+            GameManager.Instance.OnMidFade += ActivateCurrentDialogue;
         }
+
+        private void OnDestroy()
+        {
+            GameManager.Instance.OnMidFade -= ActivateCurrentDialogue;
+        }
+
+        void ActivateCurrentDialogue() => currentOrderDialogue.gameObject.SetActive(true);
 
         void UpdateCurrentOrderDialogue()
         {

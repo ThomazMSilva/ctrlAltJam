@@ -58,7 +58,7 @@ public class DialogueBehaviour : MonoBehaviour
         characterIMG.gameObject.SetActive(true);
 
         currentIndex = 0;
-        Debug.Log($"Chamou {gameObject.name}");
+        //Debug.Log($"Chamou {gameObject.name}");
         StartTypingCurrentDialogue();
 
         if (LevelUpAfter) OnTextFinished.AddListener(GameManager.Instance.LevelManager.IncreaseLevel);
@@ -139,7 +139,7 @@ public class DialogueBehaviour : MonoBehaviour
 
     private void StartTypingCurrentDialogue()
     {
-        Debug.Log($"Comecou a digitar uma fala de {gameObject.name}");
+        //Debug.Log($"Comecou a digitar uma fala de {gameObject.name}");
         Dialogue currentDialogue = dialogueList[currentIndex];
 
         StartCoroutine(

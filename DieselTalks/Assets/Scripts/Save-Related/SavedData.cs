@@ -5,23 +5,23 @@ using UnityEngine;
 public class SavedData
 {
     public int
-        level,
-        characterProximity1,
-        characterProximity2;
+        level;
 
     public SerializableDictionary<CharacterKey, int> characterProximityLevels;
 
-    public GameObject[] savedDrinks;
+
+    public string[] savedDrinks;
     public bool[] drinkStates;
     
     //Constructor
     public SavedData()
     {
         level = 0;
-        characterProximity1 = 0;
-        characterProximity2 = 0;
         characterProximityLevels = new SerializableDictionary<CharacterKey, int>();
-        savedDrinks = new GameObject[16];
+        
         drinkStates = new bool[16];
+        for (int i = 0; i < drinkStates.Length; i++)
+            drinkStates[i] = false;
+        
     }
 }

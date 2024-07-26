@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace Assets.Scripts.Bartending
 {
@@ -8,6 +7,17 @@ namespace Assets.Scripts.Bartending
         public GameObject[] drinkPrefabs;
         public GameObject[] drinksInRecipeBook;
         public bool[] drinkStates;
+        public GameObject recipeScreen;
+     
+        public string DrinkStateString()
+        {
+            string s = "";
+            for (int i = 0; i < drinkPrefabs.Length; i++)
+            {
+                s += $"{drinksInRecipeBook[i].name}: {drinkStates[i]}\n";
+            }
+            return s;
+        }
 
         public void UnlockDrink(int drinkIndex)
         {
@@ -15,6 +25,7 @@ namespace Assets.Scripts.Bartending
             {
                 drinksInRecipeBook[drinkIndex].SetActive(true);
                 drinkStates[drinkIndex] = true;
+                
             }
             else { Debug.Log("Tentando ativar uma bebida de índice não-presente no array 'Drinks' do livro de receitas"); }
 
@@ -22,23 +33,28 @@ namespace Assets.Scripts.Bartending
 
         public void ActivateSavedDrinks()
         {
+            //Debug.Log("Activate no start");
             for (int i = 0; i < drinksInRecipeBook.Length; i++)
-            {
                 drinksInRecipeBook[i].SetActive(drinkStates[i]);
-            }
         }
 
         public void LoadData(SavedData data)
         {
-            drinksInRecipeBook = data.savedDrinks;
             drinkStates = data.drinkStates;
             ActivateSavedDrinks();
+            //Debug.Log("Load:\n" + str);
         }
-
+        //string str = "";
         public void SaveData(ref SavedData data)
         {
-            data.savedDrinks = drinksInRecipeBook;
-            data.drinkStates = drinkStates;
+            data.drinkStates = new bool[drinkStates.Length];
+            //str = "";
+            for (int i = 0; i < drinksInRecipeBook.Length; i++)
+            {
+                data.drinkStates[i] = drinksInRecipeBook[i].activeSelf;
+                //str += $"{drinksInRecipeBook[i]}: data.drinksStates - {data.drinkStates[i]}\n";
+            }
+            //Debug.Log("Salvou:\n" + str);
         }
     }
 }

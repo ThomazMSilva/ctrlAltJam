@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
     public LevelManager LevelManager;
     public DataManager DataManager;
     public CharacterManager CharacterManager;
+    public RecipeBook recipeBook;
 
     private void Awake()
     {
@@ -22,8 +23,8 @@ public class GameManager : MonoBehaviour
         }
         else
         {
-            Debug.LogError("Ja existe uma instancia de LevelManager e ta tentando instanciar uma no Awake");
-            Destroy(gameObject);
+            Debug.LogError("Ja existe uma instancia de GameManager e ta tentando instanciar uma no Awake");
+            //Destroy(gameObject);
         }
         LevelManager.OnLevelUp += Fade;
 
@@ -32,13 +33,22 @@ public class GameManager : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.G))
+        if (Input.GetKeyDown(KeyCode.N))
         {
-            Fade();
+            LoadScene(1);
+            DataManager.NewGame();
+            Debug.Log("GameManager New Game");
         }
         if (Input.GetKeyDown(KeyCode.S))
         {
+            DataManager.SaveGame();
+            Debug.Log("GameManager Save Game");
+        }
+        if (Input.GetKeyDown(KeyCode.L))
+        {
             LoadScene(1);
+            DataManager.LoadGame();
+            Debug.Log("GameManager Load Game");
         }
     }
 

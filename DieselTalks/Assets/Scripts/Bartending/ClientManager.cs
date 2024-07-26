@@ -10,7 +10,7 @@ namespace Assets.Scripts.Bartending
 
         public void UpdateCurrentClient(int clientIndex)
         {
-
+            if (clientIndex >= clients.Length) { return; }
             if (currentClient != null)
             {
                 //Debug.Log($"Desativando cliente {currentClient.name}");
@@ -27,6 +27,11 @@ namespace Assets.Scripts.Bartending
             UpdateClientToLevel();
 
             GameManager.Instance.LevelManager.OnLevelUp += UpdateClientToLevel;
+        }
+
+        private void OnDestroy()
+        {
+            GameManager.Instance.LevelManager.OnLevelUp -= UpdateClientToLevel;
         }
 
         public void ChangeClientEnjoymentLevel()

@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Assets.Scripts
 {
-    public class MenuManager : MonoBehaviour
+    public class UIManager : MonoBehaviour
     {
 
         [SerializeField]
@@ -13,7 +13,7 @@ namespace Assets.Scripts
 
         [SerializeField] ImageFade brewingBackground;
         
-        [SerializeField] private GameObject recipeScreen;
+        //[SerializeField] private GameObject recipeScreen;
         private bool
             isPaused = false,
             isBrewing = false,
@@ -23,7 +23,8 @@ namespace Assets.Scripts
         public void SwitchRecipeBook()
         {
             isRecipeOpen = !isRecipeOpen;
-            recipeScreen.SetActive(isRecipeOpen);
+            //recipeScreen.SetActive(isRecipeOpen);
+            GameManager.Instance.recipeBook.recipeScreen.SetActive(isRecipeOpen);
         }
 
         public void SwitchBrewingScreen()
@@ -64,9 +65,7 @@ namespace Assets.Scripts
             pauseScreen.SetActive(isPaused);
         }
 
-
-
-        /*
+/*
          IEnumerator MovePorta(bool vaiAbrir)
     {
         Quaternion rotacaoAlvo = Quaternion.Euler(new(porta.rotation.x, estaPortaAberta ? 0 : abertura, porta.rotation.z));
@@ -95,8 +94,6 @@ namespace Assets.Scripts
 
         yield return null;
     }
-
-
-         */
+*/
     }
 }

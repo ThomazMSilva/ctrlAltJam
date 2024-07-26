@@ -12,18 +12,20 @@ public class DataManager : MonoBehaviour
 
     private void Awake()
     {
-        gameData = new SavedData();
+        gameData ??= new SavedData();
     }
 
     private void Start()
     {
         fileHandler = new FileHandler(Application.persistentDataPath, fileName);
-        dataHandlers = FindAllDataHandlers();
+        //dataHandlers = FindAllDataHandlers();
     }
 
     public void NewGame()
     {
-        this.gameData = new SavedData();
+        dataHandlers = FindAllDataHandlers();
+        gameData = new SavedData();
+        foreach (ISavable handler in dataHandlers) { handler.LoadData(gameData); }
     }
     public void SaveGame()
     {
@@ -33,6 +35,7 @@ public class DataManager : MonoBehaviour
     }
     public void LoadGame()
     {
+        dataHandlers = FindAllDataHandlers();
         this.gameData = fileHandler.Load();
 
         if(this.gameData == null)
@@ -52,6 +55,10 @@ public class DataManager : MonoBehaviour
     List<ISavable> FindAllDataHandlers()
     {
         IEnumerable<ISavable> dataHandlers = FindObjectsOfType<MonoBehaviour>().OfType<ISavable>();
+
+        string str = "";
+        foreach (ISavable handler in dataHandlers) str += handler.ToString();
+        //Debug.Log($"FindAllDataHandlers in DataManager {gameObject.name}:\n {str}");
 
         return new List<ISavable>(dataHandlers);
     }
