@@ -47,7 +47,7 @@ public class DialogueBehaviour : MonoBehaviour
         textMeshPro = reference.tmp;
         characterIMG = reference.image;
         imageFade = characterIMG.GetComponent<ImageFade>();
-        audioSource = reference.audioSource;
+        audioSource = GameManager.Instance.AudioManager.voicesAudioSource;
     }
 
     private void OnEnable()

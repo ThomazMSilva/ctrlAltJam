@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
     public LevelManager LevelManager;
     public DataManager DataManager;
     public CharacterManager CharacterManager;
+    public AudioManager AudioManager;
     public RecipeBook recipeBook;
 
     private void Awake()
@@ -35,22 +36,24 @@ public class GameManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.N))
         {
-            LoadScene(1);
-            DataManager.NewGame();
-            Debug.Log("GameManager New Game");
+            NewGame();
         }
         if (Input.GetKeyDown(KeyCode.S))
         {
-            DataManager.SaveGame();
-            Debug.Log("GameManager Save Game");
+            SaveGame();
         }
         if (Input.GetKeyDown(KeyCode.L))
         {
-            LoadScene(1);
-            DataManager.LoadGame();
-            Debug.Log("GameManager Load Game");
+            LoadGame();
         }
     }
+
+
+    [Space(8f)/*, Header("Menu Configurações"), Space(5f)*/]
+
+    [SerializeField] GameObject pauseScreen;
+
+    public void SwitchPauseScreen() => pauseScreen.SetActive(!pauseScreen.activeSelf);
 
     [Space(8f), Header("Transição em Fade"), Space(5f)]
     [SerializeField] UnityEngine.UI.Image transitionScreen;
@@ -60,6 +63,31 @@ public class GameManager : MonoBehaviour
 
     public delegate void MidFade();
     public event MidFade OnMidFade;
+
+    public void NewGame()
+    {
+        LoadScene(1);
+        DataManager.NewGame();
+        Debug.Log("GameManager New Game");
+    }
+
+    public void SaveGame()
+    {
+        DataManager.SaveGame();
+        Debug.Log("GameManager Save Game");
+    }
+
+    public void LoadGame()
+    {
+        LoadScene(1);
+        DataManager.LoadGame();
+        Debug.Log("GameManager Load Game");
+    }
+
+    public void Quit()
+    {
+        Application.Quit();
+    }
 
     public void Fade()
     {
