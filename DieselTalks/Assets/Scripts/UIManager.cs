@@ -11,7 +11,7 @@ namespace Assets.Scripts
             pauseScreen,
             brewingScreen;
 
-        [SerializeField] ImageFade brewingBackground;
+        //[SerializeField] ImageFade brewingBackground;
         
         //[SerializeField] private GameObject recipeScreen;
         private bool
@@ -27,14 +27,29 @@ namespace Assets.Scripts
             GameManager.Instance.recipeBook.recipeScreen.SetActive(isRecipeOpen);
         }
 
+        public void SaveGame() 
+        {
+            GameManager.Instance.SaveGame();       
+        }
+
+        public void SwitchOptions()
+        {
+            GameManager.Instance.SwitchOptionsScreen();
+        }
+
+        public void LoadMenu()
+        {
+            GameManager.Instance.LoadScene(0);
+        }
+
         public void SwitchBrewingScreen()
         {
 
             isBrewing = !isBrewing;
-            //brewingScreen.SetActive(isBrewing);
-            brewingBackground.SwitchState();
+            brewingScreen.SetActive(isBrewing);
+            /*brewingBackground.SwitchState();
             StopAllCoroutines();
-            StartCoroutine(DragBrewingScreen(!isBrewing));
+            StartCoroutine(DragBrewingScreen(!isBrewing));*/
 
         }
 

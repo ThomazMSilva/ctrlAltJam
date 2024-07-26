@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 namespace Assets.Scripts
 {
-    public class AudioManager : MonoBehaviour
+    public class AudioManager : MonoBehaviour, ISavable
     {
         [Space(8f), Header("AudioSources"), Space(5f)]
         public AudioSource sfxAudioSource;
@@ -24,6 +24,23 @@ namespace Assets.Scripts
             musicAudioSource.volume = musicSlider.value;
             voicesAudioSource.volume = voicesAudioSlider.value;
             AudioListener.volume = generalSlider.value;
+        }
+
+        public void LoadData(SavedData data)
+        {
+            AudioListener.volume = data.generalVolume;
+            sfxSlider.value = data.sfxVolume;
+            musicSlider.value = data.musicVolume;
+            voicesAudioSlider.value = data.voicesVolume;
+            SetVolume();
+        }
+
+        public void SaveData(ref SavedData data)
+        {
+            data.generalVolume = AudioListener.volume;
+            data.sfxVolume = sfxSlider.value;
+            data.musicVolume = musicSlider.value;
+            data.voicesVolume = voicesAudioSlider.value;
         }
     }
 }

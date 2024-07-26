@@ -29,6 +29,12 @@ namespace Assets.Scripts.Bartending
         [SerializeField] Transform drinkFinalPosition;
 
         private GameObject drink;
+        private RecipeBook book;
+
+        private void Start()
+        {
+            book = GameManager.Instance.recipeBook;
+        }
 
         public void SetIngredient(Ingredient ingr, RectTransform rect)
         {
@@ -76,10 +82,6 @@ namespace Assets.Scripts.Bartending
 
             int i = DrinkManager.GetEffectIndex(drinkTexture, drinkTaste);
 
-            //Debug.Log($"Criou drink com textura {drinkTexture} e gosto {drinkTaste}. Numero {i}. Sour + Smooth = 0, bitter + smooth = 1");
-
-            RecipeBook book = GameManager.Instance.recipeBook;
-            book.UnlockDrink(i);
             drink = Instantiate(book.drinkPrefabs[i], buttons.transform);
 
             buttons.SetActive(true);
@@ -99,12 +101,15 @@ namespace Assets.Scripts.Bartending
 
         public void DeliverDrink()
         {
+            int i = DrinkManager.GetEffectIndex(drinkTexture, drinkTaste);
+            book.UnlockDrink(i);
+
             //StartCoroutine(DragDrinkFinalPosition(drink));
             drink.transform.SetParent(drinkFinalPosition, false);
             drink.transform.localPosition = Vector2.zero;
             clientManager.ChangeClientEnjoymentLevel();
             menuManager.SwitchBrewingScreen();
-            //buttons.SetActive(false);
+            buttons.SetActive(false);
         }
 
         IEnumerator DragDrinkFinalPosition(GameObject drink)

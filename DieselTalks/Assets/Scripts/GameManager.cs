@@ -51,9 +51,10 @@ public class GameManager : MonoBehaviour
 
     [Space(8f)/*, Header("Menu Configurações"), Space(5f)*/]
 
-    [SerializeField] GameObject pauseScreen;
+    [SerializeField] GameObject pauseScreen, creditsScreen;
 
-    public void SwitchPauseScreen() => pauseScreen.SetActive(!pauseScreen.activeSelf);
+    public void SwitchOptionsScreen() => pauseScreen.SetActive(!pauseScreen.activeSelf);
+    public void SwitchCreditsScreen() => creditsScreen.SetActive(!creditsScreen.activeSelf);
 
     [Space(8f), Header("Transição em Fade"), Space(5f)]
     [SerializeField] UnityEngine.UI.Image transitionScreen;
@@ -89,16 +90,16 @@ public class GameManager : MonoBehaviour
         Application.Quit();
     }
 
-    public void Fade()
-    {
-        StopAllCoroutines();
-        StartCoroutine(FadeTransition(transitionTime));
-    }
-
     public void LoadScene(int sceneIndex)
     {
         StopAllCoroutines();
         StartCoroutine(LoadSceneAsynchronously(sceneIndex));
+    }
+
+    public void Fade()
+    {
+        StopAllCoroutines();
+        StartCoroutine(FadeTransition(transitionTime));
     }
 
     IEnumerator FadeTransition(float tempoTransicaoGeral)
