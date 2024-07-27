@@ -124,7 +124,7 @@ namespace Assets.Scripts.Bartending
             buttons.SetActive(false);
         }
 
-        IEnumerator DragDrinkFinalPosition(GameObject drink)
+        /*IEnumerator DragDrinkFinalPosition(GameObject drink)
         {
             bool isOnPlace = false;
             drink.transform.SetParent(drinkFinalPosition, true);
@@ -147,7 +147,7 @@ namespace Assets.Scripts.Bartending
                 yield return null;
             }
             Debug.Log("terminou");
-        }
+        }*/
     }
 
 }

@@ -4,15 +4,22 @@ using UnityEngine;
 
 namespace Assets.Scripts.Bartending
 {
-    public class drinkStateDisplay : MonoBehaviour
+    public class DrinkStateDisplay : MonoBehaviour
     {
         //public RecipeBook book;
         public TextMeshProUGUI textMeshPro;
-        
+
+        private RecipeBook book;
+
+        private void Start()
+        {
+            book = GameManager.Instance.recipeBook;
+        }
+
         // Update is called once per frame
         void Update()
         {
-            textMeshPro.text = GameManager.Instance.recipeBook.DrinkStateString();
+            textMeshPro.text = book.DrinkStateString();
         }
     }
 }

@@ -1,4 +1,7 @@
-﻿using UnityEngine;
+﻿using System.IO.IsolatedStorage;
+using TMPro;
+using UnityEngine;
+using UnityEngine.UI;
 
 namespace Assets.Scripts.Bartending
 {
@@ -6,9 +9,45 @@ namespace Assets.Scripts.Bartending
     {
         public GameObject[] drinkPrefabs;
         public GameObject[] drinksInRecipeBook;
-        public bool[] drinkStates;
+        [HideInInspector]public bool[] drinkStates;
         public GameObject recipeScreen;
-     
+
+        [Space(8f), Header("Descricao"), Space(5f)]
+        [SerializeField] GameObject descriptionBackground;
+        [SerializeField] Image drinkCurrentIMG;
+        [SerializeField] TextMeshProUGUI drinkNameTMP;
+        [SerializeField] TextMeshProUGUI drinkDescriptionTMP;
+
+        [Space(8f)]
+
+        [SerializeField] Sprite baseSprite;
+        [SerializeField] Sprite[] drinkSprites;
+        [SerializeField] string[] drinkNames;
+        [SerializeField, TextArea] string[] drinkDescriptions;
+
+        public void OpenDescription(GameObject go)
+        {
+            int index = 0;
+            for (int i = 0; i < drinksInRecipeBook.Length; i++)
+                if (go == drinksInRecipeBook[i]) { index = i; break; }
+
+            drinkCurrentIMG.sprite = drinkSprites[index] ?? baseSprite;
+            drinkNameTMP.text = drinkNames[index] ?? "";
+            drinkDescriptionTMP.text = drinkDescriptions[index] ?? "";
+            
+            descriptionBackground.SetActive(true);
+        }
+
+
+        /*private void Awake()
+        {
+            for (int i = 0; i < drinksInRecipeBook.Length; i++)            
+                if (drinksInRecipeBook[i].TryGetComponent<UnlockedDrink>(out var unlocked))                
+                    unlocked.index = i;
+                
+            
+        }*/
+
         public string DrinkStateString()
         {
             string s = "";

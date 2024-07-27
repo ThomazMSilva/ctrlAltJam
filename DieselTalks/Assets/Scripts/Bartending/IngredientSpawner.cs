@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -11,6 +12,8 @@ namespace Assets.Scripts.Bartending
         Vector3 transformScale;
         [SerializeField] GameObject ingredientPrefab;
         [SerializeField] Transform parent;
+        [TextArea, SerializeField] string ingredientDescription = "a";
+        [SerializeField] TextMeshProUGUI textMeshProUGUI;
 
         private void Start()
         {
@@ -19,9 +22,17 @@ namespace Assets.Scripts.Bartending
         }
 
 
-        public void OnPointerExit(PointerEventData eventData) => rectTransform.localScale = transformScale;
+        public void OnPointerExit(PointerEventData eventData)
+        {
+            rectTransform.localScale = transformScale;
+            textMeshProUGUI.text = "";
+        }
 
-        public void OnPointerEnter(PointerEventData eventData) => rectTransform.localScale = transformScale * 1.1f;
+        public void OnPointerEnter(PointerEventData eventData)
+        {
+            rectTransform.localScale = transformScale * 1.1f;
+            textMeshProUGUI.text = ingredientDescription;
+        }
 
         public void OnPointerDown(PointerEventData eventData)
         {
