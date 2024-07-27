@@ -42,8 +42,6 @@ namespace Assets.Scripts.Bartending
             colisorCirculoColidido,
             colisorCirculoAtual;
 
-
-
         private void Start()
         {
             rectTransform = GetComponent<RectTransform>();
@@ -171,26 +169,6 @@ namespace Assets.Scripts.Bartending
                 Debug.Log($"rectTransform.anchoredPosition: {rectTransform.anchoredPosition}");
 
                 rectTransform.anchoredPosition = followPosition;*/
-            }
-        }
-
-        public void AddIngredient(DrinkMix drink)
-        {
-            if (isBase) drink.drinkTexture = ingredientTexture;
-            else drink.drinkTaste = ingredientTaste;
-        }
-
-        public void AddIngredient()
-        {
-            if (isBase)
-            {
-                Debug.Log($"Adicionando textura {ingredientTexture} ao drink :3");
-                DrinkManager.SetCurrentDrinkTexture(ingredientTexture);
-            }
-            else
-            {
-                Debug.Log($"Adicionando gosto {ingredientTaste} ao drink Ò-Ó");
-                DrinkManager.SetCurrentDrinkTaste(ingredientTaste);
             }
         }
 

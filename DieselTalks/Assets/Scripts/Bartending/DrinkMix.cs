@@ -40,17 +40,25 @@ namespace Assets.Scripts.Bartending
         {
             if (ingr.isBase)
             {
-                if(ingredientA != null)Destroy(ingredientA.gameObject);
+                if(ingredientA != null)
+                    Destroy(ingredientA.gameObject);
+
                 drinkTexture = ingr.ingredientTexture;
                 ingredientA = ingr;
                 rect.anchoredPosition = TextureCircle.anchoredPosition;
+
+                GameManager.Instance.AudioManager.PlayTextureSound((int)ingr.ingredientTexture);
             }
             else
             {
-                if(ingredientB != null)Destroy(ingredientB.gameObject);
+                if(ingredientB != null)
+                    Destroy(ingredientB.gameObject);
+
                 drinkTaste = ingr.ingredientTaste;
                 ingredientB = ingr;
                 rect.anchoredPosition = TasteCircle.anchoredPosition;
+
+                GameManager.Instance.AudioManager.PlayTasteSound((int)ingr.ingredientTaste);
             }
         }
 
@@ -94,9 +102,12 @@ namespace Assets.Scripts.Bartending
             chancesLeft--;
             
             Destroy(drink);
-            
+
+            GameManager.Instance.AudioManager.PlayDiscardSound();
+
             drink = null;
             buttons.SetActive(false);
+
         }
 
         public void DeliverDrink()
@@ -104,6 +115,7 @@ namespace Assets.Scripts.Bartending
             int i = DrinkManager.GetEffectIndex(drinkTexture, drinkTaste);
             book.UnlockDrink(i);
 
+            GameManager.Instance.AudioManager.PlayDeliverSound();
             //StartCoroutine(DragDrinkFinalPosition(drink));
             drink.transform.SetParent(drinkFinalPosition, false);
             drink.transform.localPosition = Vector2.zero;

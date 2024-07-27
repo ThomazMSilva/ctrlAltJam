@@ -25,6 +25,7 @@ namespace Assets.Scripts.Bartending
 
         public void OnPointerDown(PointerEventData eventData)
         {
+            GameManager.Instance.AudioManager.PlayPoppingSound();
             parent.gameObject.SetActive(false);
             Instantiate(ingredientPrefab, parent);
             parent.gameObject.SetActive(true);

@@ -1,4 +1,6 @@
-﻿using System.Collections;
+﻿using Assets.Scripts.Bartending;
+using System.Collections;
+using System.Data.SqlTypes;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -42,5 +44,36 @@ namespace Assets.Scripts
             data.musicVolume = musicSlider.value;
             data.voicesVolume = voicesAudioSlider.value;
         }
+
+        [Space(8f), Header("AudioClips"), Space(5f)]
+        [SerializeField] AudioClip buttonClip;
+        [SerializeField] AudioClip poppingClip;
+        [SerializeField] AudioClip discardClip;
+        [SerializeField] AudioClip deliverClip;
+        [SerializeField] AudioClip[] textureClips;
+        [SerializeField] AudioClip[] tasteClips;
+        [SerializeField] AudioClip musicMenu;
+        [SerializeField] AudioClip musicGame;
+
+        public void SwitchMusic()
+        {
+            if (musicAudioSource.clip == musicMenu)
+            { 
+                musicAudioSource.clip = musicGame;
+                musicAudioSource.Play();
+            }
+            else
+            {
+                musicAudioSource.clip = musicMenu;
+                musicAudioSource.Play();
+            }
+        }
+
+        public void PlayDiscardSound() => sfxAudioSource.PlayOneShot(discardClip);
+        public void PlayDeliverSound() => sfxAudioSource.PlayOneShot(deliverClip);
+        public void PlayPoppingSound() => sfxAudioSource.PlayOneShot(poppingClip);
+        public void PlayTasteSound(int tasteIndex) => sfxAudioSource.PlayOneShot(tasteClips[tasteIndex]);
+        public void PlayTextureSound(int textureIndex) => sfxAudioSource.PlayOneShot(textureClips[textureIndex]);
+        public void PlayButtonEnterSound() => sfxAudioSource.PlayOneShot(buttonClip);
     }
 }

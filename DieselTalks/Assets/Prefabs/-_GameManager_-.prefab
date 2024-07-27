@@ -39,7 +39,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
   m_AnchoredPosition: {x: 1040, y: -86.99995}
-  m_SizeDelta: {x: 660, y: 50}
+  m_SizeDelta: {x: 660, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &8121316621044856573
 MonoBehaviour:
@@ -596,7 +596,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
   m_AnchoredPosition: {x: 1040, y: 53.000053}
-  m_SizeDelta: {x: 660, y: 50}
+  m_SizeDelta: {x: 660, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &3130661620404847540
 MonoBehaviour:
@@ -2148,7 +2148,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
   m_AnchoredPosition: {x: 1040, y: 193}
-  m_SizeDelta: {x: 660, y: 50}
+  m_SizeDelta: {x: 660, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &6907914733789445973
 MonoBehaviour:
@@ -2376,7 +2376,7 @@ RectTransform:
   m_GameObject: {fileID: 2373389763778060529}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.25, y: 0.6, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2040069116280320980}
@@ -2954,7 +2954,7 @@ RectTransform:
   m_GameObject: {fileID: 3615410132473147308}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.25, y: 0.6, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 777960184577786275}
@@ -4938,6 +4938,22 @@ MonoBehaviour:
   musicSlider: {fileID: 8121316621044856573}
   voicesAudioSlider: {fileID: 8974019631043860783}
   generalSlider: {fileID: 6907914733789445973}
+  buttonClip: {fileID: 8300000, guid: dc43491a690a4214fb7575ae62ece5ae, type: 3}
+  poppingClip: {fileID: 8300000, guid: ab9cc9c5e880cb14c8c2ceb715701ad3, type: 3}
+  discardClip: {fileID: 8300000, guid: 135ecf30945bb66479f01fdec606c41f, type: 3}
+  deliverClip: {fileID: 8300000, guid: 0691cefaa87df0d4180b348693604d60, type: 3}
+  textureClips:
+  - {fileID: 8300000, guid: 2ea31a24c5590f74d9d3ccecfaf7603f, type: 3}
+  - {fileID: 8300000, guid: 6b810ce3c311c774a95a9b6e2a403e1d, type: 3}
+  - {fileID: 8300000, guid: a58b84f0e5d09724ca2aa3816a168d6a, type: 3}
+  - {fileID: 8300000, guid: 04c3ea7abedabd5439ffd7f530f2a4ac, type: 3}
+  tasteClips:
+  - {fileID: 8300000, guid: 72025ef819c7fc845832124bf89b4a09, type: 3}
+  - {fileID: 8300000, guid: 91ceabe441c5d20448403b478db53da0, type: 3}
+  - {fileID: 8300000, guid: ca4267265d302e54f8802dae05425897, type: 3}
+  - {fileID: 8300000, guid: fa14b4e2c327d2e4489591f0ef1dfeb2, type: 3}
+  musicMenu: {fileID: 8300000, guid: a58b84f0e5d09724ca2aa3816a168d6a, type: 3}
+  musicGame: {fileID: 8300000, guid: bf20671475adb9f43ace10341280364d, type: 3}
 --- !u!1 &6429399327358668519
 GameObject:
   m_ObjectHideFlags: 0
@@ -5152,7 +5168,7 @@ RectTransform:
   m_GameObject: {fileID: 6804308265907364191}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.25, y: 0.6, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 872904910207434526}
@@ -5670,7 +5686,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: a58b84f0e5d09724ca2aa3816a168d6a, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.5
   m_Pitch: 1
@@ -5906,7 +5922,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
   m_AnchoredPosition: {x: 1040, y: -226.99994}
-  m_SizeDelta: {x: 660, y: 50}
+  m_SizeDelta: {x: 660, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &8974019631043860783
 MonoBehaviour:
@@ -5984,7 +6000,7 @@ RectTransform:
   m_GameObject: {fileID: 7841087107944442862}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.25, y: 0.6, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2145072536935089296}

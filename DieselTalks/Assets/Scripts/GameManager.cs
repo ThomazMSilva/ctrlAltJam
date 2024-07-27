@@ -25,7 +25,7 @@ public class GameManager : MonoBehaviour
         else
         {
             Debug.LogError("Ja existe uma instancia de GameManager e ta tentando instanciar uma no Awake");
-            //Destroy(gameObject);
+            Destroy(gameObject);
         }
         LevelManager.OnLevelUp += Fade;
 
@@ -159,6 +159,7 @@ public class GameManager : MonoBehaviour
                 loadingBar.fillAmount = sceneLoading.progress;
                 yield return null;
             }
+            AudioManager.SwitchMusic();
             loadingBackground.SetActive(false);
         }
     }

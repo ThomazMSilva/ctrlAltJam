@@ -47,9 +47,5 @@ public class IngredientInspector : Editor
 
         serializedObject.ApplyModifiedProperties();
 
-        if(GUILayout.Button("Aplica na bebida"))
-        {
-            newIngredient.AddIngredient();
-        }
     }
 }
