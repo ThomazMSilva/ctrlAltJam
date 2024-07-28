@@ -34,6 +34,6 @@ MonoBehaviour:
   - characterName: 3
     characterVoiceAudioClip: {fileID: 8300000, guid: dc43491a690a4214fb7575ae62ece5ae, type: 3}
     voicePitchVariation: 0.067
-    characterHappyIMG: {fileID: 21300000, guid: 2e12177860ce4bc419278bff724c8fc0, type: 3}
-    characterNeutralIMG: {fileID: 21300000, guid: dafcd62b08dd3b34a8ed808dbc8cd1d8, type: 3}
-    characterUpsetIMG: {fileID: 21300000, guid: ba4a938b424d39b4782ee98288ab3115, type: 3}
+    characterHappyIMG: {fileID: 21300000, guid: 274e37b2aaadfef45af7650afb8db26c, type: 3}
+    characterNeutralIMG: {fileID: 21300000, guid: 81ac5a0ba97da4e4dbaa12db0609d519, type: 3}
+    characterUpsetIMG: {fileID: 21300000, guid: 81ac5a0ba97da4e4dbaa12db0609d519, type: 3}

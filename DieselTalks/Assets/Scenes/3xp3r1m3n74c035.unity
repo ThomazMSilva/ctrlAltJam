@@ -248,7 +248,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 194.99994, y: -350}
+  m_AnchoredPosition: {x: -336, y: -350}
   m_SizeDelta: {x: 150, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &28344347
@@ -320,6 +320,7 @@ RectTransform:
   - {fileID: 2073956061}
   - {fileID: 729435139}
   - {fileID: 1571366059}
+  - {fileID: 1970947293}
   - {fileID: 123150707}
   m_Father: {fileID: 2108346563}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -403,8 +404,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -5.000061, y: -461}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: 39.382, y: -281.038}
+  m_SizeDelta: {x: 319.246, y: 287.913}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &114142236
 MonoBehaviour:
@@ -475,7 +476,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.18039216}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -572,8 +573,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -575}
-  m_SizeDelta: {x: 2048, y: 200}
+  m_AnchoredPosition: {x: 1, y: -550}
+  m_SizeDelta: {x: 2220.739, y: 257.58}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &123150708
 MonoBehaviour:
@@ -597,8 +598,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 708cc4ccec2facc4c9b61d8121013835, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 576576d6e59955f4396d5fb83c74594f, type: 2}
+  m_sharedMaterial: {fileID: 6947890688743592264, guid: 576576d6e59955f4396d5fb83c74594f, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -622,19 +623,19 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 56
-  m_fontSizeBase: 56
+  m_fontSize: 36
+  m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 2
-  m_VerticalAlignment: 512
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
-  m_lineSpacing: 0
+  m_lineSpacing: -20
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
@@ -661,7 +662,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &123150709
@@ -854,7 +855,7 @@ MonoBehaviour:
       tranquila e um semblante at\xE9 mais feliz.</b>"
     typingDelaySpeed: 0.05
     hasBackground: 0
-    characterMood: 0
+    characterMood: 1
     characterKey: 3
   disablesSelfOTF: 1
   hidesImageOnDisable: 0
@@ -969,7 +970,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &179746022
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1477,19 +1478,19 @@ MonoBehaviour:
   - text: "<b>Voc\xEA</b>\n\r\n<i>Caramba, foi um dia e tanto\u2026</i>"
     typingDelaySpeed: 0.05
     hasBackground: 0
-    characterMood: 0
+    characterMood: 1
     characterKey: 3
   - text: "<b>Voc\xEA</b>\n\r\n<i>Muitos clientes diferentes, e essa mulher que veio
       agora...</i>"
     typingDelaySpeed: 0.05
     hasBackground: 0
-    characterMood: 0
+    characterMood: 1
     characterKey: 3
   - text: "<b>Voc\xEA</b>\n\r\n<i>Bom, pelo menos estou conhecendo um pessoal novo.
       Quem diria que trabalhar em um bar seria \xF3timo.</i>"
     typingDelaySpeed: 0.05
     hasBackground: 0
-    characterMood: 0
+    characterMood: 1
     characterKey: 3
   disablesSelfOTF: 1
   hidesImageOnDisable: 0
@@ -1569,7 +1570,7 @@ MonoBehaviour:
       bar.</b>\r"
     typingDelaySpeed: 0.05
     hasBackground: 0
-    characterMood: 2
+    characterMood: 1
     characterKey: 3
   disablesSelfOTF: 1
   hidesImageOnDisable: 0
@@ -1710,7 +1711,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -105.00006, y: 325}
+  m_AnchoredPosition: {x: -840, y: -75}
   m_SizeDelta: {x: 150, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &334002404
@@ -1727,13 +1728,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ingredientPrefab: {fileID: 6128440654870204135, guid: 8f8a6c19fc92f3b429f1b9178fb71506, type: 3}
   parent: {fileID: 1496944289}
-  ingredientDescription: "Coice de Hipogrifo\nIngrediente base para bebidas intensas\nUma
-    bebida feita ao preparar uma infus\xE3o com pedras m\xE1gicas. Foi descoberto
-    que algumas leves propriedades m\xE1gicas permaneciam no l\xEDquido, surgiu ent\xE3o
-    a ideia de mistur\xE1-lo com outros ingredientes para intensificar suas propriedades.
-    Algumas pessoas  tamb\xE9m consomem a bebida de modo recreativo, seu intenso
-    sabor pode trazer a disposi\xE7\xE3o necess\xE1ria para come\xE7ar o dia ou para
-    encarar desafios."
+  ingredientDescription: "<b>Coice de Hipogrifo</b>\nIngrediente base para bebidas
+    intensas\nUma bebida feita ao preparar uma infus\xE3o com pedras m\xE1gicas.
+    Foi descoberto que algumas leves propriedades m\xE1gicas permaneciam no l\xEDquido,
+    surgiu ent\xE3o a ideia de mistur\xE1-lo com outros ingredientes para intensificar
+    suas propriedades. Algumas pessoas  tamb\xE9m consomem a bebida de modo recreativo,
+    seu intenso sabor pode trazer a disposi\xE7\xE3o necess\xE1ria para come\xE7ar
+    o dia ou para encarar desafios."
   textMeshProUGUI: {fileID: 123150708}
 --- !u!61 &334002405
 BoxCollider2D:
@@ -2178,8 +2179,8 @@ GameObject:
   m_Component:
   - component: {fileID: 486283822}
   - component: {fileID: 486283825}
-  - component: {fileID: 486283824}
   - component: {fileID: 486283823}
+  - component: {fileID: 486283826}
   m_Layer: 5
   m_Name: Config (BTN)
   m_TagString: Untagged
@@ -2196,8 +2197,8 @@ RectTransform:
   m_GameObject: {fileID: 486283821}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1073653589}
   m_Father: {fileID: 2081108215}
@@ -2205,7 +2206,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -250}
-  m_SizeDelta: {x: 350, y: 90}
+  m_SizeDelta: {x: 920, y: 224}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &486283823
 MonoBehaviour:
@@ -2247,7 +2248,7 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 486283824}
+  m_TargetGraphic: {fileID: 0}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
@@ -2263,7 +2264,15 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &486283824
+--- !u!222 &486283825
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 486283821}
+  m_CullTransparentMesh: 1
+--- !u!114 &486283826
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2276,15 +2285,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.8113208, g: 0.753916, b: 0.80726033, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 4d410331a98ff1e4aa9dc4e384b42e76, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -2293,14 +2302,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!222 &486283825
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 486283821}
-  m_CullTransparentMesh: 1
 --- !u!1 &500189387
 GameObject:
   m_ObjectHideFlags: 0
@@ -2446,8 +2447,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -155, y: 140.00003}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: 315.251, y: 13.107}
+  m_SizeDelta: {x: 283.267, y: 170.72}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &506018455
 MonoBehaviour:
@@ -2518,7 +2519,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 1, b: 0.0408051, a: 1}
+  m_Color: {r: 0, g: 1, b: 0.0408051, a: 0.1764706}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2655,7 +2656,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 294.99994, y: 75}
+  m_AnchoredPosition: {x: 1080, y: -75}
   m_SizeDelta: {x: 150, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &543187920
@@ -2672,11 +2673,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ingredientPrefab: {fileID: 6128440654870204135, guid: 3ac2438e10f1a754e8bd63ba5cbe65ed, type: 3}
   parent: {fileID: 1496944289}
-  ingredientDescription: "Leite de Drag\xE3o\nIngrediente Salgado\nNove entre dez
-    pediatras entre todos os reinos indicam o leite de drag\xE3o como o melhor alimento
-    para as crian\xE7as. Os adultos, por sua vez, podem fazer uso dele de maneira
-    muito ampla em sua culin\xE1ria, tanto pelo seu sabor delicioso quanto por sua
-    mem\xF3ria afetiva."
+  ingredientDescription: "<b>Leite de Drag\xE3o</b>\nIngrediente Salgado\nNove entre
+    dez pediatras entre todos os reinos indicam o leite de drag\xE3o como o melhor
+    alimento para as crian\xE7as. Os adultos, por sua vez, podem fazer uso dele de
+    maneira muito ampla em sua culin\xE1ria, tanto pelo seu sabor delicioso quanto
+    por sua mem\xF3ria afetiva."
   textMeshProUGUI: {fileID: 123150708}
 --- !u!61 &543187921
 BoxCollider2D:
@@ -3123,7 +3124,7 @@ MonoBehaviour:
       se tivesse fazendo notas mentais.</b>"
     typingDelaySpeed: 0.05
     hasBackground: 0
-    characterMood: 0
+    characterMood: 1
     characterKey: 3
   disablesSelfOTF: 1
   hidesImageOnDisable: 0
@@ -3179,7 +3180,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 94.99994, y: 325}
+  m_AnchoredPosition: {x: -600, y: -75}
   m_SizeDelta: {x: 150, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &623350407
@@ -3196,7 +3197,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ingredientPrefab: {fileID: 6128440654870204135, guid: ae63176e814138d40823dcb118af2c48, type: 3}
   parent: {fileID: 1496944289}
-  ingredientDescription: "G.O.S.M.A\nIngrediente base para bebidas cremosas\nAnagrama
+  ingredientDescription: "<b>G.O.S.M.A</b>\nIngrediente base para bebidas cremosas\nAnagrama
     para \u201CGrossa Org\xE2nica e Suspeita Massa Apetitosa\u201D. Ocasionalmente
     encontrada no lugar de pouso de estrelas cadentes, ningu\xE9m sabe quem foi o
     primeiro louco a experimentar essa tal G.O.S.M.A, mas todos s\xE3o gratos \xE0
@@ -3297,8 +3298,8 @@ GameObject:
   m_Component:
   - component: {fileID: 705864085}
   - component: {fileID: 705864088}
-  - component: {fileID: 705864087}
   - component: {fileID: 705864086}
+  - component: {fileID: 705864089}
   m_Layer: 5
   m_Name: Voltar (BTN)
   m_TagString: Untagged
@@ -3315,8 +3316,8 @@ RectTransform:
   m_GameObject: {fileID: 705864084}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 840230214}
   m_Father: {fileID: 2081108215}
@@ -3324,7 +3325,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 350, y: 90}
+  m_SizeDelta: {x: 920, y: 224}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &705864086
 MonoBehaviour:
@@ -3366,7 +3367,7 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 705864087}
+  m_TargetGraphic: {fileID: 0}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
@@ -3382,7 +3383,15 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &705864087
+--- !u!222 &705864088
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 705864084}
+  m_CullTransparentMesh: 1
+--- !u!114 &705864089
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3395,15 +3404,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.8113208, g: 0.753916, b: 0.80726033, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: e5ebb02ed3e6b404ebd41c22d05bc94c, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -3412,14 +3421,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!222 &705864088
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 705864084}
-  m_CullTransparentMesh: 1
 --- !u!1 &722087601
 GameObject:
   m_ObjectHideFlags: 0
@@ -3474,13 +3475,13 @@ MonoBehaviour:
       se apoia no balc\xE3o, completamente oposto delar.</b>"
     typingDelaySpeed: 0.05
     hasBackground: 0
-    characterMood: 0
+    characterMood: 1
     characterKey: 3
   - text: "<b>Narrador</b>\n\n<b>Ele fica em sil\xEAncio, distra\xEDdo em seus pensamentos,
       quase como se ele estivesse sozinho no bar.</b>"
     typingDelaySpeed: 0.05
     hasBackground: 0
-    characterMood: 0
+    characterMood: 1
     characterKey: 3
   - text: "<b>Voc\xEA</b>\n\nHmmm\u2026Oi?."
     typingDelaySpeed: 0.05
@@ -3818,7 +3819,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -350}
+  m_Offset: {x: -500, y: -350}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -3979,7 +3980,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -305.00006, y: 75}
+  m_AnchoredPosition: {x: 360, y: -75}
   m_SizeDelta: {x: 150, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &765802597
@@ -3996,12 +3997,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ingredientPrefab: {fileID: 6128440654870204135, guid: 91820ea021b6bdd47a6bab255cadc3c5, type: 3}
   parent: {fileID: 1496944289}
-  ingredientDescription: "Saliva de Bruxa\nIngrediente Azedo\nA linhagem das bruxas
-    \xE9 conhecida pelo seu dom\xEDnio em magia, principalmente no uso das palavras
-    m\xE1gicas que proferem desde crian\xE7as. Dessa forma, a saliva delas muitas
-    vezes \xE9 usada para adquirir parte dessa desenvoltura com as palavras de poder,
-    mas muitas vezes a utilidade vai al\xE9m do campo m\xE1gico, agindo na desenvoltura
-    do indiv\xEDduo como um todo. "
+  ingredientDescription: "<b>Saliva de Bruxa</b>\nIngrediente Azedo\nA linhagem das
+    bruxas \xE9 conhecida pelo seu dom\xEDnio em magia, principalmente no uso das
+    palavras m\xE1gicas que proferem desde crian\xE7as. Dessa forma, a saliva delas
+    muitas vezes \xE9 usada para adquirir parte dessa desenvoltura com as palavras
+    de poder, mas muitas vezes a utilidade vai al\xE9m do campo m\xE1gico, agindo
+    na desenvoltura do indiv\xEDduo como um todo. "
   textMeshProUGUI: {fileID: 123150708}
 --- !u!61 &765802598
 BoxCollider2D:
@@ -4186,7 +4187,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &840230214
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4357,53 +4358,53 @@ MonoBehaviour:
       cliente misteriosa entra.</b>"
     typingDelaySpeed: 0.05
     hasBackground: 0
-    characterMood: 0
+    characterMood: 1
     characterKey: 3
   - text: "<b>Voc\xEA</b>\n\nBoa noite, estamos fechando! Mas abrimos amanh\xE3 ap\xF3s
       o entardecer, voc\xEA pode voltar depois."
     typingDelaySpeed: 0.05
     hasBackground: 0
-    characterMood: 1
-    characterKey: 2
+    characterMood: 0
+    characterKey: 3
   - text: "<b>Dama Misteriosa</b>\n\nAh\u2026 hoje foi exaustivo."
     typingDelaySpeed: 0.05
     hasBackground: 0
-    characterMood: 1
-    characterKey: 2
+    characterMood: 0
+    characterKey: 3
   - text: "<b>Voc\xEA</b>\n\nDesculpe, mas estamos encerrando os nossos servi\xE7os
       por hoje. Voc\xEA pode voltar amanh\xE3, se quiser!"
     typingDelaySpeed: 0.05
     hasBackground: 0
-    characterMood: 1
-    characterKey: 2
+    characterMood: 0
+    characterKey: 3
   - text: "<b>Dama Misteriosa</b>\n\nVai realmente recusar a bebida para um cliente?
       Acho que isso n\xE3o faz bem para os seus neg\xF3cios\u2026 De qualquer forma,
       vou s\xF3 beber e voltar ao trabalho, n\xE3o \xE9 minha inten\xE7\xE3o estender
       a minha noite por aqui."
     typingDelaySpeed: 0.05
     hasBackground: 0
-    characterMood: 1
-    characterKey: 2
+    characterMood: 0
+    characterKey: 3
   - text: "<b>Voc\xEA</b>\n\nBom\u2026 \xE9 que\u2026 \xE9\u2026 mas\u2026"
     typingDelaySpeed: 0.05
     hasBackground: 0
-    characterMood: 1
-    characterKey: 2
+    characterMood: 0
+    characterKey: 3
   - text: "<b>Voc\xEA</b>\n\n..."
     typingDelaySpeed: 0.05
     hasBackground: 0
-    characterMood: 1
-    characterKey: 2
+    characterMood: 0
+    characterKey: 3
   - text: "<b>Voc\xEA</b>\n\n<i>Ela \xE9 bem insistente...</i>"
     typingDelaySpeed: 0.05
     hasBackground: 0
-    characterMood: 1
-    characterKey: 2
+    characterMood: 0
+    characterKey: 3
   - text: "<b>Voc\xEA</b>\n\nTudo bem, qual seria o pedido?"
     typingDelaySpeed: 0.05
     hasBackground: 0
-    characterMood: 1
-    characterKey: 2
+    characterMood: 0
+    characterKey: 3
   - text: "<b>Dama Misteriosa</b>\n\nSe tiver alguma mistura com <i>Fruta de S\xE1tiro</i>,
       e que me deixe acordada pelo resto da noite, seria \xF3timo. Ainda tenho muito
       trabalho a fazer."
@@ -4503,7 +4504,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 94.99994, y: 75}
+  m_AnchoredPosition: {x: 840, y: -75}
   m_SizeDelta: {x: 150, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &865617281
@@ -4520,10 +4521,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ingredientPrefab: {fileID: 6128440654870204135, guid: d8d1091e63a48134fa6dd4625e3088ce, type: 3}
   parent: {fileID: 1496944289}
-  ingredientDescription: "P\xF3 de Fada\nIngrediente Doce\nUm produto escasso, adquirido
-    ao macerar pedras que s\xE3o raramente encontradas \xE0 porta de casas de pessoas
-    que, em dias seguintes, s\xE3o aben\xE7oadas com grande fortuna.\r\nSeu doce
-    sabor \xE9 aproveitado nas guloseimas de mais alta qualidade entre os reinos,
+  ingredientDescription: "<b>P\xF3 de Fada</b>\nIngrediente Doce\nUm produto escasso,
+    adquirido ao macerar pedras que s\xE3o raramente encontradas \xE0 porta de casas
+    de pessoas que, em dias seguintes, s\xE3o aben\xE7oadas com grande fortuna.\r\nSeu
+    doce sabor \xE9 aproveitado nas guloseimas de mais alta qualidade entre os reinos,
     sempre proporcionando sensa\xE7\xF5es positivas para aqueles que as ingerem.\r\n"
   textMeshProUGUI: {fileID: 123150708}
 --- !u!61 &865617282
@@ -4748,7 +4749,7 @@ MonoBehaviour:
       vai parar ele de conseguir se declarar.</b>"
     typingDelaySpeed: 0.05
     hasBackground: 0
-    characterMood: 0
+    characterMood: 1
     characterKey: 3
   disablesSelfOTF: 1
   hidesImageOnDisable: 0
@@ -4952,7 +4953,7 @@ MonoBehaviour:
   charaterName: 1
   desiredTexture: 3
   desiredTaste: 0
-  minimumProximityLevel: 2
+  minimumProximityLevel: 1
   responsesParent: {fileID: 1699626400}
 --- !u!1 &930371100
 GameObject:
@@ -4990,8 +4991,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 145.00006, y: 140.00003}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: 662.63, y: 50.297}
+  m_SizeDelta: {x: 351.34, y: 245.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &930371102
 MonoBehaviour:
@@ -5062,7 +5063,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 0, b: 0, a: 0.18039216}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -5286,7 +5287,7 @@ MonoBehaviour:
       um sorriso.</b>"
     typingDelaySpeed: 0.05
     hasBackground: 0
-    characterMood: 0
+    characterMood: 1
     characterKey: 3
   disablesSelfOTF: 1
   hidesImageOnDisable: 0
@@ -5449,7 +5450,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1073653589
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5466,7 +5467,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -19, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1073653590
@@ -5576,8 +5577,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1092408163}
   - component: {fileID: 1092408166}
-  - component: {fileID: 1092408165}
   - component: {fileID: 1092408164}
+  - component: {fileID: 1092408167}
   m_Layer: 5
   m_Name: Menu (BTN)
   m_TagString: Untagged
@@ -5594,8 +5595,8 @@ RectTransform:
   m_GameObject: {fileID: 1092408162}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1697308007}
   m_Father: {fileID: 2081108215}
@@ -5603,7 +5604,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -375}
-  m_SizeDelta: {x: 350, y: 90}
+  m_SizeDelta: {x: 920, y: 224}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1092408164
 MonoBehaviour:
@@ -5645,7 +5646,7 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 1092408165}
+  m_TargetGraphic: {fileID: 0}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
@@ -5661,7 +5662,15 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &1092408165
+--- !u!222 &1092408166
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1092408162}
+  m_CullTransparentMesh: 1
+--- !u!114 &1092408167
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5674,15 +5683,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.8113208, g: 0.753916, b: 0.80726033, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: e6f940176b610d64497f7b7d1daa7110, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -5691,14 +5700,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!222 &1092408166
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1092408162}
-  m_CullTransparentMesh: 1
 --- !u!1 &1137940307
 GameObject:
   m_ObjectHideFlags: 0
@@ -6093,55 +6094,54 @@ MonoBehaviour:
       cliente misteriosa do outro dia entra no bar.</b>"
     typingDelaySpeed: 0.05
     hasBackground: 0
-    characterMood: 0
+    characterMood: 1
     characterKey: 3
   - text: "<b>Voc\xEA</b>\n\r\nBoa noite, estamos fechando\u2026"
     typingDelaySpeed: 0.05
     hasBackground: 0
-    characterMood: 1
-    characterKey: 2
+    characterMood: 0
+    characterKey: 3
   - text: "<b>Voc\xEA</b>\n\r\nAh! \xC9 voc\xEA!"
     typingDelaySpeed: 0.05
     hasBackground: 0
-    characterMood: 1
-    characterKey: 2
+    characterMood: 0
+    characterKey: 3
   - text: "<b>Dama Misteriosa</b>\n\r\n\xC9\u2026hoje foi uma merda, eu nem consegui
       tirar uma pausa durante a noite para descansar."
     typingDelaySpeed: 0.05
     hasBackground: 0
-    characterMood: 2
-    characterKey: 2
+    characterMood: 0
+    characterKey: 3
   - text: "<b>Dama Misteriosa</b>\n\r\nTive que ficar esperando o hor\xE1rio do cliente\u2026
       pena que era um hor\xE1rio bem n\xE3o conveniente para mim."
     typingDelaySpeed: 0.05
     hasBackground: 0
-    characterMood: 2
-    characterKey: 2
+    characterMood: 0
+    characterKey: 3
   - text: "<b>Voc\xEA</b>\n\r\nFicou at\xE9 muito tarde trabalhando?"
     typingDelaySpeed: 0.05
     hasBackground: 0
-    characterMood: 2
-    characterKey: 2
+    characterMood: 0
+    characterKey: 3
   - text: '<b>Dama Misteriosa</b>
-
 
 
       Passei da hora do lobisomem, infelizmente.'
     typingDelaySpeed: 0.05
     hasBackground: 0
-    characterMood: 1
-    characterKey: 2
+    characterMood: 0
+    characterKey: 3
   - text: "<b>Voc\xEA</b>\n\r\nCaramba! Isso \xE9 bem tarde! Que tipo de trabalho
       \xE9 esse que voc\xEA passa a noite em claro para atender um cliente? Voc\xEA
       \xE9 guarda real ou algo do tipo?"
     typingDelaySpeed: 0.05
     hasBackground: 0
-    characterMood: 1
-    characterKey: 2
+    characterMood: 0
+    characterKey: 3
   - text: "<b>Dama Misteriosa</b>\n\r\nAinda n\xE3o descobriu qual o meu trabalho?"
     typingDelaySpeed: 0.05
     hasBackground: 0
-    characterMood: 1
+    characterMood: 2
     characterKey: 2
   - text: "<b>Dama Misteriosa</b>\n\r\nAchei que a nossa conversa de ontem j\xE1
       seria o suficiente para voc\xEA descobrir."
@@ -6438,7 +6438,7 @@ MonoBehaviour:
       <b>A mulher misteriosa sai do bar.</i>'
     typingDelaySpeed: 0.05
     hasBackground: 0
-    characterMood: 1
+    characterMood: 0
     characterKey: 3
   disablesSelfOTF: 1
   hidesImageOnDisable: 0
@@ -6698,7 +6698,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -105.00006, y: 75}
+  m_AnchoredPosition: {x: 600, y: -75}
   m_SizeDelta: {x: 150, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1314040735
@@ -6715,12 +6715,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ingredientPrefab: {fileID: 6128440654870204135, guid: 933b7f1cd8afe0e45908b9c0b6f7b5b5, type: 3}
   parent: {fileID: 1496944289}
-  ingredientDescription: "Fruta de S\xE1tiro\nIngrediente Amargo\nEssa fruta est\xE1
-    sempre presente nas festas da cultura dos s\xE1tiros, seu consumo em abund\xE2ncia
-    os deixam agitados e garantem uma baita festan\xE7a. Foi descoberto que seu uso
-    controlado garante \xE2nimo o suficiente para durar o resto do dia, sendo muito
-    aproveitado em rotinas de trabalho, estudo ou at\xE9 pelo seu amargo e delicioso
-    sabor."
+  ingredientDescription: "<b>Fruta de S\xE1tiro</b>\nIngrediente Amargo\nEssa fruta
+    est\xE1 sempre presente nas festas da cultura dos s\xE1tiros, seu consumo em
+    abund\xE2ncia os deixam agitados e garantem uma baita festan\xE7a. Foi descoberto
+    que seu uso controlado garante \xE2nimo o suficiente para durar o resto do dia,
+    sendo muito aproveitado em rotinas de trabalho, estudo ou at\xE9 pelo seu amargo
+    e delicioso sabor."
   textMeshProUGUI: {fileID: 123150708}
 --- !u!61 &1314040736
 BoxCollider2D:
@@ -7339,14 +7339,12 @@ MonoBehaviour:
   - text: '<b>Dorian</b>
 
 
-
       Obrigado!'
     typingDelaySpeed: 0.1
     hasBackground: 0
     characterMood: 1
     characterKey: 1
   - text: '<b>Narrador</b>
-
 
 
       <b>Ele sai pela porta, com uma postura meio recolhida
@@ -7477,175 +7475,166 @@ MonoBehaviour:
   characterManager: {fileID: 11400000, guid: a4e284afea3ff1c40a426fc5e4ac6e3a, type: 2}
   dialogueList:
   - text: "<b>Voc\xEA</b>\n\nEssa noite o bar parece mais calmo que o normal."
-    typingDelaySpeed: 0.1
-    hasBackground: 0
-    characterMood: 0
-    characterKey: 3
-  - text: "<b>TESTE CARAIO</b>\n\nComo comprometido, a \xFAltima dica \xE9 um pouco
-      mais \xF3bvia. As pessoas n\xE3o valorizam o meu trabalho, na verdade, muitos
-      odeiam o que eu fa\xE7o e ficam com raiva quando eu estrago uma data especial,
-      ou atrapalho algum compromisso importante. Mas, para aqueles que moram na mis\xE9ria,
-      meus servi\xE7os os deixam esperan\xE7osos."
-    typingDelaySpeed: 0.1
+    typingDelaySpeed: 0.05
     hasBackground: 0
     characterMood: 1
-    characterKey: 0
+    characterKey: 3
   - text: "<b>Voc\xEA</b>\n\nVai ser um bom dia para conversar com os clientes com
       mais calma."
-    typingDelaySpeed: 0.1
+    typingDelaySpeed: 0.05
     hasBackground: 0
-    characterMood: 0
+    characterMood: 1
     characterKey: 3
   - text: "<b>Voc\xEA</b>\n\nEu ainda t\xF4 pegando o jeito, abrir um bar assim n\xE3o
       \xE9 f\xE1cil. N\xE3o esperava que seria t\xE3o movimentado\u2026"
-    typingDelaySpeed: 0.1
+    typingDelaySpeed: 0.05
     hasBackground: 0
-    characterMood: 0
+    characterMood: 1
     characterKey: 3
   - text: "<b>Voc\xEA</b>\n\nIsso me deixa meio nervoso\u2026"
-    typingDelaySpeed: 0.1
+    typingDelaySpeed: 0.05
     hasBackground: 0
-    characterMood: 0
+    characterMood: 1
     characterKey: 3
   - text: "<b>Voc\xEA</b>\n\nMas acho que vai ficar tudo bem, n\xE9?"
-    typingDelaySpeed: 0.1
+    typingDelaySpeed: 0.05
     hasBackground: 0
-    characterMood: 0
+    characterMood: 1
     characterKey: 3
   - text: "<b>Narrador</b>\n\n<b>Em pouco tempo, uma pessoa se aproxima do balc\xE3o
       com um bom humor.</b>"
-    typingDelaySpeed: 0.1
+    typingDelaySpeed: 0.05
     hasBackground: 0
-    characterMood: 0
+    characterMood: 1
     characterKey: 3
   - text: "<b>Voc\xEA</b>\n\n<i>Ok, primeiro cliente da noite!\nVamos nessa.</i>"
-    typingDelaySpeed: 0.1
+    typingDelaySpeed: 0.05
     hasBackground: 0
-    characterMood: 0
+    characterMood: 1
     characterKey: 3
   - text: "<b>Mo\xE7a barbuda</b>\n\r\nBoa noite, s\xF4!"
-    typingDelaySpeed: 0.1
+    typingDelaySpeed: 0.05
     hasBackground: 0
     characterMood: 0
     characterKey: 0
   - text: "<b>Voc\xEA</b>\n\r\nBoa noite! G-gostaria de pedir alguma coisa?"
-    typingDelaySpeed: 0.1
+    typingDelaySpeed: 0.05
     hasBackground: 0
     characterMood: 0
     characterKey: 0
   - text: "<b>Mo\xE7a barbuda</b>\n\r\nUai, s\xF4. N\xE3o precisa desse nervosismo
       todo, n\xE3o."
-    typingDelaySpeed: 0.1
+    typingDelaySpeed: 0.05
     hasBackground: 0
     characterMood: 1
     characterKey: 0
   - text: "<b>Voc\xEA</b>\n\r\nN-N\xE3o \xE9 nada, \xE9 um dos meus primeiros dias
       atendendo, acho que \xE9 normal ficar meio ansioso."
-    typingDelaySpeed: 0.1
+    typingDelaySpeed: 0.05
     hasBackground: 0
     characterMood: 1
     characterKey: 0
   - text: "<b>Voc\xEA</b>\n\r\nAinda t\xF4 num per\xEDodo de experi\xEAncia, \xE0s
       vezes me atrapalho com os ingredientes\u2026"
-    typingDelaySpeed: 0.1
+    typingDelaySpeed: 0.05
     hasBackground: 0
     characterMood: 1
     characterKey: 0
   - text: "<b>Voc\xEA</b>\n\r\nAcho que \xE9 normal, n\xE9?"
-    typingDelaySpeed: 0.1
+    typingDelaySpeed: 0.05
     hasBackground: 0
     characterMood: 1
     characterKey: 0
   - text: "<b>Mo\xE7a barbuda</b>\n\r\nNormar, normar, num \xE9 n\xE9, mas t\xE1
       tudo bem!"
-    typingDelaySpeed: 0.1
+    typingDelaySpeed: 0.05
     hasBackground: 0
     characterMood: 1
     characterKey: 0
   - text: "<b>Mo\xE7a barbuda</b>\n\r\nEu sou a S\xF4nia. Se oc\xEA quiser, posso
       te dar uma ajuda."
-    typingDelaySpeed: 0.1
+    typingDelaySpeed: 0.05
     hasBackground: 0
     characterMood: 0
     characterKey: 0
   - text: "<b>S\xF4nia</b>\n\r\nVoc\xEA tem que prestar bem aten\xE7\xE3o nos trem
       que oc\xEA usa, mocin, eles t\xEAm efeitos que oc\xEA nem deve conhecer!"
-    typingDelaySpeed: 0.1
+    typingDelaySpeed: 0.05
     hasBackground: 0
     characterMood: 1
     characterKey: 0
   - text: "<b>S\xF4nia</b>\n\r\nImagina oc\xEA mata algu\xE9m com uma fruta t\xF3xica!?"
-    typingDelaySpeed: 0.1
+    typingDelaySpeed: 0.05
     hasBackground: 0
     characterMood: 2
     characterKey: 0
   - text: "<b>Voc\xEA</b>\n\r\nN\xC3O! N\xE3o!"
-    typingDelaySpeed: 0.1
+    typingDelaySpeed: 0.05
     hasBackground: 0
     characterMood: 2
     characterKey: 0
   - text: "<b>Voc\xEA</b>\n\r\nN\xE3o\u2026Eu nunca faria isso, eu sei os ingredientes
       que eu uso, s\xF3 fico meio confuso e perdido, por conta dos pedidos. Sa\xED
       uma variedade de bebidas, e a\xED que o bixo pega!"
-    typingDelaySpeed: 0.1
+    typingDelaySpeed: 0.05
     hasBackground: 0
     characterMood: 2
     characterKey: 0
   - text: "<b>S\xF4nia</b>\n\r\n\xD3, meu truque \xE9 o seguinte, pra uma boa bebida
       oc\xEA s\xF3 precisa de uma boa base, seja ela uma bebida forte, um vinho seco
       ou at\xE9 algo cremoso\u2026"
-    typingDelaySpeed: 0.1
+    typingDelaySpeed: 0.05
     hasBackground: 0
     characterMood: 1
     characterKey: 0
   - text: "<b>S\xF4nia</b>\n\r\nE um sabor \xFAnico tamb\xE9m, que pode ser doce
       ou aquele amargo de fruta n\xE3o madura!"
-    typingDelaySpeed: 0.1
+    typingDelaySpeed: 0.05
     hasBackground: 0
     characterMood: 1
     characterKey: 0
   - text: "<b>S\xF4nia</b>\n\r\nOc\xEA pode misturar, bater, o que importa \xE9 estar
       tudo junto e misturado! N\xE3o se preocupa com decora\xE7\xE3o e firulinhas
       assim."
-    typingDelaySpeed: 0.1
+    typingDelaySpeed: 0.05
     hasBackground: 0
     characterMood: 1
     characterKey: 0
   - text: "<b>S\xF4nia</b>\n\r\nO que importa s\xE3o os ingredientes, o sabor e principalmente
       a sensa\xE7\xE3o que oc\xEA quer passar pro seu cliente."
-    typingDelaySpeed: 0.1
+    typingDelaySpeed: 0.05
     hasBackground: 0
     characterMood: 1
     characterKey: 0
   - text: "<b>S\xF4nia</b>\n\r\nVai ter gente que vai chegar confusa, n\xE3o sabe
       nada de bebida, s\xF3 quer conversar, entrar num clima, sentir algo. "
-    typingDelaySpeed: 0.1
+    typingDelaySpeed: 0.05
     hasBackground: 0
     characterMood: 1
     characterKey: 0
   - text: "<b>S\xF4nia</b>\n\r\nFazer a bebida certa vai fazer oc\xEA conquistar
       um cliente pra sempre! \xC0s vezes, oc\xEA pode at\xE9 receber uma recompensa,
       uai! Nunca se sabe."
-    typingDelaySpeed: 0.1
+    typingDelaySpeed: 0.05
     hasBackground: 0
     characterMood: 0
     characterKey: 0
   - text: "<b>Voc\xEA</b>\n\r\nOk! Foram boas dicas, obrigado!"
-    typingDelaySpeed: 0.1
+    typingDelaySpeed: 0.05
     hasBackground: 0
     characterMood: 0
     characterKey: 0
   - text: "<b>S\xF4nia</b>\n\r\nJ\xE1 que eu te ensinei tudo isso, me v\xEA uma bebida.
       Vou querer uma bebida com <i>Leite de Drag\xE3o</i> e esse <i>Coice de Hipogrifo</i>
       no fundo dessa prateleira a\xED."
-    typingDelaySpeed: 0.1
+    typingDelaySpeed: 0.05
     hasBackground: 0
     characterMood: 1
     characterKey: 0
   - text: "<b>S\xF4nia</b>\n\r\nToma o seu tempo, se precisar refazer a bebida \xE9
       s\xF3 jogar a antiga na sua plantinha ali do canto, ela com certeza vai aproveitar
       bem. Sem desperd\xEDcio!"
-    typingDelaySpeed: 0.1
+    typingDelaySpeed: 0.05
     hasBackground: 0
     characterMood: 1
     characterKey: 0
@@ -7970,32 +7959,32 @@ MonoBehaviour:
       conseguiria fazer um bar durar tr\xEAs dias."
     typingDelaySpeed: 0.05
     hasBackground: 0
-    characterMood: 0
+    characterMood: 1
     characterKey: 3
   - text: "<b>Voc\xEA</b>\n\nNo meu \xFAltimo emprego eu fui demitido depois de,
       n\xE3o propositalmente, come\xE7ar uma briga entre um s\xE1tiro e um centauro,
       teve bastante coices e alguns itens foram quebrados\u2026"
     typingDelaySpeed: 0.05
     hasBackground: 0
-    characterMood: 0
+    characterMood: 1
     characterKey: 3
   - text: "<b>Voc\xEA</b>\n\nTudo porque eu troquei os pedidos, o s\xE1tiro recebeu
       a bebida do centauro, e o centauro recebeu a bebida do s\xE1tiro\u2026"
     typingDelaySpeed: 0.05
     hasBackground: 0
-    characterMood: 0
+    characterMood: 1
     characterKey: 3
   - text: "<b>Voc\xEA</b>\n\nNo final da briga, o chefe conversou com os dois e eles
       delataram o meu erro. E o meu chefe antigo me demitiu, pois eu era o \u201Cculpado\u201D."
     typingDelaySpeed: 0.05
     hasBackground: 0
-    characterMood: 0
+    characterMood: 2
     characterKey: 3
   - text: "<b>Voc\xEA</b>\n\nBom, dane-se!! Agora eu t\xF4 bem melhor trabalhando
       aqui!"
     typingDelaySpeed: 0.05
     hasBackground: 0
-    characterMood: 0
+    characterMood: 1
     characterKey: 3
   - text: "<b>S\xF4nia</b>\n\nOpa, b\xE3o?"
     typingDelaySpeed: 0.05
@@ -8129,18 +8118,18 @@ MonoBehaviour:
       com a ideia de atender clientes. "
     typingDelaySpeed: 0.05
     hasBackground: 0
-    characterMood: 0
+    characterMood: 1
     characterKey: 3
   - text: "<b>Voc\xEA</b>\n\r\nEspero que hoje seja um dia tranquilo!!"
     typingDelaySpeed: 0.05
     hasBackground: 0
-    characterMood: 0
+    characterMood: 1
     characterKey: 3
   - text: "<b>Narrador</b>\n\r\n<b>N\xE3o demora muito tempo at\xE9 um rosto familiar
       entrar pela porta do bar</b>"
     typingDelaySpeed: 0.05
     hasBackground: 0
-    characterMood: 0
+    characterMood: 1
     characterKey: 3
   - text: "<b>S\xF4nia</b>\n\r\n\xD3ia, se n\xE3o \xE9 meu bartender favorito!"
     typingDelaySpeed: 0.05
@@ -8511,8 +8500,8 @@ MonoBehaviour:
       como se tivesse algo o assombrando</b>"
     typingDelaySpeed: 0.05
     hasBackground: 0
-    characterMood: 0
-    characterKey: 1
+    characterMood: 1
+    characterKey: 3
   disablesSelfOTF: 1
   hidesImageOnDisable: 0
   OnTextFinished:
@@ -8597,22 +8586,22 @@ MonoBehaviour:
   - text: "<b>Voc\xEA</b>\n\nA-aah!! Espera!! Voc\xEA\u2026"
     typingDelaySpeed: 0.05
     hasBackground: 0
-    characterMood: 2
+    characterMood: 0
     characterKey: 3
   - text: "<b>Voc\xEA</b>\n\nDroga, ela j\xE1 se foi\u2026"
     typingDelaySpeed: 0.05
     hasBackground: 0
-    characterMood: 2
+    characterMood: 0
     characterKey: 3
   - text: "<b>Voc\xEA</b>\n\nDroga, deveria ter prestado mais aten\xE7\xE3o\u2026"
     typingDelaySpeed: 0.05
     hasBackground: 0
-    characterMood: 2
+    characterMood: 0
     characterKey: 3
   - text: "<b>Voc\xEA</b>\n\nAmanh\xE3 vou me esfor\xE7ar mais!"
     typingDelaySpeed: 0.05
     hasBackground: 0
-    characterMood: 2
+    characterMood: 0
     characterKey: 3
   disablesSelfOTF: 1
   hidesImageOnDisable: 0
@@ -8706,7 +8695,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -305.00006, y: 325}
+  m_AnchoredPosition: {x: -1080, y: -75}
   m_SizeDelta: {x: 150, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1648062156
@@ -8761,7 +8750,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ingredientPrefab: {fileID: 6128440654870204135, guid: 2be98fa73ef96fd43811b0f741db0948, type: 3}
   parent: {fileID: 1496944289}
-  ingredientDescription: "Ch\xE1 de Gnomo\nIngrediente base para bebidas suaves\nUm
+  ingredientDescription: "<b>Ch\xE1 de Gnomo</b>\nIngrediente base para bebidas suaves\nUm
     tipo de ch\xE1 muito comum em regi\xF5es campestres, feito ao coar um gnomo dentro
     de seu pr\xF3prio chap\xE9u.\r\nDevido \xE0 natureza m\xE1gica e travessa dos
     gnomos, os efeitos moment\xE2neos desse ch\xE1 podem fragilizar seu contato com
@@ -8864,7 +8853,7 @@ MonoBehaviour:
   charaterName: 2
   desiredTexture: 3
   desiredTaste: 2
-  minimumProximityLevel: 2
+  minimumProximityLevel: 1
   responsesParent: {fileID: 243212866}
 --- !u!1 &1685361560
 GameObject:
@@ -8920,7 +8909,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1697308007
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9161,12 +9150,12 @@ MonoBehaviour:
       <b>Ele sai bravo pela porta do bar.</b>'
     typingDelaySpeed: 0.05
     hasBackground: 0
-    characterMood: 2
+    characterMood: 1
     characterKey: 3
   - text: "<b>Voc\xEA</b>\n\n<i>Acho que eu vou ter que fazer terapia depois disso.</i>"
     typingDelaySpeed: 0.05
     hasBackground: 0
-    characterMood: 2
+    characterMood: 1
     characterKey: 3
   disablesSelfOTF: 1
   hidesImageOnDisable: 0
@@ -9287,8 +9276,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: New Text
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 576576d6e59955f4396d5fb83c74594f, type: 2}
+  m_sharedMaterial: {fileID: 6947890688743592264, guid: 576576d6e59955f4396d5fb83c74594f, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -9312,8 +9301,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 56
-  m_fontSizeBase: 56
+  m_fontSize: 42
+  m_fontSizeBase: 42
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -9324,7 +9313,7 @@ MonoBehaviour:
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
-  m_lineSpacing: 0
+  m_lineSpacing: -10
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
@@ -9425,8 +9414,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 175}
-  m_SizeDelta: {x: 425, y: 300}
+  m_AnchoredPosition: {x: -0, y: 202}
+  m_SizeDelta: {x: 573.548, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1764544342
 MonoBehaviour:
@@ -9450,8 +9439,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Precisando de alguma coisa?
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 708cc4ccec2facc4c9b61d8121013835, type: 2}
+  m_sharedMaterial: {fileID: 1652531914822736424, guid: 708cc4ccec2facc4c9b61d8121013835, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -9475,8 +9464,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 56
-  m_fontSizeBase: 56
+  m_fontSize: 71
+  m_fontSizeBase: 71
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -9582,13 +9571,13 @@ MonoBehaviour:
       aparece, com o mesmo semblante deprimido.</b>'
     typingDelaySpeed: 0.05
     hasBackground: 0
-    characterMood: 0
+    characterMood: 1
     characterKey: 3
   - text: "<b>Narrador</b>\n\n<b>Ele se aproxima do bar, senta e se apoia no balc\xE3o,
       com o mesmo suspiro triste.</b>"
     typingDelaySpeed: 0.05
     hasBackground: 0
-    characterMood: 0
+    characterMood: 1
     characterKey: 3
   - text: '<b>Dorian</b>
 
@@ -9810,24 +9799,24 @@ MonoBehaviour:
       mulher senta na bancada do bar mais uma vez.</b>'
     typingDelaySpeed: 0.05
     hasBackground: 0
-    characterMood: 0
+    characterMood: 1
     characterKey: 3
   - text: "<b>Voc\xEA</b>\n\nBoa noite!!"
     typingDelaySpeed: 0.05
     hasBackground: 0
-    characterMood: 1
-    characterKey: 2
+    characterMood: 0
+    characterKey: 3
   - text: "<b>Voc\xEA</b>\n\nEstou finalizando os pedidos, ainda d\xE1 tempo de fazer
       o seu."
     typingDelaySpeed: 0.05
     hasBackground: 0
-    characterMood: 1
-    characterKey: 2
+    characterMood: 0
+    characterKey: 3
   - text: "<b>Voc\xEA</b>\n\nMais um dos seus dias longos?"
     typingDelaySpeed: 0.05
     hasBackground: 0
-    characterMood: 1
-    characterKey: 2
+    characterMood: 0
+    characterKey: 3
   - text: "<b>Dama Misteriosa</b>\n\n\xC9\u2026 hoje foi um dia complicado."
     typingDelaySpeed: 0.05
     hasBackground: 0
@@ -10309,7 +10298,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -325}
+  m_AnchoredPosition: {x: 428, y: -349}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1878650189
@@ -10348,7 +10337,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 294.99994, y: 325}
+  m_AnchoredPosition: {x: -360, y: -75}
   m_SizeDelta: {x: 150, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1878650191
@@ -10365,13 +10354,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ingredientPrefab: {fileID: 6128440654870204135, guid: de162588759241f4f84a17a29fc514a4, type: 3}
   parent: {fileID: 1496944289}
-  ingredientDescription: "Ovo de Boitat\xE1\nIngrediente base para bebidas gaseificadas\nProveniente
-    da grande cobra de fogo que preda humanoides ca\xE7adores, o ovo de boitat\xE1
-    deve ser manejado com muito cuidado, pois continua muito quente mesmo ap\xF3s
-    sair de dentro da criatura. Devido a sua alta temperatura e sua saborosa gordura,
-    as bebidas feitas com esse ovo s\xE3o bem calorosas, al\xE9m de muito nutritivas.
-    Outro uso desse ingrediente inclui adicionar bolhas \xE0s bebidas, j\xE1 que
-    o ovo ferve por muito tempo fora da casca."
+  ingredientDescription: "<b>Ovo de Boitat\xE1</b>\nIngrediente base para bebidas
+    gaseificadas\nProveniente da grande cobra de fogo que preda humanoides ca\xE7adores,
+    o ovo de boitat\xE1 deve ser manejado com muito cuidado, pois continua muito
+    quente mesmo ap\xF3s sair de dentro da criatura. Devido a sua alta temperatura
+    e sua saborosa gordura, as bebidas feitas com esse ovo s\xE3o bem calorosas,
+    al\xE9m de muito nutritivas. Outro uso desse ingrediente inclui adicionar bolhas
+    \xE0s bebidas, j\xE1 que o ovo ferve por muito tempo fora da casca."
   textMeshProUGUI: {fileID: 123150708}
 --- !u!61 &1878650192
 BoxCollider2D:
@@ -10723,8 +10712,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1906868841}
   - component: {fileID: 1906868844}
-  - component: {fileID: 1906868843}
   - component: {fileID: 1906868842}
+  - component: {fileID: 1906868845}
   m_Layer: 5
   m_Name: ???Salvar (BTN)
   m_TagString: Untagged
@@ -10741,8 +10730,8 @@ RectTransform:
   m_GameObject: {fileID: 1906868840}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 179746022}
   m_Father: {fileID: 2081108215}
@@ -10750,7 +10739,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -125}
-  m_SizeDelta: {x: 350, y: 90}
+  m_SizeDelta: {x: 920, y: 224}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1906868842
 MonoBehaviour:
@@ -10792,7 +10781,7 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 1906868843}
+  m_TargetGraphic: {fileID: 0}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
@@ -10808,7 +10797,15 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &1906868843
+--- !u!222 &1906868844
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1906868840}
+  m_CullTransparentMesh: 1
+--- !u!114 &1906868845
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -10821,15 +10818,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.8113208, g: 0.753916, b: 0.80726033, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 57aed8a9297d23a4f922961e11e58615, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -10838,14 +10835,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!222 &1906868844
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1906868840}
-  m_CullTransparentMesh: 1
 --- !u!1 &1920728347
 GameObject:
   m_ObjectHideFlags: 0
@@ -11054,6 +11043,94 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1939430292}
   m_CullTransparentMesh: 1
+--- !u!1 &1970947292
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1970947293}
+  - component: {fileID: 1970947294}
+  m_Layer: 5
+  m_Name: Square (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1970947293
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1970947292}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 2230, y: 278.43246, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 43000078}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: -568}
+  m_SizeDelta: {x: 1, y: 1}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!212 &1970947294
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1970947292}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 1
+  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Color: {r: 0.2754717, g: 0.12975009, b: 0, a: 0.19607843}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &1980494910
 GameObject:
   m_ObjectHideFlags: 0
@@ -11454,7 +11531,7 @@ MonoBehaviour:
   - text: "<b>Narrador</b>\n\r\n<b>Ela vaza.</b>\r"
     typingDelaySpeed: 0.05
     hasBackground: 0
-    characterMood: 2
+    characterMood: 1
     characterKey: 3
   disablesSelfOTF: 1
   hidesImageOnDisable: 0
@@ -11641,15 +11718,15 @@ RectTransform:
   m_GameObject: {fileID: 2073956060}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.99999994, y: 0.99999994, z: 0.99999994}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 43000078}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -3.4447632, y: -25.62}
-  m_SizeDelta: {x: 1167.359, y: 1492.239}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 2560, y: 1440}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2073956062
 MonoBehaviour:
@@ -11664,14 +11741,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.32156864, g: 0.23529413, b: 0.17254902, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 0a923726484343b4783a0c6f20ebfd7b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -11857,7 +11934,7 @@ MonoBehaviour:
   charaterName: 0
   desiredTexture: 0
   desiredTaste: 3
-  minimumProximityLevel: 2
+  minimumProximityLevel: 1
   responsesParent: {fileID: 1369378242}
 --- !u!1 &2118586905
 GameObject:
@@ -11893,7 +11970,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -205.00006, y: -350}
+  m_AnchoredPosition: {x: -659, y: -350}
   m_SizeDelta: {x: 150, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2118586907
@@ -12101,7 +12178,7 @@ MonoBehaviour:
       triste de antes, como se algo ainda o incomodasse.</b>'
     typingDelaySpeed: 0.05
     hasBackground: 0
-    characterMood: 2
+    characterMood: 1
     characterKey: 3
   disablesSelfOTF: 1
   hidesImageOnDisable: 0
