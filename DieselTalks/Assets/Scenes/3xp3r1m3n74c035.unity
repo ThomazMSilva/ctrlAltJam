@@ -172,16 +172,30 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterManager: {fileID: 11400000, guid: a4e284afea3ff1c40a426fc5e4ac6e3a, type: 2}
   dialogueList:
-  - text: vc se safou
-    typingDelaySpeed: 0.1
+  - text: "<b>Dama Misteriosa</b>\n\r\nPoxa, achei que hoje voc\xEA j\xE1 estaria
+      um pouco melhor com as suas habilidades de bartender."
+    typingDelaySpeed: 0.05
     hasBackground: 0
     characterMood: 1
     characterKey: 2
-  - text: ta na media
-    typingDelaySpeed: 0.5
-    hasBackground: 1
+  - text: "<b>Dama Misteriosa</b>\n\r\nInfelizmente n\xE3o vou conseguir cumprir
+      com a minha proposta, n\xE3o estou nem um pouco satisfeita com o que voc\xEA
+      me entregou."
+    typingDelaySpeed: 0.05
+    hasBackground: 0
     characterMood: 1
     characterKey: 2
+  - text: "<b>Dama Misteriosa</b>\n\r\nAt\xE9 mais!"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 2
+  - text: "<b>Narrador</b>\n\n\r<b>A Dama recolhe seu chap\xE9u e se despede com
+      um aceno.</b>"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 3
   disablesSelfOTF: 1
   hidesImageOnDisable: 0
   OnTextFinished:
@@ -583,7 +597,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 708cc4ccec2facc4c9b61d8121013835, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -647,7 +661,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &123150709
@@ -707,8 +721,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   charaterName: 0
-  desiredTexture: 0
-  desiredTaste: 0
+  desiredTexture: 1
+  desiredTaste: 3
   minimumProximityLevel: 0
   responsesParent: {fileID: 1533038491}
 --- !u!1 &161654177
@@ -761,23 +775,88 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterManager: {fileID: 11400000, guid: a4e284afea3ff1c40a426fc5e4ac6e3a, type: 2}
   dialogueList:
-  - text: 'IIIIIIIIIIIIIIIIIIAAAAA
+  - text: "<b>Dorian</b>\n\r\nUau! Isso aqui t\xE1 perfeito!"
+    typingDelaySpeed: 0.08
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 1
+  - text: "<b>Dorian</b>\n\r\nVoc\xEA faz as bebidas t\xE3o bem, e ainda \xE9 bonitinho."
+    typingDelaySpeed: 0.08
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 1
+  - text: "<b>Voc\xEA</b>\n\r\n<i>Meu deus\u2026Espero que eu n\xE3o esteja vermelho.</i>"
+    typingDelaySpeed: 0.08
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 1
+  - text: "<b>Dorian</b>\n\r\nEnt\xE3o, como eu estava dizendo, o problema \xE9 que\u2026
+      Eu sou um vampiro\u2026"
+    typingDelaySpeed: 0.1
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 1
+  - text: "<b>Dorian</b>\n\r\nE-Eu tenho medo de que\u2026 N\xE3o d\xEA certo, sabe.."
+    typingDelaySpeed: 0.1
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 1
+  - text: "<b>Dorian</b>\n\r\nE de arruinar tudo que j\xE1 temos\u2026"
+    typingDelaySpeed: 0.1
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 1
+  - text: "<b>Dorian</b>\n\r\nJ\xE1 n\xE3o tem como sair muito, porque ele n\xE3o
+      vai passear de madrugada."
+    typingDelaySpeed: 0.1
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 1
+  - text: "<b>Dorian</b>\n\r\nE ele \xE9 uma pessoa normal\u2026 N\xE3o sei o que
+      pode acontecer se eu perder o controle um dia."
+    typingDelaySpeed: 0.1
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 1
+  - text: "<b>Dorian</b>\n\r\nMas eu gosto tanto dele\u2026"
+    typingDelaySpeed: 0.1
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 1
+  - text: "<b>Voc\xEA</b>\n\r\nAcho que n\xE3o tem problema se voc\xEAs conversarem
+      sobre o assunto, j\xE1 que voc\xEAs tem uma amizade t\xE3o boa!"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 1
+  - text: "<b>Dorian</b>\n\r\n\xC9, voc\xEA tem raz\xE3o. Toda essa preocupa\xE7\xE3o
+      pode ser s\xF3 medo."
+    typingDelaySpeed: 0.1
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 1
+  - text: "<b>Dorian</b>\n\r\nJ\xE1 vou indo embora, quero aproveitar o resto da
+      noite para tentar conversar com ele."
+    typingDelaySpeed: 0.1
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 1
+  - text: '<b>Dorian</b>
 
-      ;'
+      
+
+      Muito obrigado pela bebida maravilhosa,
+      querido.'
     typingDelaySpeed: 0.1
     hasBackground: 0
     characterMood: 0
     characterKey: 1
-  - text: AAAAAAAAAAA
-    typingDelaySpeed: 0.5
+  - text: "<b>Narrador</b>\n\r\n<b>Ele sai pela porta do bar, com uma postura mais
+      tranquila e um semblante at\xE9 mais feliz.</b>"
+    typingDelaySpeed: 0.05
     hasBackground: 0
     characterMood: 0
-    characterKey: 1
-  - text: ;)
-    typingDelaySpeed: 0.1
-    hasBackground: 1
-    characterMood: 0
-    characterKey: 1
+    characterKey: 3
   disablesSelfOTF: 1
   hidesImageOnDisable: 0
   OnTextFinished:
@@ -1175,8 +1254,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -11.524, y: 266}
-  m_SizeDelta: {x: 2582.062, y: 941.403}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 2560, y: 1440}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &223035704
 MonoBehaviour:
@@ -1191,14 +1270,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.101581946, g: 0.08321468, b: 0.20754719, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 51d03607a029c094f864c21f743c191a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1341,23 +1420,78 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterManager: {fileID: 11400000, guid: a4e284afea3ff1c40a426fc5e4ac6e3a, type: 2}
   dialogueList:
-  - text: 'IIIIIIIIIIIIIIIIIIAAAAA
+  - text: '<b>Madame Misteriosa</b>
 
-      ;'
-    typingDelaySpeed: 0.1
+      
+
+      Uau! Esse bar tem futuro! Bom,
+      como prometido, aqui vai uma dica:'
+    typingDelaySpeed: 0.05
     hasBackground: 0
     characterMood: 0
     characterKey: 2
-  - text: AAAAAAAAAAA
-    typingDelaySpeed: 0.5
+  - text: "<b>Madame Misteriosa</b>\n\r\nApesar de ser um trabalho popular, ningu\xE9m
+      gosta muito de execut\xE1-lo. E por isso, eu sou a \xFAnica do cargo, atualmente."
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 2
+  - text: '<b>Madame Misteriosa</b>
+
+      
+
+      ...'
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 2
+  - text: '<b>Madame Misteriosa</b>
+
+      
+
+      Algum chute?'
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 2
+  - text: "<b>Voc\xEA</b>\n\r\nAaah\u2026 bem\u2026"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 2
+  - text: "<b>Voc\xEA</b>\n\r\n\u2026 voc\xEA \xE9 m\xE9dica?"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 2
+  - text: "<b>Madame Misteriosa</b>\n\r\nFoi um bom chute! Mas n\xE3o, n\xE3o sou
+      m\xE9dica. Espero que voc\xEA acerte da pr\xF3xima vez. Obrigado pela bebida."
+    typingDelaySpeed: 0.05
     hasBackground: 0
     characterMood: 0
     characterKey: 2
-  - text: ;)
-    typingDelaySpeed: 0.1
-    hasBackground: 1
+  - text: "<b>Voc\xEA</b>\n\r\nAh, de nada. At\xE9!"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
     characterMood: 0
     characterKey: 2
+  - text: "<b>Voc\xEA</b>\n\r\n<i>Caramba, foi um dia e tanto\u2026</i>"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 3
+  - text: "<b>Voc\xEA</b>\n\r\n<i>Muitos clientes diferentes, e essa mulher que veio
+      agora...</i>"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 3
+  - text: "<b>Voc\xEA</b>\n\r\n<i>Bom, pelo menos estou conhecendo um pessoal novo.
+      Quem diria que trabalhar em um bar seria \xF3timo.</i>"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 3
   disablesSelfOTF: 1
   hidesImageOnDisable: 0
   OnTextFinished:
@@ -1426,16 +1560,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterManager: {fileID: 11400000, guid: a4e284afea3ff1c40a426fc5e4ac6e3a, type: 2}
   dialogueList:
-  - text: se eu pudesse morrer agora eu queria
-    typingDelaySpeed: 0.1
+  - text: "<b>Dama Misteriosa</b>\n\nNossa, isso era para me deixar calma? S\xF3
+      me deixou mais estressada! T\xE1 p\xE9ssimo!\r\nEstou bem decepcionada\u2026\r"
+    typingDelaySpeed: 0.05
     hasBackground: 0
     characterMood: 2
     characterKey: 2
-  - text: isso aqui ta mt ruim
-    typingDelaySpeed: 0.1
+  - text: "<b>Narrador</b>\n\n<b>A Dama p\xF5e o seu chap\xE9u e sai estressada do
+      bar.</b>\r"
+    typingDelaySpeed: 0.05
     hasBackground: 0
     characterMood: 2
-    characterKey: 2
+    characterKey: 3
   disablesSelfOTF: 1
   hidesImageOnDisable: 0
   OnTextFinished:
@@ -1592,7 +1728,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ingredientPrefab: {fileID: 6128440654870204135, guid: 8f8a6c19fc92f3b429f1b9178fb71506, type: 3}
   parent: {fileID: 1496944289}
-  ingredientDescription: rough
+  ingredientDescription: "Coice de Hipogrifo\nIngrediente base para bebidas intensas\nUma
+    bebida feita ao preparar uma infus\xE3o com pedras m\xE1gicas. Foi descoberto
+    que algumas leves propriedades m\xE1gicas permaneciam no l\xEDquido, surgiu ent\xE3o
+    a ideia de mistur\xE1-lo com outros ingredientes para intensificar suas propriedades.
+    Algumas pessoas  tamb\xE9m consomem a bebida de modo recreativo, seu intenso
+    sabor pode trazer a disposi\xE7\xE3o necess\xE1ria para come\xE7ar o dia ou para
+    encarar desafios."
   textMeshProUGUI: {fileID: 123150708}
 --- !u!61 &334002405
 BoxCollider2D:
@@ -1860,13 +2002,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterManager: {fileID: 11400000, guid: a4e284afea3ff1c40a426fc5e4ac6e3a, type: 2}
   dialogueList:
-  - text: uma porra
-    typingDelaySpeed: 0.1
-    hasBackground: 0
-    characterMood: 2
-    characterKey: 0
-  - text: nem eu como isso
-    typingDelaySpeed: 0.1
+  - text: "<b>S\xF4nia</b>\n\r\nAcho que voc\xEA ainda precisa treinar mais um pouco,
+      n\xE9\u2026"
+    typingDelaySpeed: 0.05
     hasBackground: 0
     characterMood: 2
     characterKey: 0
@@ -1875,19 +2013,19 @@ MonoBehaviour:
   OnTextFinished:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 889212163}
-        m_TargetAssemblyTypeName: FinalDrinkPosClean, Assembly-CSharp
-        m_MethodName: CleanChildren
-        m_Mode: 1
+      - m_Target: {fileID: 547205349}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
+          m_BoolArgument: 1
         m_CallState: 2
-  LevelUpAfter: 1
+  LevelUpAfter: 0
 --- !u!224 &455955064
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2001,21 +2139,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterManager: {fileID: 11400000, guid: a4e284afea3ff1c40a426fc5e4ac6e3a, type: 2}
   dialogueList:
-  - text: 'IIIIIIIIIIIIIIIIIIAAAAA
-
-      ;'
+  - text: "<b>S\xF4nia</b>\n\nUai, s\xF4. C\xEA sabe bem como fazer essas bebidas!
+      Nem precisava da minha ajuda!"
     typingDelaySpeed: 0.1
     hasBackground: 0
     characterMood: 0
     characterKey: 0
-  - text: AAAAAAAAAAA
-    typingDelaySpeed: 0.5
-    hasBackground: 0
-    characterMood: 0
-    characterKey: 0
-  - text: ;)
+  - text: "<b>S\xF4nia</b>\n\nUai, s\xF4. C\xEA sabe bem como fazer essas bebidas!
+      Nem precisava da minha ajuda!"
     typingDelaySpeed: 0.1
-    hasBackground: 1
+    hasBackground: 0
     characterMood: 0
     characterKey: 0
   disablesSelfOTF: 1
@@ -2023,19 +2156,19 @@ MonoBehaviour:
   OnTextFinished:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 889212163}
-        m_TargetAssemblyTypeName: FinalDrinkPosClean, Assembly-CSharp
-        m_MethodName: CleanChildren
-        m_Mode: 1
+      - m_Target: {fileID: 547205349}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
+          m_BoolArgument: 1
         m_CallState: 2
-  LevelUpAfter: 1
+  LevelUpAfter: 0
 --- !u!1 &486283821
 GameObject:
   m_ObjectHideFlags: 0
@@ -2540,7 +2673,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ingredientPrefab: {fileID: 6128440654870204135, guid: 3ac2438e10f1a754e8bd63ba5cbe65ed, type: 3}
   parent: {fileID: 1496944289}
-  ingredientDescription: salty
+  ingredientDescription: "Leite de Drag\xE3o\nIngrediente Salgado\nNove entre dez
+    pediatras entre todos os reinos indicam o leite de drag\xE3o como o melhor alimento
+    para as crian\xE7as. Os adultos, por sua vez, podem fazer uso dele de maneira
+    muito ampla em sua culin\xE1ria, tanto pelo seu sabor delicioso quanto por sua
+    mem\xF3ria afetiva."
   textMeshProUGUI: {fileID: 123150708}
 --- !u!61 &543187921
 BoxCollider2D:
@@ -2625,6 +2762,98 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 543187918}
   m_CullTransparentMesh: 1
+--- !u!1 &547205349
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 547205350}
+  - component: {fileID: 547205351}
+  m_Layer: 0
+  m_Name: "Dialogo Padr\xE3o"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &547205350
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 547205349}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1533038492}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &547205351
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 547205349}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 601a0cea4bd604c46aafe72f6ab33eea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterManager: {fileID: 11400000, guid: a4e284afea3ff1c40a426fc5e4ac6e3a, type: 2}
+  dialogueList:
+  - text: "<b>S\xF4nia</b>\n\r\nVou voltar amanh\xE3 pra ver o quanto oc\xEA aprendeu
+      e beber mais uns gor\xF3, claro."
+    typingDelaySpeed: 0.1
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 0
+  - text: "<b>S\xF4nia</b>\n\r\nUma boa sorte para voc\xEA, cuida bem dos pr\xF3ximos
+      clientes!"
+    typingDelaySpeed: 0.1
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 0
+  - text: "<b>Narrador</b>\n\r\n<b>S\xF4nia paga e sai do bar animada, acenando at\xE9
+      a porta fechar.</b>"
+    typingDelaySpeed: 0.1
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 3
+  - text: "<b>Voc\xEA</b>\n\r\n<i>Uau, ela era realmente animada\u2026As dicas foram
+      bem \xFAteis, acho que vai me ajudar nos pr\xF3ximos dias.</i>"
+    typingDelaySpeed: 0.1
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 3
+  disablesSelfOTF: 1
+  hidesImageOnDisable: 0
+  OnTextFinished:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 889212163}
+        m_TargetAssemblyTypeName: FinalDrinkPosClean, Assembly-CSharp
+        m_MethodName: CleanChildren
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  LevelUpAfter: 1
 --- !u!1 &555466388
 GameObject:
   m_ObjectHideFlags: 0
@@ -2659,8 +2888,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -11.524, y: -675}
-  m_SizeDelta: {x: 2582.1, y: 941.403}
+  m_AnchoredPosition: {x: -0, y: -218}
+  m_SizeDelta: {x: 2560, y: 1440}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &555466390
 MonoBehaviour:
@@ -2675,14 +2904,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.2830189, g: 0.171078, b: 0, a: 1}
-  m_RaycastTarget: 1
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 392cd8d239d650549b27056954074a97, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2750,16 +2979,45 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterManager: {fileID: 11400000, guid: a4e284afea3ff1c40a426fc5e4ac6e3a, type: 2}
   dialogueList:
-  - text: uma porra
-    typingDelaySpeed: 0.1
+  - text: "<b>S\xF4nia</b>\r\n\n\xC9, acho que c\xEA n\xE3o tem jeito mesmo. Essa
+      bebida ficou tenebrosa!"
+    typingDelaySpeed: 0.05
     hasBackground: 0
     characterMood: 2
     characterKey: 0
-  - text: nem eu como isso
-    typingDelaySpeed: 0.1
+  - text: "<b>Voc\xEA</b>\r\n\nAh..."
+    typingDelaySpeed: 0.05
     hasBackground: 0
     characterMood: 2
     characterKey: 0
+  - text: "<b>S\xF4nia</b>\r\n\nN\xE3o precisa desistir n\xE3o, mas \xE9 bom voc\xEA
+      estudar mais para fazer as bebidas."
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 2
+    characterKey: 0
+  - text: "<b>S\xF4nia</b>\r\n\nVou aproveitar para meter o p\xE9, beber e comer
+      coisa boa em casa!"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 0
+  - text: "<b>S\xF4nia</b>\r\n\nAt\xE9, mocin."
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 0
+  - text: "<b>Narrador</b>\r\n\n<b>Ela sai do bar sem aquele \xE2nimo todo da primeira
+      noite.</b>"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 3
+  - text: "<b>Voc\xEA</b>\r\n\n<i>Vixe! Eu errei feio. Espero ver a S\xF4nia novamente.</i>"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 3
   disablesSelfOTF: 1
   hidesImageOnDisable: 0
   OnTextFinished:
@@ -2828,23 +3086,46 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterManager: {fileID: 11400000, guid: a4e284afea3ff1c40a426fc5e4ac6e3a, type: 2}
   dialogueList:
-  - text: 'IIIIIIIIIIIIIIIIIIAAAAA
-
-      ;'
-    typingDelaySpeed: 0.1
+  - text: "<b>S\xF4nia</b> \n\r\nEta, trem b\xE3o, s\xF4! Essa daqui t\xE1 das boas!"
+    typingDelaySpeed: 0.05
     hasBackground: 0
     characterMood: 0
     characterKey: 0
-  - text: AAAAAAAAAAA
-    typingDelaySpeed: 0.5
+  - text: "<b>S\xF4nia</b> \n\r\nRealmente, oc\xEA tem jeito, garoto. Desse jeito
+      eu vou ter que contar todos meus truques pra voc\xEA."
+    typingDelaySpeed: 0.05
     hasBackground: 0
     characterMood: 0
     characterKey: 0
-  - text: ;)
-    typingDelaySpeed: 0.1
-    hasBackground: 1
+  - text: "<b>Voc\xEA</b> \n\r\nVai me contar como voc\xEA sabe tanto?"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
     characterMood: 0
     characterKey: 0
+  - text: "<b>S\xF4nia</b> \n\r\nVai sonhando! Conto s\xF3 se oc\xEA me fizer uma
+      bebida t\xE3o boa quanto essa amanh\xE3."
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 2
+    characterKey: 0
+  - text: "<b>S\xF4nia</b> \n\r\nBom, isso aqui me deixou mais que inspirada pra
+      fazer uma comida boa em casa, ent\xE3o j\xE1 vou indo nessa."
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 0
+  - text: "<b>S\xF4nia</b> \n\r\nBom, isso aqui me deixou mais que inspirada pra
+      fazer uma comida boa em casa, ent\xE3o j\xE1 vou indo nessa."
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 0
+  - text: "<b>Narrador</b> \n\r\n<b>Ela paga e sai conversando com ela mesma, como
+      se tivesse fazendo notas mentais.</b>"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 3
   disablesSelfOTF: 1
   hidesImageOnDisable: 0
   OnTextFinished:
@@ -2916,7 +3197,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ingredientPrefab: {fileID: 6128440654870204135, guid: ae63176e814138d40823dcb118af2c48, type: 3}
   parent: {fileID: 1496944289}
-  ingredientDescription: creamy
+  ingredientDescription: "G.O.S.M.A\nIngrediente base para bebidas cremosas\nAnagrama
+    para \u201CGrossa Org\xE2nica e Suspeita Massa Apetitosa\u201D. Ocasionalmente
+    encontrada no lugar de pouso de estrelas cadentes, ningu\xE9m sabe quem foi o
+    primeiro louco a experimentar essa tal G.O.S.M.A, mas todos s\xE3o gratos \xE0
+    ele, seja l\xE1 quem for. Al\xE9m de sua curiosa textura, consumir essa iguaria
+    pode mexer com seus sentidos, te deixando mais curioso e suscet\xEDvel ambiente
+    ao seu redor.\n"
   textMeshProUGUI: {fileID: 123150708}
 --- !u!61 &623350408
 BoxCollider2D:
@@ -3184,16 +3471,195 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterManager: {fileID: 11400000, guid: a4e284afea3ff1c40a426fc5e4ac6e3a, type: 2}
   dialogueList:
-  - text: cu do draculauro
-    typingDelaySpeed: 0
-    hasBackground: 1
+  - text: "<b>Narrador</b>\n\n<b>Pouco depois da S\xF4nia sair animada, outro cliente
+      se apoia no balc\xE3o, completamente oposto delar.</b>"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
     characterMood: 0
+    characterKey: 3
+  - text: "<b>Narrador</b>\n\n<b>Ele fica em sil\xEAncio, distra\xEDdo em seus pensamentos,
+      quase como se ele estivesse sozinho no bar.</b>"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 3
+  - text: "<b>Voc\xEA</b>\n\nHmmm\u2026Oi?."
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 1
+  - text: "<b>Vampiro Deprimido</b>\n\nAh\u2026"
+    typingDelaySpeed: 0.1
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 1
+  - text: "<b>Vampiro Deprimido</b>\n\nOi\u2026"
+    typingDelaySpeed: 0.1
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 1
+  - text: "<b>Voc\xEA</b>\n\nTudo certo?"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 1
+  - text: "<b>Voc\xEA</b>\n\nQuer pedir alguma coisa?"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 1
+  - text: "<b>Voc\xEA</b>\n\nQuer conversar?"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 1
+  - text: "<b>Vampiro Deprimido</b>\n\nAh, verdade\u2026Pedir alguma coisa\u2026"
+    typingDelaySpeed: 0.1
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 1
+  - text: "<b>Vampiro Deprimido</b>\n\nN\xE3o sei o que pedir."
+    typingDelaySpeed: 0.1
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 1
+  - text: "<b>Voc\xEA</b>\n\nQuer alguma sugest\xE3o? O favorito do bartender?"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 1
+  - text: "<b>Vampiro Deprimido</b>\n\nN\xE3o sei\u2026"
+    typingDelaySpeed: 0.1
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 1
+  - text: "<b>Narrador</b>\n\n<b>Ele d\xE1 um suspiro frustrado, ainda com a cabe\xE7a
+      nas nuvens.</b>"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 1
+  - text: "<b>Vampiro Deprimido</b>\n\nEu t\xF4 em um dilema, voc\xEA pode dar sua
+      opini\xE3o?"
+    typingDelaySpeed: 0.1
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 1
+  - text: "<b>Voc\xEA</b>\n\nClaro, o que \xE9?"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 1
+  - text: "<b>Vampiro Deprimido</b>\n\nVoc\xEA j\xE1 morou com algu\xE9m? N\xE3o
+      algu\xE9m da sua fam\xEDlia, algum amigo, colega de trabalho, faculdade, sei
+      l\xE1\u2026"
+    typingDelaySpeed: 0.1
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 1
+  - text: "<b>Voc\xEA</b>\n\nNunca, quando sa\xED da casa dos meus pais, eu fui morar
+      sozinho."
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 1
+  - text: "<b>Vampiro Deprimido</b>\n\nQue bom! \xC9 um inferno! Eu moro com um cara
+      que terminou um namoro, fazem alguns bons meses, e eu lembro que no come\xE7o
+      ele ficava choramingando pelos cantos da casa."
+    typingDelaySpeed: 0.08
+    hasBackground: 0
+    characterMood: 2
+    characterKey: 1
+  - text: "<b>Vampiro Deprimido</b>\n\nEm um geral, ele era bem chato, mas sem a
+      namorada ele se tornou at\xE9 mais suport\xE1vel."
+    typingDelaySpeed: 0.08
+    hasBackground: 0
+    characterMood: 2
+    characterKey: 1
+  - text: '<b>Vampiro Deprimido</b>
+
+
+      Claro que ele ainda me irritava, mas
+      eu irritava ele de volta e a gente acabou aprendendo a conviver melhor do que
+      quando ele namorava.'
+    typingDelaySpeed: 0.08
+    hasBackground: 0
+    characterMood: 2
+    characterKey: 1
+  - text: '<b>Vampiro Deprimido</b>
+
+
+      Acho que agora podemos nos considerar
+      bons amigos, passamos um bom tempo juntos, com o tempo ele foi se abrindo comigo
+      e conversamos cada vez mais.'
+    typingDelaySpeed: 0.1
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 1
+  - text: "<b>Voc\xEA</b>\n\nOk. At\xE9 agora n\xE3o parece ter um problema muito
+      s\xE9rio. O que tem de errado?"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 1
+  - text: "<b>Vampiro Deprimido</b>\n\n\u2026acho que com uma bebida vai ser mais
+      f\xE1cil de explicar."
+    typingDelaySpeed: 0.1
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 1
+  - text: "<b>Vampiro Deprimido</b>\n\n\u2026acho que com uma bebida vai ser mais
+      f\xE1cil de explicar."
+    typingDelaySpeed: 0.1
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 1
+  - text: '<b>Vampiro Deprimido</b>
+
+
+      Inclusive, esqueci de me apresentar,
+      que rude da minha parte!'
+    typingDelaySpeed: 0.1
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 1
+  - text: '<b>Vampiro Deprimido</b>
+
+
+      Inclusive, esqueci de me apresentar,
+      que rude da minha parte!'
+    typingDelaySpeed: 0.1
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 1
+  - text: "<b>Vampiro Deprimido</b>\n\nVoc\xEA pode me chamar de Dorian, querido."
+    typingDelaySpeed: 0.1
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 1
+  - text: "<b>Dorian</b>\n\nAgora, eu quero uma bebida com <i>Leite de Drag\xE3o</i>
+      e aquela coisa maluca ali, <i>parece ter uma textura estranha</i>, meio curioso."
+    typingDelaySpeed: 0.1
+    hasBackground: 0
+    characterMood: 1
     characterKey: 1
   disablesSelfOTF: 1
   hidesImageOnDisable: 0
   OnTextFinished:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1049693286}
+        m_TargetAssemblyTypeName: Assets.Scripts.UIManager, Assembly-CSharp
+        m_MethodName: SwitchBrewingScreen
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   LevelUpAfter: 0
   orderingCharacter: 1
   orderIndex: 0
@@ -3531,7 +3997,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ingredientPrefab: {fileID: 6128440654870204135, guid: 91820ea021b6bdd47a6bab255cadc3c5, type: 3}
   parent: {fileID: 1496944289}
-  ingredientDescription: sour
+  ingredientDescription: "Saliva de Bruxa\nIngrediente Azedo\nA linhagem das bruxas
+    \xE9 conhecida pelo seu dom\xEDnio em magia, principalmente no uso das palavras
+    m\xE1gicas que proferem desde crian\xE7as. Dessa forma, a saliva delas muitas
+    vezes \xE9 usada para adquirir parte dessa desenvoltura com as palavras de poder,
+    mas muitas vezes a utilidade vai al\xE9m do campo m\xE1gico, agindo na desenvoltura
+    do indiv\xEDduo como um todo. "
   textMeshProUGUI: {fileID: 123150708}
 --- !u!61 &765802598
 BoxCollider2D:
@@ -3883,16 +4354,117 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterManager: {fileID: 11400000, guid: a4e284afea3ff1c40a426fc5e4ac6e3a, type: 2}
   dialogueList:
-  - text: cu da morte
-    typingDelaySpeed: 0
-    hasBackground: 1
+  - text: "<b>Narrador</b>\n\n<b>O tempo passa, pr\xF3ximo da hora de fechar uma
+      cliente misteriosa entra.</b>"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 3
+  - text: "<b>Voc\xEA</b>\n\nBoa noite, estamos fechando! Mas abrimos amanh\xE3 ap\xF3s
+      o entardecer, voc\xEA pode voltar depois."
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 2
+  - text: "<b>Dama Misteriosa</b>\n\nAh\u2026 hoje foi exaustivo."
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 2
+  - text: "<b>Voc\xEA</b>\n\nDesculpe, mas estamos encerrando os nossos servi\xE7os
+      por hoje. Voc\xEA pode voltar amanh\xE3, se quiser!"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 2
+  - text: "<b>Dama Misteriosa</b>\n\nVai realmente recusar a bebida para um cliente?
+      Acho que isso n\xE3o faz bem para os seus neg\xF3cios\u2026 De qualquer forma,
+      vou s\xF3 beber e voltar ao trabalho, n\xE3o \xE9 minha inten\xE7\xE3o estender
+      a minha noite por aqui."
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 2
+  - text: "<b>Voc\xEA</b>\n\nBom\u2026 \xE9 que\u2026 \xE9\u2026 mas\u2026"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 2
+  - text: "<b>Voc\xEA</b>\n\n..."
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 2
+  - text: "<b>Voc\xEA</b>\n\n<i>Ela \xE9 bem insistente...</i>"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 2
+  - text: "<b>Voc\xEA</b>\n\nTudo bem, qual seria o pedido?"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 2
+  - text: "<b>Dama Misteriosa</b>\n\nSe tiver alguma mistura com <i>Fruta de S\xE1tiro</i>,
+      e que me deixe acordada pelo resto da noite, seria \xF3timo. Ainda tenho muito
+      trabalho a fazer."
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 2
+  - text: "<b>Voc\xEA</b>\n\nAh, uau. Voc\xEA trabalha no per\xEDodo da noite. Meio
+      incomum\u2026"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 2
+  - text: "<b>Dama Misteriosa</b>\n\nBom, \xE9 o que paga as contas. N\xE3o acho
+      de todo ruim passar a noite em claro, mas pode ser complicado quando ocorre
+      todos os dias, principalmente quando o trabalho \xE9 ficar parado e esperando."
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 2
+  - text: "<b>Voc\xEA</b>\n\nD-desculpa a intromiss\xE3o\u2026 \xE9 que eu nunca
+      te vi pelas redondezas e, apesar de o bar ser novo, eu moro na cidade h\xE1
+      um tempo\u2026"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 2
+  - text: "<b>Voc\xEA</b>\n\n\xC9\u2026 com o que voc\xEA trabalha?"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 2
+  - text: "<b>Dama Misteriosa</b>\n\nSe voc\xEA fizer a melhor bebida da noite, eu
+      te dou uma dica. Combinado?"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 2
+  - text: "<b>Voc\xEA</b>\n\n... certo!"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
     characterMood: 0
     characterKey: 2
   disablesSelfOTF: 1
   hidesImageOnDisable: 0
   OnTextFinished:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1049693286}
+        m_TargetAssemblyTypeName: Assets.Scripts.UIManager, Assembly-CSharp
+        m_MethodName: SwitchBrewingScreen
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   LevelUpAfter: 0
   orderingCharacter: 2
   orderIndex: 0
@@ -3949,7 +4521,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ingredientPrefab: {fileID: 6128440654870204135, guid: d8d1091e63a48134fa6dd4625e3088ce, type: 3}
   parent: {fileID: 1496944289}
-  ingredientDescription: sweet
+  ingredientDescription: "P\xF3 de Fada\nIngrediente Doce\nUm produto escasso, adquirido
+    ao macerar pedras que s\xE3o raramente encontradas \xE0 porta de casas de pessoas
+    que, em dias seguintes, s\xE3o aben\xE7oadas com grande fortuna.\r\nSeu doce
+    sabor \xE9 aproveitado nas guloseimas de mais alta qualidade entre os reinos,
+    sempre proporcionando sensa\xE7\xF5es positivas para aqueles que as ingerem.\r\n"
   textMeshProUGUI: {fileID: 123150708}
 --- !u!61 &865617282
 BoxCollider2D:
@@ -4301,7 +4877,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   charaterName: 1
-  desiredTexture: 0
+  desiredTexture: 3
   desiredTaste: 0
   minimumProximityLevel: 2
   responsesParent: {fileID: 1699626400}
@@ -4469,14 +5045,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterManager: {fileID: 11400000, guid: a4e284afea3ff1c40a426fc5e4ac6e3a, type: 2}
   dialogueList:
-  - text: daora
+  - text: "<b>S\xF4nia</b>\n\nOk, nada mau. Acho que ainda pode melhorar, mas tudo
+      certo pras primeiras vezes!"
     typingDelaySpeed: 0.1
     hasBackground: 0
-    characterMood: 1
-    characterKey: 0
-  - text: ta faltando cosa
-    typingDelaySpeed: 0.5
-    hasBackground: 1
     characterMood: 1
     characterKey: 0
   disablesSelfOTF: 1
@@ -4484,19 +5056,19 @@ MonoBehaviour:
   OnTextFinished:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 889212163}
-        m_TargetAssemblyTypeName: FinalDrinkPosClean, Assembly-CSharp
-        m_MethodName: CleanChildren
-        m_Mode: 1
+      - m_Target: {fileID: 547205349}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
+          m_BoolArgument: 1
         m_CallState: 2
-  LevelUpAfter: 1
+  LevelUpAfter: 0
 --- !u!224 &938111403
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4566,23 +5138,83 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterManager: {fileID: 11400000, guid: a4e284afea3ff1c40a426fc5e4ac6e3a, type: 2}
   dialogueList:
-  - text: 'IIIIIIIIIIIIIIIIIIAAAAA
-
-      ;'
-    typingDelaySpeed: 0.1
+  - text: "<b>Dama Misteriosa</b>\n\r\nNossa! J\xE1 me sinto mais tranquila.\r\n"
+    typingDelaySpeed: 0.05
     hasBackground: 0
     characterMood: 0
     characterKey: 2
-  - text: AAAAAAAAAAA
-    typingDelaySpeed: 0.5
+  - text: "<b>Dama Misteriosa</b>\n\r\nVoc\xEA est\xE1 melhorando cada dia mais!"
+    typingDelaySpeed: 0.05
     hasBackground: 0
     characterMood: 0
     characterKey: 2
-  - text: ;)
-    typingDelaySpeed: 0.1
-    hasBackground: 1
+  - text: "<b>Voc\xEA</b>\n\r\r\nA-ah!! Muito obrigado! Fico feliz que tenha gostado."
+    typingDelaySpeed: 0.05
+    hasBackground: 0
     characterMood: 0
     characterKey: 2
+  - text: "<b>Voc\xEA</b>\n\r\r\nJ\xE1 que gostou da bebida, vai cumprir a sua proposta?"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 2
+  - text: "<b>Dama Misteriosa</b>\n\r\r\nVoc\xEA n\xE3o perde tempo mesmo, n\xE9!
+      Bom, vou te contar um pouco mais sobre o meu trabalho."
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 2
+  - text: "<b>Dama Misteriosa</b>\n\r\r\nMuitos clientes temem minha chegada, outros
+      j\xE1 esperam que eu chegue. Muitas vezes as pessoas relacionadas aos clientes
+      os aconselham a n\xE3o fazer neg\xF3cios comigo. Isso \xE9 tudo."
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 2
+  - text: "<b>Voc\xEA</b>\n\r\r\nUau\u2026 isso \xE9 um pouco complicado\u2026"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 2
+  - text: "<b>Voc\xEA</b>\n\r\r\nVoc\xEA \xE9 comerciante? Mercadora?"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 2
+  - text: "<b>Dama Misteriosa</b>\n\r\r\nSua l\xF3gica at\xE9 que faz sentido\u2026
+      mas n\xE3o!"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 2
+  - text: "<b>Dama Misteriosa</b>\n\r\r\nMas voc\xEA me fez lembrar de um amigo que
+      n\xE3o vejo h\xE1 muito tempo. Ele n\xE3o tira muitas folgas, at\xE9 porque
+      se ele n\xE3o estiver dispon\xEDvel, muita gente n\xE3o\u2026"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 2
+  - text: "<b>Dama Misteriosa</b>\n\r\r\n..."
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 2
+  - text: "<b>Dama Misteriosa</b>\n\r\r\nAcho que falei demais."
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 2
+  - text: "<b>Dama Misteriosa</b>\n\r\r\nBom, eu j\xE1 preciso ir. At\xE9 depois!"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 2
+  - text: "<b>Narrador</b>\n\r\r\n<b>A Dama recolhe seu chap\xE9u e se despede com
+      um sorriso.</b>"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 3
   disablesSelfOTF: 1
   hidesImageOnDisable: 0
   OnTextFinished:
@@ -5044,21 +5676,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterManager: {fileID: 11400000, guid: a4e284afea3ff1c40a426fc5e4ac6e3a, type: 2}
   dialogueList:
-  - text: 'IIIIIIIIIIIIIIIIIIAAAAA
-
-      ;'
-    typingDelaySpeed: 0.1
+  - text: "Dama misteriosa</b>\n\r\nVoc\xEA fez uma bebida e tanto! Essa ficou bem
+      gostosa, talvez mais que as outras dos dias anteriores!\r"
+    typingDelaySpeed: 0.05
     hasBackground: 0
-    characterMood: 0
-    characterKey: 2
-  - text: AAAAAAAAAAA
-    typingDelaySpeed: 0.5
-    hasBackground: 0
-    characterMood: 0
-    characterKey: 2
-  - text: ;)
-    typingDelaySpeed: 0.1
-    hasBackground: 1
     characterMood: 0
     characterKey: 2
   disablesSelfOTF: 1
@@ -5395,16 +6016,96 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterManager: {fileID: 11400000, guid: a4e284afea3ff1c40a426fc5e4ac6e3a, type: 2}
   dialogueList:
-  - text: cu da morte 2
-    typingDelaySpeed: 0
-    hasBackground: 1
+  - text: "<b>Narrador</b>\n\n<b>O tempo passa, pr\xF3ximo da hora de fechar a mesma
+      cliente misteriosa do outro dia entra no bar.</b>"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 3
+  - text: "<b>Voc\xEA</b>\n\r\nBoa noite, estamos fechando\u2026"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 2
+  - text: "<b>Voc\xEA</b>\n\r\nAh! \xC9 voc\xEA!"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 2
+  - text: "<b>Dama Misteriosa</b>\n\r\n\xC9\u2026hoje foi uma merda, eu nem consegui
+      tirar uma pausa durante a noite para descansar."
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 2
+    characterKey: 2
+  - text: "<b>Dama Misteriosa</b>\n\r\nTive que ficar esperando o hor\xE1rio do cliente\u2026
+      pena que era um hor\xE1rio bem n\xE3o conveniente para mim."
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 2
+    characterKey: 2
+  - text: "<b>Voc\xEA</b>\n\r\nFicou at\xE9 muito tarde trabalhando?"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 2
+    characterKey: 2
+  - text: '<b>Dama Misteriosa</b>
+
+      
+
+      Passei da hora do lobisomem, infelizmente.'
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 2
+  - text: "<b>Voc\xEA</b>\n\r\nCaramba! Isso \xE9 bem tarde! Que tipo de trabalho
+      \xE9 esse que voc\xEA passa a noite em claro para atender um cliente? Voc\xEA
+      \xE9 guarda real ou algo do tipo?"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 2
+  - text: "<b>Dama Misteriosa</b>\n\r\nAinda n\xE3o descobriu qual o meu trabalho?"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 2
+  - text: "<b>Dama Misteriosa</b>\n\r\nAchei que a nossa conversa de ontem j\xE1
+      seria o suficiente para voc\xEA descobrir."
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 2
+  - text: "<b>Dama Misteriosa</b>\n\r\nVou te fazer uma proposta, se fizer alguma
+      bebida com aquele <i>l\xEDquido verde um pouco espesso</i>, mas <i>quero me
+      sentir bem e tranquila ao beber.</i> Se voc\xEA conseguir fazer, eu te dou
+      uma dica."
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 2
+  - text: "<b>Voc\xEA</b>\n\r\nEu aceito! S\xF3 um momento, j\xE1 vou preparar!"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
     characterMood: 0
     characterKey: 2
   disablesSelfOTF: 1
   hidesImageOnDisable: 0
   OnTextFinished:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1049693286}
+        m_TargetAssemblyTypeName: Assets.Scripts.UIManager, Assembly-CSharp
+        m_MethodName: SwitchBrewingScreen
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   LevelUpAfter: 0
   orderingCharacter: 2
   orderIndex: 1
@@ -5630,16 +6331,42 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterManager: {fileID: 11400000, guid: a4e284afea3ff1c40a426fc5e4ac6e3a, type: 2}
   dialogueList:
-  - text: vc se safou
-    typingDelaySpeed: 0.1
+  - text: "<b>Dama Misteriosa</b>\n\n\xC9, podia ser melhor, sinto que tem algo faltando\u2026"
+    typingDelaySpeed: 0.05
     hasBackground: 0
     characterMood: 1
     characterKey: 2
-  - text: ta na media
-    typingDelaySpeed: 0.5
-    hasBackground: 1
+  - text: "<b>Dama Misteriosa</b>\n\n\xC9 uma pena, queria poder te dar essa dica,
+      eu n\xE3o converso muito com outras pessoas, voc\xEA parecia ser algu\xE9m
+      que me entenderia."
+    typingDelaySpeed: 0.05
+    hasBackground: 0
     characterMood: 1
     characterKey: 2
+  - text: "<b>Dama Misteriosa</b>\n\nEspero que da pr\xF3xima vez voc\xEA j\xE1 tenha
+      melhorado suas habilidades."
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 2
+  - text: "<b>Voc\xEA</b>\n\n<i>Droga, deveria ter me esfor\xE7ado mais\u2026</i>"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 2
+  - text: "<b>Voc\xEA</b>\n\n<i>Amanh\xE3 vou me empenhar mais!</i>"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 2
+  - text: '<b>Narrador</b>
+
+
+      <b>A mulher misteriosa sai do bar.</i>'
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 3
   disablesSelfOTF: 1
   hidesImageOnDisable: 0
   OnTextFinished:
@@ -5696,131 +6423,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1001 &1280629722
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 661805356622141083, guid: 9b37f6488d8c0d84786507bea56e3d76, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 661805356622141083, guid: 9b37f6488d8c0d84786507bea56e3d76, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 661805356622141083, guid: 9b37f6488d8c0d84786507bea56e3d76, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 661805356622141083, guid: 9b37f6488d8c0d84786507bea56e3d76, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1966222267117460309, guid: 9b37f6488d8c0d84786507bea56e3d76, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0.00010073185
-      objectReference: {fileID: 0}
-    - target: {fileID: 1966222267117460309, guid: 9b37f6488d8c0d84786507bea56e3d76, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0.00009947248
-      objectReference: {fileID: 0}
-    - target: {fileID: 3183114518691402863, guid: 9b37f6488d8c0d84786507bea56e3d76, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3183114518691402863, guid: 9b37f6488d8c0d84786507bea56e3d76, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3183114518691402863, guid: 9b37f6488d8c0d84786507bea56e3d76, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3183114518691402863, guid: 9b37f6488d8c0d84786507bea56e3d76, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3183114518691402863, guid: 9b37f6488d8c0d84786507bea56e3d76, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3183114518691402863, guid: 9b37f6488d8c0d84786507bea56e3d76, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3183114518691402863, guid: 9b37f6488d8c0d84786507bea56e3d76, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3183114518691402863, guid: 9b37f6488d8c0d84786507bea56e3d76, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3183114518691402863, guid: 9b37f6488d8c0d84786507bea56e3d76, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3183114518691402863, guid: 9b37f6488d8c0d84786507bea56e3d76, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3675354201059113834, guid: 9b37f6488d8c0d84786507bea56e3d76, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3675354201059113834, guid: 9b37f6488d8c0d84786507bea56e3d76, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5192351580252646853, guid: 9b37f6488d8c0d84786507bea56e3d76, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5192351580252646853, guid: 9b37f6488d8c0d84786507bea56e3d76, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5192351580252646853, guid: 9b37f6488d8c0d84786507bea56e3d76, type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7606358462978699156, guid: 9b37f6488d8c0d84786507bea56e3d76, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7606358462978699156, guid: 9b37f6488d8c0d84786507bea56e3d76, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7667347212546065808, guid: 9b37f6488d8c0d84786507bea56e3d76, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -299.51
-      objectReference: {fileID: 0}
-    - target: {fileID: 8383519226752879958, guid: 9b37f6488d8c0d84786507bea56e3d76, type: 3}
-      propertyPath: m_Name
-      value: -_GameManager_-
-      objectReference: {fileID: 0}
-    - target: {fileID: 8995527605011854532, guid: 9b37f6488d8c0d84786507bea56e3d76, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8995527605011854532, guid: 9b37f6488d8c0d84786507bea56e3d76, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8995527605011854532, guid: 9b37f6488d8c0d84786507bea56e3d76, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 9b37f6488d8c0d84786507bea56e3d76, type: 3}
 --- !u!1 &1285159999
 GameObject:
   m_ObjectHideFlags: 0
@@ -6040,7 +6642,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ingredientPrefab: {fileID: 6128440654870204135, guid: 933b7f1cd8afe0e45908b9c0b6f7b5b5, type: 3}
   parent: {fileID: 1496944289}
-  ingredientDescription: bitter
+  ingredientDescription: "Fruta de S\xE1tiro\nIngrediente Amargo\nEssa fruta est\xE1
+    sempre presente nas festas da cultura dos s\xE1tiros, seu consumo em abund\xE2ncia
+    os deixam agitados e garantem uma baita festan\xE7a. Foi descoberto que seu uso
+    controlado garante \xE2nimo o suficiente para durar o resto do dia, sendo muito
+    aproveitado em rotinas de trabalho, estudo ou at\xE9 pelo seu amargo e delicioso
+    sabor."
   textMeshProUGUI: {fileID: 123150708}
 --- !u!61 &1314040736
 BoxCollider2D:
@@ -6174,8 +6781,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   charaterName: 2
-  desiredTexture: 0
-  desiredTaste: 0
+  desiredTexture: 1
+  desiredTaste: 1
   minimumProximityLevel: 0
   responsesParent: {fileID: 440992566}
 --- !u!1 &1340986222
@@ -6613,21 +7220,68 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterManager: {fileID: 11400000, guid: a4e284afea3ff1c40a426fc5e4ac6e3a, type: 2}
   dialogueList:
-  - text: <i>eu adoro comer gesso</i>
+  - text: "<b>Dorian</b>\n\r\nOh! \xC9 melhor do que eu esperava, mas t\xE1 longe
+      de ser perfeita."
     typingDelaySpeed: 0.1
     hasBackground: 0
     characterMood: 1
     characterKey: 1
-  - text: <b>eu vou comer gesso</b>
-    typingDelaySpeed: 0.5
-    hasBackground: 1
-    characterMood: 1
-    characterKey: 1
-  - text: ;)
+  - text: "<b>Voc\xEA</b>\n\r\n\u2026obrigado\u2026eu acho\u2026"
     typingDelaySpeed: 0.1
-    hasBackground: 1
+    hasBackground: 0
     characterMood: 1
     characterKey: 1
+  - text: "<b>Dorian</b>\n\r\nComo eu ia dizendo, \xE9 um problema porque\u2026"
+    typingDelaySpeed: 0.1
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 1
+  - text: "<b>Dorian</b>\n\r\nEu sou um vampiro, ent\xE3o as rotinas n\xE3o batem
+      muito, sabe."
+    typingDelaySpeed: 0.1
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 1
+  - text: "<b>Dorian</b>\n\r\nAcho que \xE9 esse o problema."
+    typingDelaySpeed: 0.1
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 1
+  - text: "<b>Dorian</b>\n\r\nUma amizade dif\xEDcil de manter, n\xE3o consigo sair
+      com ele de dia, n\xE3o \xE9\u2026Hahaha\u2026"
+    typingDelaySpeed: 0.1
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 1
+  - text: "<b>Narrador</b>\n\r\n<b>Ele for\xE7a uma risada meio sem gra\xE7a.<b>"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 1
+  - text: "<b>Dorian</b>\n\r\nAcho que eu vou indo, antes que amanhe\xE7a!"
+    typingDelaySpeed: 0.1
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 1
+  - text: '<b>Dorian</b>
+
+      
+
+      Obrigado!'
+    typingDelaySpeed: 0.1
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 1
+  - text: '<b>Narrador</b>
+
+      
+
+      <b>Ele sai pela porta, com uma postura
+      meio recolhida ainda.</b>'
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 3
   disablesSelfOTF: 1
   hidesImageOnDisable: 0
   OnTextFinished:
@@ -6695,8 +7349,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   charaterName: 1
-  desiredTexture: 0
-  desiredTaste: 0
+  desiredTexture: 2
+  desiredTaste: 3
   minimumProximityLevel: 0
   responsesParent: {fileID: 760875228}
 --- !u!1 &1454055498
@@ -6749,16 +7403,187 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterManager: {fileID: 11400000, guid: a4e284afea3ff1c40a426fc5e4ac6e3a, type: 2}
   dialogueList:
-  - text: 'cu da sonia '
-    typingDelaySpeed: 0
-    hasBackground: 1
+  - text: "<b>Voc\xEA</b>\n\nEssa noite o bar parece mais calmo que o normal."
+    typingDelaySpeed: 0.1
+    hasBackground: 0
     characterMood: 0
+    characterKey: 3
+  - text: "<b>Voc\xEA</b>\n\nVai ser um bom dia para conversar com os clientes com
+      mais calma."
+    typingDelaySpeed: 0.1
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 3
+  - text: "<b>Voc\xEA</b>\n\nEu ainda t\xF4 pegando o jeito, abrir um bar assim n\xE3o
+      \xE9 f\xE1cil. N\xE3o esperava que seria t\xE3o movimentado\u2026"
+    typingDelaySpeed: 0.1
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 3
+  - text: "<b>Voc\xEA</b>\n\nIsso me deixa meio nervoso\u2026"
+    typingDelaySpeed: 0.1
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 3
+  - text: "<b>Voc\xEA</b>\n\nMas acho que vai ficar tudo bem, n\xE9?"
+    typingDelaySpeed: 0.1
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 3
+  - text: "<b>Narrador</b>\n\n<b>Em pouco tempo, uma pessoa se aproxima do balc\xE3o
+      com um bom humor.</b>"
+    typingDelaySpeed: 0.1
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 3
+  - text: "<b>Voc\xEA</b>\n\n<i>Ok, primeiro cliente da noite!\nVamos nessa.</i>"
+    typingDelaySpeed: 0.1
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 3
+  - text: "<b>Mo\xE7a barbuda</b>\n\r\nBoa noite, s\xF4!"
+    typingDelaySpeed: 0.1
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 0
+  - text: "<b>Voc\xEA</b>\n\r\nBoa noite! G-gostaria de pedir alguma coisa?"
+    typingDelaySpeed: 0.1
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 0
+  - text: "<b>Mo\xE7a barbuda</b>\n\r\nUai, s\xF4. N\xE3o precisa desse nervosismo
+      todo, n\xE3o."
+    typingDelaySpeed: 0.1
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 0
+  - text: "<b>Voc\xEA</b>\n\r\nN-N\xE3o \xE9 nada, \xE9 um dos meus primeiros dias
+      atendendo, acho que \xE9 normal ficar meio ansioso."
+    typingDelaySpeed: 0.1
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 0
+  - text: "<b>Voc\xEA</b>\n\r\nAinda t\xF4 num per\xEDodo de experi\xEAncia, \xE0s
+      vezes me atrapalho com os ingredientes\u2026"
+    typingDelaySpeed: 0.1
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 0
+  - text: "<b>Voc\xEA</b>\n\r\nAcho que \xE9 normal, n\xE9?"
+    typingDelaySpeed: 0.1
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 0
+  - text: "<b>Mo\xE7a barbuda</b>\n\r\nNormar, normar, num \xE9 n\xE9, mas t\xE1
+      tudo bem!"
+    typingDelaySpeed: 0.1
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 0
+  - text: "<b>Mo\xE7a barbuda</b>\n\r\nEu sou a S\xF4nia. Se oc\xEA quiser, posso
+      te dar uma ajuda."
+    typingDelaySpeed: 0.1
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 0
+  - text: "<b>S\xF4nia</b>\n\r\nVoc\xEA tem que prestar bem aten\xE7\xE3o nos trem
+      que oc\xEA usa, mocin, eles t\xEAm efeitos que oc\xEA nem deve conhecer!"
+    typingDelaySpeed: 0.1
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 0
+  - text: "<b>S\xF4nia</b>\n\r\nImagina oc\xEA mata algu\xE9m com uma fruta t\xF3xica!?"
+    typingDelaySpeed: 0.1
+    hasBackground: 0
+    characterMood: 2
+    characterKey: 0
+  - text: "<b>Voc\xEA</b>\n\r\nN\xC3O! N\xE3o!"
+    typingDelaySpeed: 0.1
+    hasBackground: 0
+    characterMood: 2
+    characterKey: 0
+  - text: "<b>Voc\xEA</b>\n\r\nN\xE3o\u2026Eu nunca faria isso, eu sei os ingredientes
+      que eu uso, s\xF3 fico meio confuso e perdido, por conta dos pedidos. Sa\xED
+      uma variedade de bebidas, e a\xED que o bixo pega!"
+    typingDelaySpeed: 0.1
+    hasBackground: 0
+    characterMood: 2
+    characterKey: 0
+  - text: "<b>S\xF4nia</b>\n\r\n\xD3, meu truque \xE9 o seguinte, pra uma boa bebida
+      oc\xEA s\xF3 precisa de uma boa base, seja ela uma bebida forte, um vinho seco
+      ou at\xE9 algo cremoso\u2026"
+    typingDelaySpeed: 0.1
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 0
+  - text: "<b>S\xF4nia</b>\n\r\nE um sabor \xFAnico tamb\xE9m, que pode ser doce
+      ou aquele amargo de fruta n\xE3o madura!"
+    typingDelaySpeed: 0.1
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 0
+  - text: "<b>S\xF4nia</b>\n\r\nOc\xEA pode misturar, bater, o que importa \xE9 estar
+      tudo junto e misturado! N\xE3o se preocupa com decora\xE7\xE3o e firulinhas
+      assim."
+    typingDelaySpeed: 0.1
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 0
+  - text: "<b>S\xF4nia</b>\n\r\nO que importa s\xE3o os ingredientes, o sabor e principalmente
+      a sensa\xE7\xE3o que oc\xEA quer passar pro seu cliente."
+    typingDelaySpeed: 0.1
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 0
+  - text: "<b>S\xF4nia</b>\n\r\nVai ter gente que vai chegar confusa, n\xE3o sabe
+      nada de bebida, s\xF3 quer conversar, entrar num clima, sentir algo. "
+    typingDelaySpeed: 0.1
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 0
+  - text: "<b>S\xF4nia</b>\n\r\nFazer a bebida certa vai fazer oc\xEA conquistar
+      um cliente pra sempre! \xC0s vezes, oc\xEA pode at\xE9 receber uma recompensa,
+      uai! Nunca se sabe."
+    typingDelaySpeed: 0.1
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 0
+  - text: "<b>Voc\xEA</b>\n\r\nOk! Foram boas dicas, obrigado!"
+    typingDelaySpeed: 0.1
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 0
+  - text: "<b>S\xF4nia</b>\n\r\nJ\xE1 que eu te ensinei tudo isso, me v\xEA uma bebida.
+      Vou querer uma bebida com <i>Leite de Drag\xE3o</i> e esse <i>Coice de Hipogrifo</i>
+      no fundo dessa prateleira a\xED."
+    typingDelaySpeed: 0.1
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 0
+  - text: "<b>S\xF4nia</b>\n\r\nToma o seu tempo, se precisar refazer a bebida \xE9
+      s\xF3 jogar a antiga na sua plantinha ali do canto, ela com certeza vai aproveitar
+      bem. Sem desperd\xEDcio!"
+    typingDelaySpeed: 0.1
+    hasBackground: 0
+    characterMood: 1
     characterKey: 0
   disablesSelfOTF: 1
   hidesImageOnDisable: 0
   OnTextFinished:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1049693286}
+        m_TargetAssemblyTypeName: Assets.Scripts.UIManager, Assembly-CSharp
+        m_MethodName: SwitchBrewingScreen
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   LevelUpAfter: 0
   orderingCharacter: 0
   orderIndex: 0
@@ -6850,17 +7675,60 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterManager: {fileID: 11400000, guid: a4e284afea3ff1c40a426fc5e4ac6e3a, type: 2}
   dialogueList:
-  - text: daora
-    typingDelaySpeed: 0.1
+  - text: "<b>S\xF4nia</b>\r\n\n\xC9, tava b\xE3o mas n\xE3o era bombom."
+    typingDelaySpeed: 0.05
     hasBackground: 0
     characterMood: 1
     characterKey: 0
-  - text: ta faltando cosa
-    typingDelaySpeed: 0.5
-    hasBackground: 1
+  - text: "<b>S\xF4nia</b>\r\n\nAcho que voc\xEA precisa conhecer mais um pouco dos
+      ingredientes, mas t\xE1 bem encaminhado."
+    typingDelaySpeed: 0.05
+    hasBackground: 0
     characterMood: 1
     characterKey: 0
-  disablesSelfOTF: 1
+  - text: "<b>S\xF4nia</b>\r\n\nDaqui a pouco oc\xEA vai ser o mi\xF3 bartender da
+      cidade!"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 0
+  - text: "<b>Voc\xEA</b>\r\n\nObrigado S\xF4nia, voc\xEA tem sido uma cliente maravilhosa
+      tamb\xE9m."
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 0
+  - text: "<b>Voc\xEA</b>\r\n\nVai me contar o que voc\xEA faz para ser t\xE3o boa
+      com as receitas?"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 0
+  - text: "<b>S\xF4nia</b>\r\n\nEu n\xE3o!"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 2
+    characterKey: 0
+  - text: "<b>S\xF4nia</b>\r\n\nS\xF3 quando oc\xEA fizer a bebida perfeita. Ai eu
+      te conto um dos meus truques."
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 2
+    characterKey: 0
+  - text: "<b>S\xF4nia</b>\r\n\nPor hoje j\xE1 chega de bebida. At\xE9, mocin."
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 0
+  - text: '<b>Narrador</b>
+
+
+      <b>Ela paga contente e sai pela porta do bar.</b>'
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 3
+  disablesSelfOTF: 0
   hidesImageOnDisable: 0
   OnTextFinished:
     m_PersistentCalls:
@@ -6928,16 +7796,111 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterManager: {fileID: 11400000, guid: a4e284afea3ff1c40a426fc5e4ac6e3a, type: 2}
   dialogueList:
-  - text: cu da sonia 3
-    typingDelaySpeed: 0
-    hasBackground: 1
+  - text: "<b>Voc\xEA</b>\n\nMais um dia no Mystic Flavor! Uau, quem diria que eu
+      conseguiria fazer um bar durar tr\xEAs dias."
+    typingDelaySpeed: 0.05
+    hasBackground: 0
     characterMood: 0
+    characterKey: 3
+  - text: "<b>Voc\xEA</b>\n\nNo meu \xFAltimo emprego eu fui demitido depois de,
+      n\xE3o propositalmente, come\xE7ar uma briga entre um s\xE1tiro e um centauro,
+      teve bastante coices e alguns itens foram quebrados\u2026"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 3
+  - text: "<b>Voc\xEA</b>\n\nTudo porque eu troquei os pedidos, o s\xE1tiro recebeu
+      a bebida do centauro, e o centauro recebeu a bebida do s\xE1tiro\u2026"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 3
+  - text: "<b>Voc\xEA</b>\n\nNo final da briga, o chefe conversou com os dois e eles
+      delataram o meu erro. E o meu chefe antigo me demitiu, pois eu era o \u201Cculpado\u201D."
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 3
+  - text: "<b>Voc\xEA</b>\n\nBom, dane-se!! Agora eu t\xF4 bem melhor trabalhando
+      aqui!"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 3
+  - text: "<b>S\xF4nia</b>\n\nOpa, b\xE3o?"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 0
+  - text: "<b>S\xF4nia</b>\n\nComo que t\xE3o as coisas por aqui, mocin?"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 0
+  - text: "<b>Voc\xEA</b>\n\nOi, S\xF4nia! Tudo bem por aqui!!"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 0
+  - text: "<b>Voc\xEA</b>\n\nEu estava t\xE3o distra\xEDdo, nem vi voc\xEA chegando!"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 0
+  - text: "<b>Voc\xEA</b>\n\nQue bom que voc\xEA veio!"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 0
+  - text: "<b>Voc\xEA</b>\n\nTenho uma coisa pra perguntar\u2026"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 0
+  - text: "<b>S\xF4nia</b>\n\nVoc\xEA \xE9 enxerido, hein mocin!"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 2
+    characterKey: 0
+  - text: "<b>S\xF4nia</b>\n\nMas t\xE1 b\xE3o, v\xF4 conta proc\xEA se oc\xEA um
+      trem bombom!"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 0
+  - text: "<b>S\xF4nia</b>\n\nMe traz uma bebida com <i>Ch\xE1 de Gnomo</i> e algo\u2026
+      que me fa\xE7a sentir <i>nost\xE1lgica\u2026</i>"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 0
+  - text: "<b>S\xF4nia</b>\n\nAgora sem choraminga, vai fazer a bebida!!"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 2
+    characterKey: 0
+  - text: "<b>Voc\xEA</b>\n\nT\xE1 certo, S\xF4nia! \xC9 pra j\xE1."
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 2
     characterKey: 0
   disablesSelfOTF: 1
   hidesImageOnDisable: 0
   OnTextFinished:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1049693286}
+        m_TargetAssemblyTypeName: Assets.Scripts.UIManager, Assembly-CSharp
+        m_MethodName: SwitchBrewingScreen
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   LevelUpAfter: 0
   orderingCharacter: 0
   orderIndex: 2
@@ -6991,26 +7954,86 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterManager: {fileID: 11400000, guid: a4e284afea3ff1c40a426fc5e4ac6e3a, type: 2}
   dialogueList:
-  - text: cu da sonia 2
-    typingDelaySpeed: 0
-    hasBackground: 1
+  - text: "<b>Voc\xEA</b>\n\r\n\xC9 o meu segundo dia trabalhando no Mystic Flavor!
+      Estou um pouco ansioso com o novo dia, mas acho que j\xE1 estou me acostumando
+      com a ideia de atender clientes. "
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 3
+  - text: "<b>Voc\xEA</b>\n\r\nEspero que hoje seja um dia tranquilo!!"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 3
+  - text: "<b>Narrador</b>\n\r\n<b>N\xE3o demora muito tempo at\xE9 um rosto familiar
+      entrar pela porta do bar</b>"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 3
+  - text: "<b>S\xF4nia</b>\n\r\n\xD3ia, se n\xE3o \xE9 meu bartender favorito!"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
     characterMood: 0
     characterKey: 0
-  - text: cu da sonia 2
-    typingDelaySpeed: 0
-    hasBackground: 1
+  - text: "<b>Voc\xEA</b>\n\r\nOi, S\xF4nia! Tudo bem? N\xE3o acredito que voc\xEA
+      voltou!"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
     characterMood: 0
     characterKey: 0
-  - text: cu da sonia 2
-    typingDelaySpeed: 0
-    hasBackground: 1
-    characterMood: 0
+  - text: "<b>S\xF4nia</b>\n\r\nClaro que eu voltei, uai."
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 0
+  - text: "<b>S\xF4nia</b>\n\r\nQueria ver o que \xF4ce aprendeu ontem, se conseguiu
+      fazer um trem b\xE3o mesmo ou se passou vergonha com os clientes."
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 0
+  - text: "<b>Voc\xEA</b>\n\r\nSuas dicas me ajudaram muito."
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 0
+  - text: "<b>Voc\xEA</b>\n\r\nComo voc\xEA sabe de tanta coisa dos ingredientes?
+      Voc\xEA era cozinheira? Era bartender tamb\xE9m?"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 0
+  - text: "<b>S\xF4nia</b>\n\r\nQuem sabe se voc\xEA me der um trem b\xE3o, eu te
+      conto alguma coisa, mocin."
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 0
+  - text: "<b>S\xF4nia</b>\n\r\nQuero alguma coisa levinha e aquela <i>Fruta de S\xE1tiro</i>
+      boa ali no balc\xE3o."
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
     characterKey: 0
   disablesSelfOTF: 1
   hidesImageOnDisable: 0
   OnTextFinished:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1049693286}
+        m_TargetAssemblyTypeName: Assets.Scripts.UIManager, Assembly-CSharp
+        m_MethodName: SwitchBrewingScreen
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   LevelUpAfter: 0
   orderingCharacter: 0
   orderIndex: 1
@@ -7080,6 +8103,7 @@ RectTransform:
   - {fileID: 455955064}
   - {fileID: 938111403}
   - {fileID: 480159287}
+  - {fileID: 547205350}
   m_Father: {fileID: 1240194673}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -7354,16 +8378,39 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterManager: {fileID: 11400000, guid: a4e284afea3ff1c40a426fc5e4ac6e3a, type: 2}
   dialogueList:
-  - text: se eu pudesse morrer agora eu queria
-    typingDelaySpeed: 0.1
+  - text: '<b>Dama Misteriosa</b>
+
+
+      Nossa! Quem te contratou como bartender?'
+    typingDelaySpeed: 0.05
     hasBackground: 0
     characterMood: 2
     characterKey: 2
-  - text: isso aqui ta mt ruim
-    typingDelaySpeed: 0.1
+  - text: "<b>Dama Misteriosa</b>\n\nVoc\xEA tem um longo caminho pela frente. Tchau!"
+    typingDelaySpeed: 0.05
     hasBackground: 0
     characterMood: 2
     characterKey: 2
+  - text: "<b>Voc\xEA</b>\n\nA-aah!! Espera!! Voc\xEA\u2026"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 2
+    characterKey: 3
+  - text: "<b>Voc\xEA</b>\n\nDroga, ela j\xE1 se foi\u2026"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 2
+    characterKey: 3
+  - text: "<b>Voc\xEA</b>\n\nDroga, deveria ter prestado mais aten\xE7\xE3o\u2026"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 2
+    characterKey: 3
+  - text: "<b>Voc\xEA</b>\n\nAmanh\xE3 vou me esfor\xE7ar mais!"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 2
+    characterKey: 3
   disablesSelfOTF: 1
   hidesImageOnDisable: 0
   OnTextFinished:
@@ -7511,7 +8558,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ingredientPrefab: {fileID: 6128440654870204135, guid: 2be98fa73ef96fd43811b0f741db0948, type: 3}
   parent: {fileID: 1496944289}
-  ingredientDescription: smooth
+  ingredientDescription: "Ch\xE1 de Gnomo\nIngrediente base para bebidas suaves\nUm
+    tipo de ch\xE1 muito comum em regi\xF5es campestres, feito ao coar um gnomo dentro
+    de seu pr\xF3prio chap\xE9u.\r\nDevido \xE0 natureza m\xE1gica e travessa dos
+    gnomos, os efeitos moment\xE2neos desse ch\xE1 podem fragilizar seu contato com
+    o mundo material, ocasionando na leveza da mente, ou at\xE9 mesmo provocando
+    leves alucina\xE7\xF5es.\r"
   textMeshProUGUI: {fileID: 123150708}
 --- !u!61 &1648062159
 BoxCollider2D:
@@ -7607,8 +8659,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   charaterName: 2
-  desiredTexture: 0
-  desiredTaste: 0
+  desiredTexture: 3
+  desiredTaste: 2
   minimumProximityLevel: 2
   responsesParent: {fileID: 243212866}
 --- !u!1 &1685361560
@@ -7870,20 +8922,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterManager: {fileID: 11400000, guid: a4e284afea3ff1c40a426fc5e4ac6e3a, type: 2}
   dialogueList:
-  - text: gosto.d.alio
-    typingDelaySpeed: 0.1
+  - text: '<b>Dorian</b>
+
+
+'
+    typingDelaySpeed: 0.05
     hasBackground: 0
     characterMood: 2
-    characterKey: 1
-  - text: eu vou litealmente morrer agroa
-    typingDelaySpeed: 0.1
-    hasBackground: 0
-    characterMood: 2
-    characterKey: 1
-  - text: eba
-    typingDelaySpeed: 0.1
-    hasBackground: 0
-    characterMood: 0
     characterKey: 1
   disablesSelfOTF: 1
   hidesImageOnDisable: 0
@@ -7978,7 +9023,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -541, y: 400}
+  m_AnchoredPosition: {x: 356, y: 228}
   m_SizeDelta: {x: 1000, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1752605145
@@ -8035,8 +9080,8 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 2
-  m_VerticalAlignment: 512
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -8291,16 +9336,106 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterManager: {fileID: 11400000, guid: a4e284afea3ff1c40a426fc5e4ac6e3a, type: 2}
   dialogueList:
-  - text: cu  do draculauro 2
-    typingDelaySpeed: 0
-    hasBackground: 1
+  - text: '<b>Narrador</b>
+
+
+      <b>Mais tarde naquela noite outro rosto conhecido
+      aparece, com o mesmo semblante deprimido.</b>'
+    typingDelaySpeed: 0.05
+    hasBackground: 0
     characterMood: 0
+    characterKey: 3
+  - text: "<b>Narrador</b>\n\n<b>Ele se aproxima do bar, senta e se apoia no balc\xE3o,
+      com o mesmo suspiro triste.</b>"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 3
+  - text: '<b>Dorian</b>
+
+
+      Oi...'
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 1
+  - text: "<b>Voc\xEA</b>\n\nOi Dorian! T\xE1 tudo bem? Que cara \xE9 essa?"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 1
+  - text: "<b>Dorian</b>\n\nAh\u2026 Nada de mais\u2026"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 1
+  - text: "<b>Voc\xEA</b>\n\nPode falar seu problema, t\xF4 aqui para escutar e fazer
+      suas bebidas."
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 1
+  - text: "<b>Dorian</b>\n\nObrigado\u2026 A-acho que eu to gostando de algu\xE9m\u2026"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 1
+  - text: "<b>Voc\xEA</b>\n\nOh! Que fofo."
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 1
+  - text: "<b>Dorian</b>\n\n\xC9\u2026Mas eu n\xE3o acho que eu vou falar isso para
+      a pessoa t\xE3o cedo. \xC9 uma coisa meio estranha."
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 1
+  - text: "<b>Voc\xEA</b>\n\nEstranha? \xC9 normal. Quanto mais tempo voc\xEA demorar
+      para falar, mais torturante vai ser pra voc\xEA."
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 1
+  - text: "<b>Dorian</b>\n\nVoc\xEA acha? E-Eu n\xE3o sei como falar isso pra pessoa.
+      Nem tenho coragem pra isso!"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 1
+  - text: "<b>Dorian</b>\n\nQuer saber, voc\xEA deve ter uma bebida boa pra isso."
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 1
+  - text: "<b>Dorian</b>\n\nQuero algo com <i>P\xF3 de Fada</i> que me deixe <i>confiante</i>
+      pra falar com a pessoa."
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 1
+  - text: "<b>Voc\xEA</b>\n\nBelesma! S\xF3 um momento."
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
     characterKey: 1
   disablesSelfOTF: 1
   hidesImageOnDisable: 0
   OnTextFinished:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1049693286}
+        m_TargetAssemblyTypeName: Assets.Scripts.UIManager, Assembly-CSharp
+        m_MethodName: SwitchBrewingScreen
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   LevelUpAfter: 0
   orderingCharacter: 1
   orderIndex: 1
@@ -8348,7 +9483,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1772578714}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
@@ -8429,16 +9564,170 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterManager: {fileID: 11400000, guid: a4e284afea3ff1c40a426fc5e4ac6e3a, type: 2}
   dialogueList:
-  - text: cu da morte 3
-    typingDelaySpeed: 0
-    hasBackground: 1
+  - text: '<b>Narrador</b>
+
+
+      <b>Novamente, no final da noite, a misteriosa
+      mulher senta na bancada do bar mais uma vez.</b>'
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 3
+  - text: "<b>Voc\xEA</b>\n\nBoa noite!!"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 2
+  - text: "<b>Voc\xEA</b>\n\nEstou finalizando os pedidos, ainda d\xE1 tempo de fazer
+      o seu."
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 2
+  - text: "<b>Voc\xEA</b>\n\nMais um dos seus dias longos?"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 2
+  - text: "<b>Dama Misteriosa</b>\n\n\xC9\u2026 hoje foi um dia complicado."
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 2
+  - text: "<b>Narrador</b>\n\n<b>A mo\xE7a parece cabisbaixa, mas parece querer continuar
+      a conversa.</b>"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 2
+  - text: "<b>Voc\xEA</b>\n\nNossa, o que aconteceu?"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 2
+  - text: "<b>Dama Misteriosa</b>\n\nHoje tive que oferecer meus servi\xE7os para
+      algu\xE9m que eu n\xE3o queria atender."
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 2
+  - text: "<b>Dama Misteriosa</b>\n\nEu n\xE3o o conhecia muito bem, apenas seu nome
+      e idade. Ele tinha uma vida de sonhos pela frente\u2026 eu nem ao menos acalentar
+      as pessoas que estavam ao redor do meu cliente\u2026"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 2
+  - text: "<b>Dama Misteriosa</b>\n\nEu n\xE3o o conhecia muito bem, apenas seu nome
+      e idade. Ele tinha uma vida de sonhos pela frente\u2026 eu nem ao menos acalentar
+      as pessoas que estavam ao redor do meu cliente\u2026"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 2
+  - text: "<b>Voc\xEA</b>\n\nCaramba..."
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 2
+  - text: "<b>Voc\xEA</b>\n\nEu sinto muito. Parece ter sido bem triste\u2026"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 2
+  - text: "<b>Voc\xEA</b>\n\nMas\u2026 o que exatamente aconteceu?"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 2
+  - text: "<b>Dama Misteriosa</b>\n\nN\xE3o sei se deveria te contar, at\xE9 porque
+      voc\xEA nem resolveu o nosso enigma."
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 2
+  - text: "<b>Voc\xEA</b>\n\n<i>\xC9 verdade, eu ainda n\xE3o consegui acertar qual
+      a profiss\xE3o dela. O que eu deveria chutar\u2026</i>"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 2
+  - text: "<b>Voc\xEA</b>\n\nAah, com o relato que voc\xEA est\xE1 me dando, parece
+      que voc\xEA viu algu\xE9m\u2026 passar dessa para melhor?"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 2
+  - text: "<b>Voc\xEA</b>\n\nTalvez voc\xEA seja\u2026 coveira? Agente funer\xE1ria?"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 2
+  - text: "<b>Voc\xEA</b>\n\n<i>Ser\xE1 que a ofendi??</i>"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 2
+    characterKey: 2
+  - text: "<b>Voc\xEA</b>\n\n..."
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 2
+    characterKey: 2
+  - text: "<b>Voc\xEA</b>\n\nAcertei?"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 2
+    characterKey: 2
+  - text: "<b>Narrador</b>\n\n<b>Ela pareceu ficar brevemente incomodada com a sua
+      resposta. \xC9 percept\xEDvel que, com o pouco tempo que voc\xEAs se encaram,
+      que a Dama vai perdendo a raiva em sua face, dando lugar a uma gargalhada.</b>"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 2
+    characterKey: 2
+  - text: "<b>Dama Misteriosa</b>\n\nHahahahahaha! Caramba! Isso \xE9 hil\xE1rio!"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 2
+  - text: "<b>Dama Misteriosa</b>\n\nPoxa, voc\xEA t\xE1 quase l\xE1!"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 2
+  - text: "<b>Dama Misteriosa</b>\n\nVamos fazer como das outras noites? Me traga
+      uma bebida que me deixe <i>leve e de bom humor</i>, a\xED te dou a dica final!"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 2
+  - text: "<b>Voc\xEA</b>\n\n<i>Nossa, por um momento achei que ia me dar mal\u2026</i>"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 2
+  - text: "<b>Voc\xEA</b>\n\nCombinado!"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
     characterMood: 0
     characterKey: 2
   disablesSelfOTF: 1
   hidesImageOnDisable: 0
   OnTextFinished:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1049693286}
+        m_TargetAssemblyTypeName: Assets.Scripts.UIManager, Assembly-CSharp
+        m_MethodName: SwitchBrewingScreen
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   LevelUpAfter: 0
   orderingCharacter: 2
   orderIndex: 2
@@ -8837,7 +10126,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ingredientPrefab: {fileID: 6128440654870204135, guid: de162588759241f4f84a17a29fc514a4, type: 3}
   parent: {fileID: 1496944289}
-  ingredientDescription: dry
+  ingredientDescription: "Ovo de Boitat\xE1\nIngrediente base para bebidas gaseificadas\nProveniente
+    da grande cobra de fogo que preda humanoides ca\xE7adores, o ovo de boitat\xE1
+    deve ser manejado com muito cuidado, pois continua muito quente mesmo ap\xF3s
+    sair de dentro da criatura. Devido a sua alta temperatura e sua saborosa gordura,
+    as bebidas feitas com esse ovo s\xE3o bem calorosas, al\xE9m de muito nutritivas.
+    Outro uso desse ingrediente inclui adicionar bolhas \xE0s bebidas, j\xE1 que
+    o ovo ferve por muito tempo fora da casca."
   textMeshProUGUI: {fileID: 123150708}
 --- !u!61 &1878650192
 BoxCollider2D:
@@ -9570,7 +10865,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   charaterName: 0
   desiredTexture: 0
-  desiredTaste: 0
+  desiredTaste: 1
   minimumProximityLevel: 0
   responsesParent: {fileID: 517467201}
 --- !u!1 &1990851924
@@ -9901,16 +11196,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterManager: {fileID: 11400000, guid: a4e284afea3ff1c40a426fc5e4ac6e3a, type: 2}
   dialogueList:
-  - text: se eu pudesse morrer agora eu queria
-    typingDelaySpeed: 0.1
+  - text: "<b>Dama Misteriosa</b>\n\r\nPoxa, achei que voc\xEA iria me entregar uma
+      bebida boa.\r"
+    typingDelaySpeed: 0.05
     hasBackground: 0
     characterMood: 2
     characterKey: 2
-  - text: isso aqui ta mt ruim
-    typingDelaySpeed: 0.1
+  - text: "<b>Dama Misteriosa</b>\n\r\nInfelizmente, n\xE3o foi o caso.\r"
+    typingDelaySpeed: 0.05
     hasBackground: 0
     characterMood: 2
     characterKey: 2
+  - text: "<b>Voc\xEA</b>\n\r\n...\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 2
+    characterKey: 2
+  - text: "<b>Narrador</b>\n\r\n<b>Ela vaza.</b>\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 2
+    characterKey: 3
   disablesSelfOTF: 1
   hidesImageOnDisable: 0
   OnTextFinished:
@@ -9979,14 +11285,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterManager: {fileID: 11400000, guid: a4e284afea3ff1c40a426fc5e4ac6e3a, type: 2}
   dialogueList:
-  - text: vc se safou
-    typingDelaySpeed: 0.1
+  - text: "<b>Dama Misteriosa</b>\n\n\xC9\u2026"
+    typingDelaySpeed: 0.05
     hasBackground: 0
     characterMood: 1
     characterKey: 2
-  - text: ta na media
-    typingDelaySpeed: 0.5
-    hasBackground: 1
+  - text: "<b>Dama Misteriosa</b>\n\nJ\xE1 tomei bebidas melhores\u2026"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 2
+  - text: '<b>Dama Misteriosa</b>
+
+
+      Bom, achei que vir aqui hoje me ajudaria
+      um pouco mais do que me afundar no trabalho.'
+    typingDelaySpeed: 0.05
+    hasBackground: 0
     characterMood: 1
     characterKey: 2
   disablesSelfOTF: 1
@@ -10056,8 +11371,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   charaterName: 1
-  desiredTexture: 0
-  desiredTaste: 0
+  desiredTexture: 1
+  desiredTaste: 2
   minimumProximityLevel: 0
   responsesParent: {fileID: 114888120}
 --- !u!1 &2073956060
@@ -10302,7 +11617,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   charaterName: 0
   desiredTexture: 0
-  desiredTaste: 0
+  desiredTaste: 3
   minimumProximityLevel: 2
   responsesParent: {fileID: 1369378242}
 --- !u!1 &2118586905
@@ -10408,15 +11723,15 @@ RectTransform:
   m_GameObject: {fileID: 2122881493}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.75, y: 0.75, z: 0.75}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1065212419}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -554, y: 50}
-  m_SizeDelta: {x: 500, y: 500}
+  m_AnchoredPosition: {x: -583, y: 277}
+  m_SizeDelta: {x: 3508, y: 2480}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2122881495
 MonoBehaviour:
@@ -10520,21 +11835,35 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterManager: {fileID: 11400000, guid: a4e284afea3ff1c40a426fc5e4ac6e3a, type: 2}
   dialogueList:
-  - text: gosto.d.alio
+  - text: "<b>Dorian</b>\n\nAh\u2026Isso \xE9 meio ruim\u2026"
     typingDelaySpeed: 0.1
     hasBackground: 0
     characterMood: 2
     characterKey: 1
-  - text: eu vou litealmente morrer agroa
+  - text: '<b>Dorian</b>
+
+
+      Acho que meu problema era meio bobo, de qualquer
+      forma...'
     typingDelaySpeed: 0.1
     hasBackground: 0
     characterMood: 2
     characterKey: 1
-  - text: eba
+  - text: "<b>Dorian</b>\n\nVou indo, espero que amanh\xE3 voc\xEA consiga fazer
+      uma bebida melhor."
     typingDelaySpeed: 0.1
     hasBackground: 0
-    characterMood: 0
+    characterMood: 2
     characterKey: 1
+  - text: '<b>Narrador</b>
+
+
+      <b>Ele paga a bebida e sai com a mesma postura
+      triste de antes, como se algo ainda o incomodasse.</b>'
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 2
+    characterKey: 3
   disablesSelfOTF: 1
   hidesImageOnDisable: 0
   OnTextFinished:
@@ -10566,4 +11895,3 @@ SceneRoots:
   - {fileID: 1878709324}
   - {fileID: 1203075805}
   - {fileID: 468088640}
-  - {fileID: 1280629722}

@@ -665,39 +665,57 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   drinkNames:
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Remela de Orfeu
+  - "Tor\xF3 de Ideias"
+  - Rainbow Gold
+  - Bons Velhos Tempos
+  - Conversa Fiada
+  - Presente da Natureza
+  - Estrela Cadente
+  - "D\xE9j\xE0 Vu"
+  - Folclore Local
+  - "Foco M\xE1gico"
+  - Alto Astral
+  - "Espa\xE7o Pessoal"
+  - Bloody Witch
+  - "Caf\xE9 da Manh\xE3"
+  - Bobo da Corte
+  - Ovada Salgada
   drinkDescriptions:
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - "Ch\xE1 de Gnomo + Saliva de Bruxa\nUm drink inspirado pelo senhor do sono, que
+    p\xF5e areia nos olhos das crian\xE7as para acalm\xE1-las at\xE9 o sono.\r"
+  - "Ch\xE1 de Gnomo + Fruta de S\xE1tiro\nUm drink muito consumido por artistas,
+    ati\xE7a a imagina\xE7\xE3o e traz muitas ideias \xE0 cabe\xE7a.\r"
+  - "Ch\xE1 de Gnomo + P\xF3 de Fada\nUma bebida colorida e de alt\xEDssimo custo,
+    que traz boa ventura \xE0queles que a tomam."
+  - "Ch\xE1 de Gnomo + Leite de Drag\xE3o\nUm coquetel suave que leva o cliente a
+    relembrar os bons momentos de sua juventude."
+  - "Coice de Hipogrifo + Saliva de Bruxa\nUm drink forte que d\xE1 desenvoltura
+    uma grande desenvoltura a quem o ingere, perfeito para ocasi\xF5es especiais."
+  - "Coice de Hipogrifo + Fruta de S\xE1tiro\nUma dose dessa bebida \xE9 como ingerir
+    um pote de frutas de s\xE1tiro, mantendo a pessoa acordada por horas."
+  - "Coice de Hipogrifo + P\xF3 de Fada\nUma bebida a\xE7ucarada e brilhante. Quem
+    a ingere adquire uma confian\xE7a inabal\xE1vel."
+  - "Coice de Hipogrifo + Leite de Drag\xE3o\nUm coquetel que for\xE7a magicamente
+    a capacidade do usu\xE1rio de guardar informa\xE7\xF5es e lembrar de acontecimentos
+    passados."
+  - "G.O.S.M.A + Saliva de Bruxa\nUm creme azedo que amplia os sentidos, tornando
+    poss\xEDvel sensa\xE7\xF5es novas, como ver sons e sentir o gosto de cheiros."
+  - "G.O.S.M.A + Fruta de S\xE1tiro\nUma bebida forte e amarga que afunila os sentidos
+    de quem a ingere, facilitando o foco no que realmente importa."
+  - "G.O.S.M.A + P\xF3 de Fada\nUma bebida que, mesmo parada, parece se mexer alegremente.
+    Quem bebe \xE9 logo contaminado por seu \xE2nimo."
+  - "G.O.S.M.A + Leite de Drag\xE3o\nUma bebida cremosa que traz a sensa\xE7\xE3o
+    de conforto e a despreocupa\xE7\xE3o de quando os tempos eram mais simples."
+  - "Ovo de Boitat\xE1 + Saliva de Bruxa\nAs bolhas fervorosas desse coquetel podem
+    tornar qualquer um em um paquerador rom\xE2ntico."
+  - "Ovo de Boitat\xE1 + Fruta de S\xE1tiro\nNutritiva e energ\xE9tica, essa \xE9
+    a bebida perfeita para come\xE7ar o dia."
+  - "Ovo de Boitat\xE1 + P\xF3 de Fada\nAs bolhas que flutuam fervorosamente dentro
+    dessa bebida causam um sentimento engra\xE7ado em quem a bebe, deixando a pessoa
+    num estado risonho e divertido."
+  - "Ovo de Boitat\xE1 + Leite de Drag\xE3o\nUma bebida comum em comemora\xE7\xF5es
+    de virada de ciclo, tr\xE1s \xE0 tona a vontade de estar cercado de pessoas queridas."
 --- !u!1 &540765629827863956
 GameObject:
   m_ObjectHideFlags: 0
@@ -3770,8 +3788,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Texto Bebida
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 708cc4ccec2facc4c9b61d8121013835, type: 2}
+  m_sharedMaterial: {fileID: 1652531914822736424, guid: 708cc4ccec2facc4c9b61d8121013835, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -5850,8 +5868,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: NOME BEBIDA
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 708cc4ccec2facc4c9b61d8121013835, type: 2}
+  m_sharedMaterial: {fileID: 1652531914822736424, guid: 708cc4ccec2facc4c9b61d8121013835, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -5875,7 +5893,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 42.75
+  m_fontSize: 44.95
   m_fontSizeBase: 50
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -5914,7 +5932,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &6118535131174663604
