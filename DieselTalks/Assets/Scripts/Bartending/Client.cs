@@ -37,6 +37,7 @@ namespace Assets.Scripts.Bartending
             characterManager.characterList.TryGetValue(charaterName, out charCurrLevel);
             if (charCurrLevel >= minProximityLevel2Snitch)
                 secretResponse.SetActive(true);
+            else GameManager.Instance.LevelManager.IncreaseLevel();
         }
 
         private void Awake()
