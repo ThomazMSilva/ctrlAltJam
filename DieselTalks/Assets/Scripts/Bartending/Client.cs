@@ -17,20 +17,39 @@ namespace Assets.Scripts.Bartending
         private GameObject[] responses = new GameObject[3];
         public GameObject[] secretResponse;
         private CharacterManager characterManager;
-        //private bool correctTex = false, correctTas = false;
+        public bool ultimaFase = false;
+        private bool correctTexture = false, correctTaste = false;
         private int i = 0;
 
         public void ChangeEnjoymentLevel(Texture tex, Taste tas)
         {
-            if (tex == desiredTexture) { i++; }
-            if (tas == desiredTaste) { i++; }
+            if (tex == desiredTexture) 
+            {
+                correctTexture = true;
+                i++; 
+            }
+            if (tas == desiredTaste) 
+            { 
+                correctTaste = true;
+                i++; 
+            }
 
             //Debug.Log(characterManager.characterList.TryGetValue(charaterName, out int a));
             characterManager.characterList.TryGetValue(charaterName, out charCurrLevel);
 
             characterManager.ChangeProximityLevel(charaterName, charCurrLevel + i);
 
-            responses[i].SetActive(true);
+            if (!ultimaFase)
+            {
+                responses[i].SetActive(true);
+                return;
+            }
+
+            if (charCurrLevel >= minProximityLevel2Snitch)
+            {
+                secretResponse[i].SetActive(true);
+            }
+            else responses[i].SetActive(true);
         }
 
         public void CheckSecret()
