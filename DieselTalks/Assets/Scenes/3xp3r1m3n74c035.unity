@@ -843,10 +843,9 @@ MonoBehaviour:
     characterKey: 1
   - text: '<b>Dorian</b>
 
-      
 
-      Muito obrigado pela bebida maravilhosa,
-      querido.'
+
+      Muito obrigado pela bebida maravilhosa, querido.'
     typingDelaySpeed: 0.1
     hasBackground: 0
     characterMood: 0
@@ -1277,7 +1276,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 51d03607a029c094f864c21f743c191a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2a1354bd3429aea46aaa90629891ee57, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1422,10 +1421,10 @@ MonoBehaviour:
   dialogueList:
   - text: '<b>Madame Misteriosa</b>
 
-      
 
-      Uau! Esse bar tem futuro! Bom,
-      como prometido, aqui vai uma dica:'
+
+      Uau! Esse bar tem futuro! Bom, como
+      prometido, aqui vai uma dica:'
     typingDelaySpeed: 0.05
     hasBackground: 0
     characterMood: 0
@@ -1438,7 +1437,7 @@ MonoBehaviour:
     characterKey: 2
   - text: '<b>Madame Misteriosa</b>
 
-      
+
 
       ...'
     typingDelaySpeed: 0.05
@@ -1447,7 +1446,7 @@ MonoBehaviour:
     characterKey: 2
   - text: '<b>Madame Misteriosa</b>
 
-      
+
 
       Algum chute?'
     typingDelaySpeed: 0.05
@@ -2888,7 +2887,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0, y: -218}
+  m_AnchoredPosition: {x: -0, y: -229}
   m_SizeDelta: {x: 2560, y: 1440}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &555466390
@@ -2911,7 +2910,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 392cd8d239d650549b27056954074a97, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 96e46704f7aa5a04d94403fa02453f98, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4660,23 +4659,97 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterManager: {fileID: 11400000, guid: a4e284afea3ff1c40a426fc5e4ac6e3a, type: 2}
   dialogueList:
-  - text: 'IIIIIIIIIIIIIIIIIIAAAAA
+  - text: "<b>Dorian</b>\r\n\nDivino! Voc\xEA tem m\xE3os divinas, querido."
+    typingDelaySpeed: 0.07
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 1
+  - text: "<b>Dorian</b>\r\n\nFazia tempo que eu n\xE3o bebia algo t\xE3o bom."
+    typingDelaySpeed: 0.07
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 1
+  - text: "<b>Dorian</b>\r\n\nTalvez s\xF3 quando eu ainda estava vivo\u2026"
+    typingDelaySpeed: 0.07
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 1
+  - text: "<b>Voc\xEA</b>\r\n\nFico feliz em ouvir isso, Dorian!"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 1
+  - text: '<b>Dorian</b>
 
-      ;'
-    typingDelaySpeed: 0.1
+
+      Agora eu to mais confiante, obrigado.'
+    typingDelaySpeed: 0.07
     hasBackground: 0
     characterMood: 0
     characterKey: 1
-  - text: AAAAAAAAAAA
-    typingDelaySpeed: 0.5
+  - text: "<b>Dorian</b>\r\n\nEsse sentimento me incomodando deve ser medo. Eu nunca
+      me apaixonei depois de\u2026Ter virado um vampiro."
+    typingDelaySpeed: 0.07
     hasBackground: 0
     characterMood: 0
     characterKey: 1
-  - text: ;)
-    typingDelaySpeed: 0.1
-    hasBackground: 1
+  - text: "<b>Dorian</b>\r\n\nEu n\xE3o acho que vivi de verdade, sabe. N\xE3o posso
+      sair de dia, n\xE3o consigo mais conviver com as pessoas, eu sempre fico com
+      medo de machucar os outros, de ser considerado um monstro\u2026"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 1
+  - text: '<b>Dorian</b>
+
+
+      E no fim, terminar sozinho.'
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 1
+  - text: '<b>Dorian</b>
+
+
+      E no fim, terminar sozinho.'
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 1
+  - text: "<b>Dorian</b>\r\n\nTalvez eu n\xE3o me apaixone por medo de perder a pessoa.
+      N\xE3o sei se eu aguentaria viver uma vida sem a pessoa que eu amo."
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 1
+  - text: "<b>Voc\xEA</b>\r\n\nTer tanto medo assim s\xF3 te afasta ainda mais desse
+      sentimento de viver."
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 1
+  - text: "<b>Dorian</b>\r\n\nQuerido, voc\xEA t\xE1 certo. Vou sair e conversar
+      com a pessoa, espero que d\xEA tudo certo."
+    typingDelaySpeed: 0.05
+    hasBackground: 0
     characterMood: 0
     characterKey: 1
+  - text: "<b>Voc\xEA</b>\r\n\r\nEu confio!"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 1
+  - text: "<b>Dorian</b>\r\n\r\nAt\xE9 breve, querido."
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 1
+  - text: "<b>Narrador</b>\r\n\r\n<b>Ele sai do bar com uma aura confiante, ningu\xE9m
+      vai parar ele de conseguir se declarar.</b>"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 3
   disablesSelfOTF: 1
   hidesImageOnDisable: 0
   OnTextFinished:
@@ -6051,7 +6124,7 @@ MonoBehaviour:
     characterKey: 2
   - text: '<b>Dama Misteriosa</b>
 
-      
+
 
       Passei da hora do lobisomem, infelizmente.'
     typingDelaySpeed: 0.05
@@ -7265,7 +7338,7 @@ MonoBehaviour:
     characterKey: 1
   - text: '<b>Dorian</b>
 
-      
+
 
       Obrigado!'
     typingDelaySpeed: 0.1
@@ -7274,10 +7347,10 @@ MonoBehaviour:
     characterKey: 1
   - text: '<b>Narrador</b>
 
-      
 
-      <b>Ele sai pela porta, com uma postura
-      meio recolhida ainda.</b>'
+
+      <b>Ele sai pela porta, com uma postura meio recolhida
+      ainda.</b>'
     typingDelaySpeed: 0.05
     hasBackground: 0
     characterMood: 1
@@ -7408,6 +7481,15 @@ MonoBehaviour:
     hasBackground: 0
     characterMood: 0
     characterKey: 3
+  - text: "<b>TESTE CARAIO</b>\n\nComo comprometido, a \xFAltima dica \xE9 um pouco
+      mais \xF3bvia. As pessoas n\xE3o valorizam o meu trabalho, na verdade, muitos
+      odeiam o que eu fa\xE7o e ficam com raiva quando eu estrago uma data especial,
+      ou atrapalho algum compromisso importante. Mas, para aqueles que moram na mis\xE9ria,
+      meus servi\xE7os os deixam esperan\xE7osos."
+    typingDelaySpeed: 0.1
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 0
   - text: "<b>Voc\xEA</b>\n\nVai ser um bom dia para conversar com os clientes com
       mais calma."
     typingDelaySpeed: 0.1
@@ -7587,6 +7669,94 @@ MonoBehaviour:
   LevelUpAfter: 0
   orderingCharacter: 0
   orderIndex: 0
+--- !u!1 &1461122585
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1461122586}
+  - component: {fileID: 1461122587}
+  m_Layer: 5
+  m_Name: Square
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1461122586
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1461122585}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1000.9083, y: 576.4646, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1752605144}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -9.837067, y: -5.440979}
+  m_SizeDelta: {x: 1, y: 1}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!212 &1461122587
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1461122585}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 1
+  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Color: {r: 0.2754717, g: 0.12975009, b: 0, a: 0.19607843}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &1475061458
 GameObject:
   m_ObjectHideFlags: 0
@@ -8295,20 +8465,53 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterManager: {fileID: 11400000, guid: a4e284afea3ff1c40a426fc5e4ac6e3a, type: 2}
   dialogueList:
-  - text: <i>eu adoro comer gesso</i>
+  - text: "<b>Dorian</b>\r\n\n\xC9, acho que isso aqui vai dar pro gasto."
     typingDelaySpeed: 0.1
     hasBackground: 0
     characterMood: 1
     characterKey: 1
-  - text: <b>eu vou comer gesso</b>
-    typingDelaySpeed: 0.5
-    hasBackground: 1
+  - text: "<b>Dorian</b>\r\n\nN\xE3o me d\xE1 muita confian\xE7a mas se eu ficar
+      b\xEAbado n\xE3o vou ter que pensar no meu problema."
+    typingDelaySpeed: 0.1
+    hasBackground: 0
     characterMood: 1
     characterKey: 1
-  - text: ;)
-    typingDelaySpeed: 0.1
-    hasBackground: 1
+  - text: "<b>Voc\xEA</b>\r\n\nPor que voc\xEA tem tanto medo de conversar com a
+      pessoa?"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
     characterMood: 1
+    characterKey: 1
+  - text: "<b>Dorian</b>\r\n\nN\xE3o sei, medo das coisas n\xE3o serem iguais depois."
+    typingDelaySpeed: 0.1
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 1
+  - text: "<b>Dorian</b>\r\n\nN\xE3o gosto muito de arriscar. Eu vou viver por um
+      bom tempo, vai ser ruim se eu estragar uma chance dessa t\xE3o cedo."
+    typingDelaySpeed: 0.1
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 1
+  - text: "<b>Dorian</b>\r\n\nAcho que eu j\xE1 vou, t\xF4 meio cansado j\xE1 e voltar
+      pra casa \xE9 meio complicado."
+    typingDelaySpeed: 0.1
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 1
+  - text: '<b>Dorian</b>
+
+
+      Obrigado pela bebida, querido.'
+    typingDelaySpeed: 0.1
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 1
+  - text: "<b>Narrador</b>\r\n\n<b>Ele sai pela porta, t\xE3o deprimido quanto chegou,
+      como se tivesse algo o assombrando</b>"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
     characterKey: 1
   disablesSelfOTF: 1
   hidesImageOnDisable: 0
@@ -8922,14 +9125,49 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterManager: {fileID: 11400000, guid: a4e284afea3ff1c40a426fc5e4ac6e3a, type: 2}
   dialogueList:
-  - text: '<b>Dorian</b>
-
-
-'
+  - text: "<b>Dorian</b>\n\nIsso \xE9 nojento. N\xE3o daria nem pra um slime tomar."
+    typingDelaySpeed: 0.1
+    hasBackground: 0
+    characterMood: 2
+    characterKey: 1
+  - text: "<b>Voc\xEA</b>\n\n\u2026Nossa."
     typingDelaySpeed: 0.05
     hasBackground: 0
     characterMood: 2
     characterKey: 1
+  - text: "<b>Voc\xEA</b>\n\nN\xE3o precisa falar assim..."
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 2
+    characterKey: 1
+  - text: '<b>Dorian</b>
+
+
+      Eu preferia tomar um banho de sol do que tomar essa
+      coisa de novo.'
+    typingDelaySpeed: 0.1
+    hasBackground: 0
+    characterMood: 2
+    characterKey: 1
+  - text: "<b>Dorian</b>\n\nVou embora pra escovar meus dentes e tirar esse gosto
+      horr\xEDvel da boca."
+    typingDelaySpeed: 0.1
+    hasBackground: 0
+    characterMood: 2
+    characterKey: 1
+  - text: '<b>Narrador</b>
+
+
+      <b>Ele sai bravo pela porta do bar.</b>'
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 2
+    characterKey: 3
+  - text: "<b>Voc\xEA</b>\n\n<i>Acho que eu vou ter que fazer terapia depois disso.</i>"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 2
+    characterKey: 3
   disablesSelfOTF: 1
   hidesImageOnDisable: 0
   OnTextFinished:
@@ -9005,7 +9243,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1752605144
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9018,13 +9256,14 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children:
+  - {fileID: 1461122586}
   - {fileID: 1772578715}
   m_Father: {fileID: 1065212419}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 356, y: 228}
-  m_SizeDelta: {x: 1000, y: 150}
+  m_AnchoredPosition: {x: 511.837, y: 151.441}
+  m_SizeDelta: {x: 976.412, y: 579.617}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1752605145
 MonoBehaviour:
@@ -9355,7 +9594,7 @@ MonoBehaviour:
 
 
       Oi...'
-    typingDelaySpeed: 0.05
+    typingDelaySpeed: 0.1
     hasBackground: 0
     characterMood: 1
     characterKey: 1
@@ -9365,7 +9604,7 @@ MonoBehaviour:
     characterMood: 1
     characterKey: 1
   - text: "<b>Dorian</b>\n\nAh\u2026 Nada de mais\u2026"
-    typingDelaySpeed: 0.05
+    typingDelaySpeed: 0.1
     hasBackground: 0
     characterMood: 1
     characterKey: 1
@@ -9376,7 +9615,7 @@ MonoBehaviour:
     characterMood: 1
     characterKey: 1
   - text: "<b>Dorian</b>\n\nObrigado\u2026 A-acho que eu to gostando de algu\xE9m\u2026"
-    typingDelaySpeed: 0.05
+    typingDelaySpeed: 0.1
     hasBackground: 0
     characterMood: 1
     characterKey: 1
@@ -9387,7 +9626,7 @@ MonoBehaviour:
     characterKey: 1
   - text: "<b>Dorian</b>\n\n\xC9\u2026Mas eu n\xE3o acho que eu vou falar isso para
       a pessoa t\xE3o cedo. \xC9 uma coisa meio estranha."
-    typingDelaySpeed: 0.05
+    typingDelaySpeed: 0.1
     hasBackground: 0
     characterMood: 1
     characterKey: 1
@@ -9399,18 +9638,18 @@ MonoBehaviour:
     characterKey: 1
   - text: "<b>Dorian</b>\n\nVoc\xEA acha? E-Eu n\xE3o sei como falar isso pra pessoa.
       Nem tenho coragem pra isso!"
-    typingDelaySpeed: 0.05
+    typingDelaySpeed: 0.1
     hasBackground: 0
     characterMood: 1
     characterKey: 1
   - text: "<b>Dorian</b>\n\nQuer saber, voc\xEA deve ter uma bebida boa pra isso."
-    typingDelaySpeed: 0.05
+    typingDelaySpeed: 0.1
     hasBackground: 0
     characterMood: 1
     characterKey: 1
   - text: "<b>Dorian</b>\n\nQuero algo com <i>P\xF3 de Fada</i> que me deixe <i>confiante</i>
       pra falar com a pessoa."
-    typingDelaySpeed: 0.05
+    typingDelaySpeed: 0.1
     hasBackground: 0
     characterMood: 1
     characterKey: 1
