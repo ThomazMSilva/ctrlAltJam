@@ -7939,7 +7939,7 @@ MonoBehaviour:
   AudioManager: {fileID: 5616355343662863674}
   recipeBook: {fileID: 2125044388589898160}
   pauseScreen: {fileID: 1615791587052617650}
-  creditsScreen: {fileID: 0}
+  creditsScreen: {fileID: 8203784708454057536}
   transitionScreen: {fileID: 1875731512970638097}
   originalColor: {r: 0, g: 0, b: 0, a: 0}
   transitionTime: 1.5

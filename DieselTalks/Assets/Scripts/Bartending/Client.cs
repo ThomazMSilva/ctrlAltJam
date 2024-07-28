@@ -10,10 +10,12 @@ namespace Assets.Scripts.Bartending
         public Taste desiredTaste;
         
         private int charCurrLevel;
-        public int minimumProximityLevel = 0;
+        public int minProximityLevel2ShowUp = 0;
+        public int minProximityLevel2Snitch = 4;
         
         public GameObject responsesParent;
         private GameObject[] responses = new GameObject[3];
+        public GameObject secretResponse;
         private CharacterManager characterManager;
 
         public void ChangeEnjoymentLevel(Texture tex, Taste tas)
@@ -28,37 +30,30 @@ namespace Assets.Scripts.Bartending
             characterManager.ChangeProximityLevel(charaterName, charCurrLevel + i);
 
             responses[i].SetActive(true);
-            /*switch (i)
-            {
-                case 0:
-                    Debug.Log("Uma merda. Eu abomino você e seus pares, e jamais respirarei os ares de sua cólera novamente.");
-                    //badResponse.SetActive(true);
-                    break;
+        }
 
-                case 1:
-                    Debug.Log
-                    (
-                        "Quase! " +
-                        "Sinto que você ignorou alguma coisa que eu falei, mas ta valendo. " +
-                        "Não quero vomitar."
-                    );
-                    //neutralResponse.SetActive(true);
-                    break;
-
-                case 2:
-                    Debug.Log
-                    (
-                        "Vós sois o ídolo de bronze no templo de minha impotência. " +
-                        "Curvo-me humildemente, e aguardo a penitência."
-                    );
-                    //goodResponse.SetActive(true);
-                    break;
-            }*/
+        public void CheckSecret()
+        {
+            characterManager.characterList.TryGetValue(charaterName, out charCurrLevel);
+            if (charCurrLevel >= minProximityLevel2Snitch)
+                secretResponse.SetActive(true);
         }
 
         private void Awake()
         {
             characterManager = GameManager.Instance.CharacterManager;
+
+            if (responsesParent.transform.childCount > 3)
+            {
+                Debug.LogError
+                (
+                    $"Objeto {responsesParent.name} tem mais de 3 respostas possíveis como seus objetos filhos." +
+                    $" Tira um ai jao, n pode." +
+                    $"Isso é de onde o script Client do {gameObject.name} ta pegando as respostas boa media e ruim, fala cmg " +
+                    $"-Biqueta de Propano"
+                );
+                return;
+            }
             
             for (int i = 0; i < responsesParent.transform.childCount; i++) 
                 responses[i] = responsesParent.transform.GetChild(i).gameObject;
@@ -66,7 +61,7 @@ namespace Assets.Scripts.Bartending
 
         private void OnEnable()
         {
-            if (charCurrLevel < minimumProximityLevel)
+            if (charCurrLevel < minProximityLevel2ShowUp)
             {
                 Debug.Log($"O nivel de proximidade com {gameObject.name} nao era suficiente pra esse nivel. Passando pro próximo.");
                 GameManager.Instance.LevelManager.IncreaseLevel();

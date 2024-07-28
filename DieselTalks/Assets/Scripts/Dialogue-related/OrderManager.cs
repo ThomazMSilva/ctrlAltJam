@@ -15,7 +15,9 @@ namespace Assets.Scripts.Dialogue_related
         private void Start()
         {
             var list = FindObjectsOfType<OrderDialogue>(true);
-            orderList = list.OrderBy(o => o.orderIndex).ThenBy(o => o.orderingCharacter).ToList();
+            orderList = list.OrderBy
+                            (o => o.orderIndex).ThenBy
+                                                (o => o.orderingCharacter).ToList();
 
             UpdateCurrentOrderDialogue();
 
@@ -31,7 +33,9 @@ namespace Assets.Scripts.Dialogue_related
             GameManager.Instance.OnMidFade -= ActivateCurrentDialogue;
         }
 
-        void ActivateCurrentDialogue() => currentOrderDialogue.gameObject.SetActive(true);
+        public void ActivateCurrentDialogue() => currentOrderDialogue.gameObject.SetActive(true);
+
+        public void DeactivateCurrentDialogue() => currentOrderDialogue.FinishDialogue(true);
 
         void UpdateCurrentOrderDialogue()
         {

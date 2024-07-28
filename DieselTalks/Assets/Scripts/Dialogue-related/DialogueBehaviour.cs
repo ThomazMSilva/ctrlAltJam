@@ -100,12 +100,17 @@ public class DialogueBehaviour : MonoBehaviour
             }
             else
             {
-                OnTextFinished?.Invoke();
-                if (disablesSelfOTF) gameObject.SetActive(false);
+                FinishDialogue(disablesSelfOTF);
             }
                 
 
         }
+    }
+
+    public void FinishDialogue(bool b) 
+    { 
+        OnTextFinished?.Invoke();
+        if(b)  gameObject.SetActive(false); 
     }
 
     private IEnumerator TypeText(string newText, float typingInterval = 0.1f, bool hasBackground = false, CharacterKey characterKey = CharacterKey.Barman, CharacterExpression characterMood = CharacterExpression.happy)

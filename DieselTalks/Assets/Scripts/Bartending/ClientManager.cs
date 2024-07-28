@@ -10,6 +10,7 @@ namespace Assets.Scripts.Bartending
 
         public void UpdateCurrentClient(int clientIndex)
         {
+            //Debug.Log($"Atualizando cliente para nível {clientIndex}. Clients.Length = {clients.Length}");
             if (clientIndex >= clients.Length) { return; }
             if (currentClient != null)
             {
@@ -20,6 +21,7 @@ namespace Assets.Scripts.Bartending
             //Debug.Log($"Ativando cliente {currentClient.name}");
             currentClient.gameObject.SetActive(true);
         }
+
         public void UpdateClientToLevel() => UpdateCurrentClient(GameManager.Instance.LevelManager.level);
 
         private void Start()
