@@ -15,14 +15,15 @@ namespace Assets.Scripts.Bartending
         
         public GameObject responsesParent;
         private GameObject[] responses = new GameObject[3];
-        public GameObject secretResponse;
+        public GameObject[] secretResponse;
         private CharacterManager characterManager;
+        //private bool correctTex = false, correctTas = false;
+        private int i = 0;
 
         public void ChangeEnjoymentLevel(Texture tex, Taste tas)
         {
-            int i = 0;
-            if (tex == desiredTexture) i++;
-            if (tas == desiredTaste) i++;
+            if (tex == desiredTexture) { i++; }
+            if (tas == desiredTaste) { i++; }
 
             //Debug.Log(characterManager.characterList.TryGetValue(charaterName, out int a));
             characterManager.characterList.TryGetValue(charaterName, out charCurrLevel);
@@ -36,7 +37,7 @@ namespace Assets.Scripts.Bartending
         {
             characterManager.characterList.TryGetValue(charaterName, out charCurrLevel);
             if (charCurrLevel >= minProximityLevel2Snitch)
-                secretResponse.SetActive(true);
+                secretResponse[i].SetActive(true);
             else GameManager.Instance.LevelManager.IncreaseLevel();
         }
 

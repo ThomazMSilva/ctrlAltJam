@@ -728,7 +728,7 @@ MonoBehaviour:
   minProximityLevel2ShowUp: 0
   minProximityLevel2Snitch: 4
   responsesParent: {fileID: 1533038491}
-  secretResponse: {fileID: 0}
+  secretResponse: []
 --- !u!1 &161654177
 GameObject:
   m_ObjectHideFlags: 0
@@ -3902,7 +3902,7 @@ MonoBehaviour:
   minProximityLevel2ShowUp: 0
   minProximityLevel2Snitch: 4
   responsesParent: {fileID: 1818456083}
-  secretResponse: {fileID: 0}
+  secretResponse: []
 --- !u!1 &760875228
 GameObject:
   m_ObjectHideFlags: 0
@@ -4965,7 +4965,10 @@ MonoBehaviour:
   minProximityLevel2ShowUp: 0
   minProximityLevel2Snitch: 4
   responsesParent: {fileID: 1699626400}
-  secretResponse: {fileID: 0}
+  secretResponse:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!1 &930371100
 GameObject:
   m_ObjectHideFlags: 0
@@ -6872,7 +6875,7 @@ MonoBehaviour:
   minProximityLevel2ShowUp: 0
   minProximityLevel2Snitch: 4
   responsesParent: {fileID: 440992566}
-  secretResponse: {fileID: 0}
+  secretResponse: []
 --- !u!1 &1340986222
 GameObject:
   m_ObjectHideFlags: 0
@@ -7440,7 +7443,7 @@ MonoBehaviour:
   minProximityLevel2ShowUp: 0
   minProximityLevel2Snitch: 4
   responsesParent: {fileID: 760875228}
-  secretResponse: {fileID: 0}
+  secretResponse: []
 --- !u!1 &1454055498
 GameObject:
   m_ObjectHideFlags: 0
@@ -8883,7 +8886,10 @@ MonoBehaviour:
   minProximityLevel2ShowUp: 0
   minProximityLevel2Snitch: 4
   responsesParent: {fileID: 243212866}
-  secretResponse: {fileID: 0}
+  secretResponse:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!1 &1685361560
 GameObject:
   m_ObjectHideFlags: 0
@@ -11070,7 +11076,7 @@ MonoBehaviour:
   minProximityLevel2ShowUp: 0
   minProximityLevel2Snitch: 4
   responsesParent: {fileID: 517467201}
-  secretResponse: {fileID: 0}
+  secretResponse: []
 --- !u!1 &1990851924
 GameObject:
   m_ObjectHideFlags: 0
@@ -11445,7 +11451,7 @@ MonoBehaviour:
   minProximityLevel2ShowUp: 0
   minProximityLevel2Snitch: 4
   responsesParent: {fileID: 114888120}
-  secretResponse: {fileID: 0}
+  secretResponse: []
 --- !u!1 &2073956060
 GameObject:
   m_ObjectHideFlags: 0
@@ -11836,7 +11842,10 @@ MonoBehaviour:
   minProximityLevel2ShowUp: 0
   minProximityLevel2Snitch: 4
   responsesParent: {fileID: 1369378242}
-  secretResponse: {fileID: 1724071565}
+  secretResponse:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!1 &2118586905
 GameObject:
   m_ObjectHideFlags: 0
