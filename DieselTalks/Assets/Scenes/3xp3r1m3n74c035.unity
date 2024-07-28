@@ -725,8 +725,10 @@ MonoBehaviour:
   charaterName: 0
   desiredTexture: 1
   desiredTaste: 3
-  minimumProximityLevel: 0
+  minProximityLevel2ShowUp: 0
+  minProximityLevel2Snitch: 4
   responsesParent: {fileID: 1533038491}
+  secretResponse: {fileID: 0}
 --- !u!1 &161654177
 GameObject:
   m_ObjectHideFlags: 0
@@ -846,7 +848,6 @@ MonoBehaviour:
   - text: '<b>Dorian</b>
 
 
-
       Muito obrigado pela bebida maravilhosa, querido.'
     typingDelaySpeed: 0.1
     hasBackground: 0
@@ -953,7 +954,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  LevelUpAfter: 1
+      - m_Target: {fileID: 2117013002}
+        m_TargetAssemblyTypeName: Assets.Scripts.Bartending.Client, Assembly-CSharp
+        m_MethodName: CheckSecret
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  LevelUpAfter: 0
 --- !u!1 &179746021
 GameObject:
   m_ObjectHideFlags: 0
@@ -1116,16 +1129,15 @@ RectTransform:
   m_GameObject: {fileID: 184218956}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1789203386}
+  m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
   m_Father: {fileID: 1386494009}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1006, y: 600}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: 1020, y: 605}
+  m_SizeDelta: {x: 352, y: 344}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &184218958
 MonoBehaviour:
@@ -1203,8 +1215,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: e0ed6bb50eb5de14bb82f6dba9e43264, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -1424,9 +1436,8 @@ MonoBehaviour:
   - text: '<b>Madame Misteriosa</b>
 
 
-
-      Uau! Esse bar tem futuro! Bom, como
-      prometido, aqui vai uma dica:'
+      Uau! Esse bar tem futuro! Bom, como prometido,
+      aqui vai uma dica:'
     typingDelaySpeed: 0.05
     hasBackground: 0
     characterMood: 0
@@ -1440,14 +1451,12 @@ MonoBehaviour:
   - text: '<b>Madame Misteriosa</b>
 
 
-
       ...'
     typingDelaySpeed: 0.05
     hasBackground: 0
     characterMood: 1
     characterKey: 2
   - text: '<b>Madame Misteriosa</b>
-
 
 
       Algum chute?'
@@ -3609,21 +3618,6 @@ MonoBehaviour:
     hasBackground: 0
     characterMood: 1
     characterKey: 1
-  - text: "<b>Vampiro Deprimido</b>\n\n\u2026acho que com uma bebida vai ser mais
-      f\xE1cil de explicar."
-    typingDelaySpeed: 0.1
-    hasBackground: 0
-    characterMood: 1
-    characterKey: 1
-  - text: '<b>Vampiro Deprimido</b>
-
-
-      Inclusive, esqueci de me apresentar,
-      que rude da minha parte!'
-    typingDelaySpeed: 0.1
-    hasBackground: 0
-    characterMood: 1
-    characterKey: 1
   - text: '<b>Vampiro Deprimido</b>
 
 
@@ -3905,8 +3899,10 @@ MonoBehaviour:
   charaterName: 2
   desiredTexture: 0
   desiredTaste: 0
-  minimumProximityLevel: 0
+  minProximityLevel2ShowUp: 0
+  minProximityLevel2Snitch: 4
   responsesParent: {fileID: 1818456083}
+  secretResponse: {fileID: 0}
 --- !u!1 &760875228
 GameObject:
   m_ObjectHideFlags: 0
@@ -4304,140 +4300,6 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 840230213}
-  m_CullTransparentMesh: 1
---- !u!1 &846425799
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 846425800}
-  - component: {fileID: 846425802}
-  - component: {fileID: 846425801}
-  m_Layer: 5
-  m_Name: Text (TMP)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &846425800
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 846425799}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 2081357705}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &846425801
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 846425799}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_text: '>>'
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_fontSharedMaterials: []
-  m_fontMaterial: {fileID: 0}
-  m_fontMaterials: []
-  m_fontColor32:
-    serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
-  m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
-  m_tintAllSprites: 0
-  m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
-  m_overrideHtmlColors: 0
-  m_faceColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontSize: 56
-  m_fontSizeBase: 56
-  m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_HorizontalAlignment: 2
-  m_VerticalAlignment: 512
-  m_textAlignment: 65535
-  m_characterSpacing: 0
-  m_wordSpacing: 0
-  m_lineSpacing: 0
-  m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
-  m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
-  m_linkedTextComponent: {fileID: 0}
-  parentLinkedComponent: {fileID: 0}
-  m_enableKerning: 1
-  m_enableExtraPadding: 0
-  checkPaddingRequired: 0
-  m_isRichText: 1
-  m_parseCtrlCharacters: 1
-  m_isOrthographic: 1
-  m_isCullingEnabled: 0
-  m_horizontalMapping: 0
-  m_verticalMapping: 0
-  m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
-  m_IsTextObjectScaleStatic: 0
-  m_VertexBufferAutoSizeReduction: 0
-  m_useMaxVisibleDescender: 1
-  m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
-  m_isUsingLegacyAnimationComponent: 0
-  m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
-  m_baseMaterial: {fileID: 0}
-  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!222 &846425802
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 846425799}
   m_CullTransparentMesh: 1
 --- !u!1 &865471177
 GameObject:
@@ -5036,7 +4898,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  LevelUpAfter: 1
+      - m_Target: {fileID: 2117013002}
+        m_TargetAssemblyTypeName: Assets.Scripts.Bartending.Client, Assembly-CSharp
+        m_MethodName: CheckSecret
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  LevelUpAfter: 0
 --- !u!1 &900365220
 GameObject:
   m_ObjectHideFlags: 0
@@ -5088,8 +4962,10 @@ MonoBehaviour:
   charaterName: 1
   desiredTexture: 3
   desiredTaste: 0
-  minimumProximityLevel: 1
+  minProximityLevel2ShowUp: 0
+  minProximityLevel2Snitch: 4
   responsesParent: {fileID: 1699626400}
+  secretResponse: {fileID: 0}
 --- !u!1 &930371100
 GameObject:
   m_ObjectHideFlags: 0
@@ -6349,6 +6225,7 @@ RectTransform:
   - {fileID: 547205350}
   - {fileID: 517467202}
   - {fileID: 1369378243}
+  - {fileID: 1724071566}
   m_Father: {fileID: 406739435}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -6561,20 +6438,20 @@ MonoBehaviour:
   - text: "<b>Voc\xEA</b>\n\n<i>Droga, deveria ter me esfor\xE7ado mais\u2026</i>"
     typingDelaySpeed: 0.05
     hasBackground: 0
-    characterMood: 1
-    characterKey: 2
+    characterMood: 0
+    characterKey: 3
   - text: "<b>Voc\xEA</b>\n\n<i>Amanh\xE3 vou me empenhar mais!</i>"
     typingDelaySpeed: 0.05
     hasBackground: 0
-    characterMood: 1
-    characterKey: 2
+    characterMood: 0
+    characterKey: 3
   - text: '<b>Narrador</b>
 
 
       <b>A mulher misteriosa sai do bar.</i>'
     typingDelaySpeed: 0.05
     hasBackground: 0
-    characterMood: 0
+    characterMood: 1
     characterKey: 3
   disablesSelfOTF: 1
   hidesImageOnDisable: 0
@@ -6992,8 +6869,10 @@ MonoBehaviour:
   charaterName: 2
   desiredTexture: 1
   desiredTaste: 1
-  minimumProximityLevel: 0
+  minProximityLevel2ShowUp: 0
+  minProximityLevel2Snitch: 4
   responsesParent: {fileID: 440992566}
+  secretResponse: {fileID: 0}
 --- !u!1 &1340986222
 GameObject:
   m_ObjectHideFlags: 0
@@ -7558,8 +7437,10 @@ MonoBehaviour:
   charaterName: 1
   desiredTexture: 2
   desiredTaste: 3
-  minimumProximityLevel: 0
+  minProximityLevel2ShowUp: 0
+  minProximityLevel2Snitch: 4
   responsesParent: {fileID: 760875228}
+  secretResponse: {fileID: 0}
 --- !u!1 &1454055498
 GameObject:
   m_ObjectHideFlags: 0
@@ -7736,6 +7617,11 @@ MonoBehaviour:
     hasBackground: 0
     characterMood: 1
     characterKey: 0
+  - text: "<b>S\xF4nia</b>\n\r\nPode usar esse caldeir\xE3o a\xED mesmo pra misturar."
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 0
   - text: "<b>S\xF4nia</b>\n\r\nO que importa s\xE3o os ingredientes, o sabor e principalmente
       a sensa\xE7\xE3o que oc\xEA quer passar pro seu cliente."
     typingDelaySpeed: 0.05
@@ -7770,6 +7656,12 @@ MonoBehaviour:
   - text: "<b>S\xF4nia</b>\n\r\nToma o seu tempo, se precisar refazer a bebida \xE9
       s\xF3 jogar a antiga na sua plantinha ali do canto, ela com certeza vai aproveitar
       bem. Sem desperd\xEDcio!"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 0
+  - text: "<b>S\xF4nia</b>\n\r\nE pode me entregar por esse sapinho de teletransporte
+      nos balc\xF5es."
     typingDelaySpeed: 0.05
     hasBackground: 0
     characterMood: 1
@@ -7820,7 +7712,7 @@ RectTransform:
   m_GameObject: {fileID: 1461122585}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1000.9083, y: 576.4646, z: 1}
+  m_LocalScale: {x: 26.779999, y: 22.106009, z: 25}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1752605144}
@@ -7828,7 +7720,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -9.837067, y: -5.440979}
-  m_SizeDelta: {x: 1, y: 1}
+  m_SizeDelta: {x: 2047, y: 1445}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!212 &1461122587
 SpriteRenderer:
@@ -7871,8 +7763,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.2754717, g: 0.12975009, b: 0, a: 0.19607843}
+  m_Sprite: {fileID: 21300000, guid: 13ce7a7494c2a8540b5f2503dca2e387, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.5921569}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -8306,8 +8198,8 @@ MonoBehaviour:
     hasBackground: 0
     characterMood: 1
     characterKey: 0
-  - text: "<b>S\xF4nia</b>\n\r\nQuero alguma coisa levinha e aquela <i>Fruta de S\xE1tiro</i>
-      boa ali no balc\xE3o."
+  - text: "<b>S\xF4nia</b>\n\r\nQuero alguma <i>coisa levinha</i> e aquela <i>Fruta
+      de S\xE1tiro</i> boa ali no balc\xE3o."
     typingDelaySpeed: 0.05
     hasBackground: 0
     characterMood: 1
@@ -8726,17 +8618,17 @@ MonoBehaviour:
   - text: "<b>Voc\xEA</b>\n\nDroga, ela j\xE1 se foi\u2026"
     typingDelaySpeed: 0.05
     hasBackground: 0
-    characterMood: 0
+    characterMood: 1
     characterKey: 3
   - text: "<b>Voc\xEA</b>\n\nDroga, deveria ter prestado mais aten\xE7\xE3o\u2026"
     typingDelaySpeed: 0.05
     hasBackground: 0
-    characterMood: 0
+    characterMood: 1
     characterKey: 3
   - text: "<b>Voc\xEA</b>\n\nAmanh\xE3 vou me esfor\xE7ar mais!"
     typingDelaySpeed: 0.05
     hasBackground: 0
-    characterMood: 0
+    characterMood: 1
     characterKey: 3
   disablesSelfOTF: 1
   hidesImageOnDisable: 0
@@ -8988,8 +8880,10 @@ MonoBehaviour:
   charaterName: 2
   desiredTexture: 3
   desiredTaste: 2
-  minimumProximityLevel: 1
+  minProximityLevel2ShowUp: 0
+  minProximityLevel2Snitch: 4
   responsesParent: {fileID: 243212866}
+  secretResponse: {fileID: 0}
 --- !u!1 &1685361560
 GameObject:
   m_ObjectHideFlags: 0
@@ -9292,6 +9186,80 @@ MonoBehaviour:
     hasBackground: 0
     characterMood: 1
     characterKey: 3
+  disablesSelfOTF: 1
+  hidesImageOnDisable: 0
+  OnTextFinished:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 889212163}
+        m_TargetAssemblyTypeName: FinalDrinkPosClean, Assembly-CSharp
+        m_MethodName: CleanChildren
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  LevelUpAfter: 1
+--- !u!1 &1724071565
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1724071566}
+  - component: {fileID: 1724071567}
+  m_Layer: 0
+  m_Name: Dialogo Segredo Sonia (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1724071566
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1724071565}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1240194673}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1724071567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1724071565}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 601a0cea4bd604c46aafe72f6ab33eea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterManager: {fileID: 11400000, guid: a4e284afea3ff1c40a426fc5e4ac6e3a, type: 2}
+  dialogueList:
+  - text: "<b>S\xF4nia</b>\n\r\nVou voltar amanh\xE3 pra ver o quanto oc\xEA aprendeu
+      e beber mais uns gor\xF3, claro."
+    typingDelaySpeed: 0.1
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 0
   disablesSelfOTF: 1
   hidesImageOnDisable: 0
   OnTextFinished:
@@ -9981,13 +9949,6 @@ MonoBehaviour:
     hasBackground: 0
     characterMood: 1
     characterKey: 2
-  - text: "<b>Dama Misteriosa</b>\n\nEu n\xE3o o conhecia muito bem, apenas seu nome
-      e idade. Ele tinha uma vida de sonhos pela frente\u2026 eu nem ao menos acalentar
-      as pessoas que estavam ao redor do meu cliente\u2026"
-    typingDelaySpeed: 0.05
-    hasBackground: 0
-    characterMood: 1
-    characterKey: 2
   - text: "<b>Voc\xEA</b>\n\nCaramba..."
     typingDelaySpeed: 0.05
     hasBackground: 0
@@ -10094,140 +10055,6 @@ MonoBehaviour:
   LevelUpAfter: 0
   orderingCharacter: 2
   orderIndex: 2
---- !u!1 &1789203385
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1789203386}
-  - component: {fileID: 1789203388}
-  - component: {fileID: 1789203387}
-  m_Layer: 5
-  m_Name: Text (TMP)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1789203386
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1789203385}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 184218957}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1789203387
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1789203385}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_text: ^-^
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_fontSharedMaterials: []
-  m_fontMaterial: {fileID: 0}
-  m_fontMaterials: []
-  m_fontColor32:
-    serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
-  m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
-  m_tintAllSprites: 0
-  m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
-  m_overrideHtmlColors: 0
-  m_faceColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontSize: 56
-  m_fontSizeBase: 56
-  m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_HorizontalAlignment: 2
-  m_VerticalAlignment: 512
-  m_textAlignment: 65535
-  m_characterSpacing: 0
-  m_wordSpacing: 0
-  m_lineSpacing: 0
-  m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
-  m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
-  m_linkedTextComponent: {fileID: 0}
-  parentLinkedComponent: {fileID: 0}
-  m_enableKerning: 1
-  m_enableExtraPadding: 0
-  checkPaddingRequired: 0
-  m_isRichText: 1
-  m_parseCtrlCharacters: 1
-  m_isOrthographic: 1
-  m_isCullingEnabled: 0
-  m_horizontalMapping: 0
-  m_verticalMapping: 0
-  m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
-  m_IsTextObjectScaleStatic: 0
-  m_VertexBufferAutoSizeReduction: 0
-  m_useMaxVisibleDescender: 1
-  m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
-  m_isUsingLegacyAnimationComponent: 0
-  m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
-  m_baseMaterial: {fileID: 0}
-  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!222 &1789203388
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1789203385}
-  m_CullTransparentMesh: 1
 --- !u!1 &1792197470
 GameObject:
   m_ObjectHideFlags: 0
@@ -10256,16 +10083,15 @@ RectTransform:
   m_GameObject: {fileID: 1792197470}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 2023969590}
+  m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
   m_Father: {fileID: 43000078}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1156, y: 600}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: 1175, y: 605}
+  m_SizeDelta: {x: 332, y: 332}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1792197472
 MonoBehaviour:
@@ -10367,8 +10193,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 0535b8ed42c0b0b4d825e6980c2cb3ba, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -10699,13 +10525,36 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterManager: {fileID: 11400000, guid: a4e284afea3ff1c40a426fc5e4ac6e3a, type: 2}
   dialogueList:
-  - text: uma porra
-    typingDelaySpeed: 0.1
+  - text: "<b>S\xF4nia</b>\n\r\nNossa! Mas tudo que eu te falei entrou em um ouvido
+      e saiu pelo outro??"
+    typingDelaySpeed: 0.05
     hasBackground: 0
     characterMood: 2
     characterKey: 0
-  - text: nem eu como isso
-    typingDelaySpeed: 0.1
+  - text: "<b>Voc\xEA</b>\n\r\nPoxa, S\xF4nia\u2026"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 2
+    characterKey: 0
+  - text: "<b>Voc\xEA</b>\n\r\nEu to me esfor\xE7ando!! Juro!"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 2
+    characterKey: 0
+  - text: "<b>S\xF4nia</b>\n\r\nNossinhora, imagina se n\xE3o tivesse!"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 2
+    characterKey: 0
+  - text: "<b>S\xF4nia</b>\n\r\nBom, mas to com d\xF3 doc\xEA. Ent\xE3o vou te contar
+      o meu segredo mesmo assim\u2026"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 2
+    characterKey: 0
+  - text: "<b>S\xF4nia</b>\n\r\nBom, mas to com d\xF3 doc\xEA. Ent\xE3o vou te contar
+      o meu segredo mesmo assim\u2026"
+    typingDelaySpeed: 0.05
     hasBackground: 0
     characterMood: 2
     characterKey: 0
@@ -10726,141 +10575,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  LevelUpAfter: 1
---- !u!1 &1885003565
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1885003566}
-  - component: {fileID: 1885003568}
-  - component: {fileID: 1885003567}
-  m_Layer: 5
-  m_Name: Text (TMP)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1885003566
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1885003565}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1920728348}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1885003567
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1885003565}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_text: '*'
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_fontSharedMaterials: []
-  m_fontMaterial: {fileID: 0}
-  m_fontMaterials: []
-  m_fontColor32:
-    serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
-  m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
-  m_tintAllSprites: 0
-  m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
-  m_overrideHtmlColors: 0
-  m_faceColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontSize: 56
-  m_fontSizeBase: 56
-  m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_HorizontalAlignment: 2
-  m_VerticalAlignment: 512
-  m_textAlignment: 65535
-  m_characterSpacing: 0
-  m_wordSpacing: 0
-  m_lineSpacing: 0
-  m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
-  m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
-  m_linkedTextComponent: {fileID: 0}
-  parentLinkedComponent: {fileID: 0}
-  m_enableKerning: 1
-  m_enableExtraPadding: 0
-  checkPaddingRequired: 0
-  m_isRichText: 1
-  m_parseCtrlCharacters: 1
-  m_isOrthographic: 1
-  m_isCullingEnabled: 0
-  m_horizontalMapping: 0
-  m_verticalMapping: 0
-  m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
-  m_IsTextObjectScaleStatic: 0
-  m_VertexBufferAutoSizeReduction: 0
-  m_useMaxVisibleDescender: 1
-  m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
-  m_isUsingLegacyAnimationComponent: 0
-  m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
-  m_baseMaterial: {fileID: 0}
-  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!222 &1885003568
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1885003565}
-  m_CullTransparentMesh: 1
+      - m_Target: {fileID: 2117013002}
+        m_TargetAssemblyTypeName: Assets.Scripts.Bartending.Client, Assembly-CSharp
+        m_MethodName: CheckSecret
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  LevelUpAfter: 0
 --- !u!1 &1906868840
 GameObject:
   m_ObjectHideFlags: 0
@@ -11022,16 +10749,15 @@ RectTransform:
   m_GameObject: {fileID: 1920728347}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1885003566}
+  m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
   m_Father: {fileID: 1386494009}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 856, y: 600}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: 865, y: 605}
+  m_SizeDelta: {x: 340, y: 333}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1920728349
 MonoBehaviour:
@@ -11109,8 +10835,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 26c5c69688839504792c4e14fa653795, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -11228,7 +10954,7 @@ RectTransform:
   m_GameObject: {fileID: 1970947292}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2230, y: 278.43246, z: 1}
+  m_LocalScale: {x: 59.32, y: 10.3928995, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 43000078}
@@ -11236,7 +10962,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -568}
-  m_SizeDelta: {x: 1, y: 1}
+  m_SizeDelta: {x: 2047, y: 1445}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!212 &1970947294
 SpriteRenderer:
@@ -11279,8 +11005,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.2754717, g: 0.12975009, b: 0, a: 0.19607843}
+  m_Sprite: {fileID: 21300000, guid: 13ce7a7494c2a8540b5f2503dca2e387, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.35686275}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -11341,8 +11067,10 @@ MonoBehaviour:
   charaterName: 0
   desiredTexture: 0
   desiredTaste: 1
-  minimumProximityLevel: 0
+  minProximityLevel2ShowUp: 0
+  minProximityLevel2Snitch: 4
   responsesParent: {fileID: 517467201}
+  secretResponse: {fileID: 0}
 --- !u!1 &1990851924
 GameObject:
   m_ObjectHideFlags: 0
@@ -11487,140 +11215,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1 &2023969589
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2023969590}
-  - component: {fileID: 2023969592}
-  - component: {fileID: 2023969591}
-  m_Layer: 5
-  m_Name: Text (TMP)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &2023969590
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2023969589}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1792197471}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &2023969591
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2023969589}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_text: <
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_fontSharedMaterials: []
-  m_fontMaterial: {fileID: 0}
-  m_fontMaterials: []
-  m_fontColor32:
-    serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
-  m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
-  m_tintAllSprites: 0
-  m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
-  m_overrideHtmlColors: 0
-  m_faceColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontSize: 56
-  m_fontSizeBase: 56
-  m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 17
-  m_HorizontalAlignment: 2
-  m_VerticalAlignment: 512
-  m_textAlignment: 65535
-  m_characterSpacing: 0
-  m_wordSpacing: 0
-  m_lineSpacing: 0
-  m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
-  m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
-  m_linkedTextComponent: {fileID: 0}
-  parentLinkedComponent: {fileID: 0}
-  m_enableKerning: 1
-  m_enableExtraPadding: 0
-  checkPaddingRequired: 0
-  m_isRichText: 1
-  m_parseCtrlCharacters: 1
-  m_isOrthographic: 1
-  m_isCullingEnabled: 0
-  m_horizontalMapping: 0
-  m_verticalMapping: 0
-  m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
-  m_IsTextObjectScaleStatic: 0
-  m_VertexBufferAutoSizeReduction: 0
-  m_useMaxVisibleDescender: 1
-  m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
-  m_isUsingLegacyAnimationComponent: 0
-  m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
-  m_baseMaterial: {fileID: 0}
-  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!222 &2023969592
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2023969589}
-  m_CullTransparentMesh: 1
 --- !u!1 &2045458052
 GameObject:
   m_ObjectHideFlags: 0
@@ -11848,8 +11442,10 @@ MonoBehaviour:
   charaterName: 1
   desiredTexture: 1
   desiredTaste: 2
-  minimumProximityLevel: 0
+  minProximityLevel2ShowUp: 0
+  minProximityLevel2Snitch: 4
   responsesParent: {fileID: 114888120}
+  secretResponse: {fileID: 0}
 --- !u!1 &2073956060
 GameObject:
   m_ObjectHideFlags: 0
@@ -12033,16 +11629,15 @@ RectTransform:
   m_GameObject: {fileID: 2081357704}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 846425800}
+  m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
   m_Father: {fileID: 1386494009}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1165, y: 600}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: 1081, y: -72}
+  m_SizeDelta: {x: 332, y: 333}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2081357706
 MonoBehaviour:
@@ -12132,8 +11727,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: db5fba7bf4ffbea4cb6147cd3c31126f, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -12238,8 +11833,10 @@ MonoBehaviour:
   charaterName: 0
   desiredTexture: 0
   desiredTaste: 3
-  minimumProximityLevel: 1
+  minProximityLevel2ShowUp: 0
+  minProximityLevel2Snitch: 4
   responsesParent: {fileID: 1369378242}
+  secretResponse: {fileID: 1724071565}
 --- !u!1 &2118586905
 GameObject:
   m_ObjectHideFlags: 0
