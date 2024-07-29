@@ -24,12 +24,14 @@ namespace Assets.Scripts.Bartending
 
         public void OnPointerExit(PointerEventData eventData)
         {
+            Debug.Log($"Saiu de {gameObject.name}");
             rectTransform.localScale = transformScale;
             textMeshProUGUI.text = "";
         }
 
         public void OnPointerEnter(PointerEventData eventData)
         {
+            Debug.Log($"Entrou de {gameObject.name}");
             rectTransform.localScale = transformScale * 1.1f;
             textMeshProUGUI.text = ingredientDescription;
         }
