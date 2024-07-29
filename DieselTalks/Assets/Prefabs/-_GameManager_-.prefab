@@ -648,7 +648,7 @@ MonoBehaviour:
   drinkDescriptionTMP: {fileID: 2960061642550517196}
   baseSprite: {fileID: 21300000, guid: 135d41a72e6865e4fa1d4a2d0730c0dd, type: 3}
   drinkSprites:
-  - {fileID: 0}
+  - {fileID: 21300000, guid: e5d51ad21a1b90643986b82f1baf81ea, type: 3}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}

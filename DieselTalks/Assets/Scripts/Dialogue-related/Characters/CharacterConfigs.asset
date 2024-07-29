@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characters:
   - characterName: 0
-    characterVoiceAudioClip: {fileID: 8300000, guid: dc43491a690a4214fb7575ae62ece5ae, type: 3}
+    characterVoiceAudioClip: {fileID: 8300000, guid: c0c4ccdd343bf1048a008b36a247d8a2, type: 3}
     voicePitchVariation: 0.095
     characterHappyIMG: {fileID: 21300000, guid: fc82bb5e29c10e84097e415208fa73d7, type: 3}
     characterNeutralIMG: {fileID: 21300000, guid: b520786e3abd1864e905823c7288e9f8, type: 3}
@@ -22,9 +22,9 @@ MonoBehaviour:
   - characterName: 1
     characterVoiceAudioClip: {fileID: 8300000, guid: dc43491a690a4214fb7575ae62ece5ae, type: 3}
     voicePitchVariation: 0.067
-    characterHappyIMG: {fileID: 21300000, guid: c63fd03b2ab9783439d17ac2227c261c, type: 3}
-    characterNeutralIMG: {fileID: 21300000, guid: c63fd03b2ab9783439d17ac2227c261c, type: 3}
-    characterUpsetIMG: {fileID: 21300000, guid: c63fd03b2ab9783439d17ac2227c261c, type: 3}
+    characterHappyIMG: {fileID: 21300000, guid: b0bbf4029ba79f6408a1be4c116bba6b, type: 3}
+    characterNeutralIMG: {fileID: 21300000, guid: 747648aa42059614a82504774958c6dd, type: 3}
+    characterUpsetIMG: {fileID: 21300000, guid: c04db962eb0203c44b6a89e04e69dc38, type: 3}
   - characterName: 2
     characterVoiceAudioClip: {fileID: 8300000, guid: dc43491a690a4214fb7575ae62ece5ae, type: 3}
     voicePitchVariation: 0.067

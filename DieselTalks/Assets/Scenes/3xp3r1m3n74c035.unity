@@ -264,7 +264,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -304,7 +304,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &43000078
 RectTransform:
   m_ObjectHideFlags: 0
@@ -320,8 +320,8 @@ RectTransform:
   - {fileID: 2073956061}
   - {fileID: 729435139}
   - {fileID: 1571366059}
-  - {fileID: 1970947293}
-  - {fileID: 123150707}
+  - {fileID: 1459757156}
+  - {fileID: 54458605}
   - {fileID: 1792197471}
   m_Father: {fileID: 2108346563}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -369,6 +369,82 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &54458604
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 54458605}
+  - component: {fileID: 54458607}
+  - component: {fileID: 54458606}
+  m_Layer: 5
+  m_Name: Image (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &54458605
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 54458604}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 1
+  m_Children:
+  - {fileID: 123150707}
+  m_Father: {fileID: 43000078}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0.998, y: -570}
+  m_SizeDelta: {x: 2259.079, y: 284.45}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &54458606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 54458604}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 13ce7a7494c2a8540b5f2503dca2e387, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &54458607
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 54458604}
+  m_CullTransparentMesh: 1
 --- !u!1 &114142234
 GameObject:
   m_ObjectHideFlags: 0
@@ -399,8 +475,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1540503190}
+  m_Children: []
   m_Father: {fileID: 729435139}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -477,7 +552,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.18039216}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -565,16 +640,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 123150706}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 43000078}
+  m_Father: {fileID: 54458605}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1, y: -550}
+  m_AnchoredPosition: {x: 0.001999855, y: 17}
   m_SizeDelta: {x: 2220.739, y: 257.58}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &123150708
@@ -729,6 +804,96 @@ MonoBehaviour:
   minProximityLevel2Snitch: 4
   responsesParent: {fileID: 1533038491}
   secretResponse: []
+  ultimaFase: 0
+--- !u!1 &155458333
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 155458334}
+  - component: {fileID: 155458335}
+  m_Layer: 0
+  m_Name: Dialogo Segredo Ruim Morte (5)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &155458334
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 155458333}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 406739435}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &155458335
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 155458333}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 601a0cea4bd604c46aafe72f6ab33eea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterManager: {fileID: 11400000, guid: a4e284afea3ff1c40a426fc5e4ac6e3a, type: 2}
+  dialogueList:
+  - text: "<b>Dama Misteriosa</b>\n\r\nPoxa, achei que voc\xEA iria me entregar uma
+      bebida boa.\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 2
+    characterKey: 2
+  - text: "<b>Dama Misteriosa</b>\n\r\nInfelizmente, n\xE3o foi o caso.\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 2
+    characterKey: 2
+  - text: "<b>Voc\xEA</b>\n\r\n...\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 2
+    characterKey: 2
+  - text: "<b>Narrador</b>\n\r\n<b>Ela vaza.</b>\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 3
+  disablesSelfOTF: 1
+  hidesImageOnDisable: 0
+  OnTextFinished:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 889212163}
+        m_TargetAssemblyTypeName: FinalDrinkPosClean, Assembly-CSharp
+        m_MethodName: CleanChildren
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  LevelUpAfter: 1
 --- !u!1 &161654177
 GameObject:
   m_ObjectHideFlags: 0
@@ -927,14 +1092,36 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterManager: {fileID: 11400000, guid: a4e284afea3ff1c40a426fc5e4ac6e3a, type: 2}
   dialogueList:
-  - text: daora
-    typingDelaySpeed: 0.1
+  - text: "<b>S\xF4nia</b>\n\nN\xE3o vou mentir proc\xEA, n\xE3o\u2026 Podia t\xE1
+      mior, viu!"
+    typingDelaySpeed: 0.05
     hasBackground: 0
     characterMood: 1
     characterKey: 0
-  - text: ta faltando cosa
-    typingDelaySpeed: 0.5
-    hasBackground: 1
+  - text: "<b>Voc\xEA</b>\n\nAi, s\xE9rio?"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 0
+  - text: "<b>Voc\xEA</b>\n\nPoxa, eu ainda tenho muito o que melhorar\u2026"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 0
+  - text: "<b>S\xF4nia</b>\n\n\xC9\u2026 mas a vida \xE9 um aprendizado, mocin. A
+      gente sempre tem o que melhorar."
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 0
+  - text: "<b>S\xF4nia</b>\n\nBom, te vejo por a\xED!"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 0
+  - text: "<b>Narrador</b>\n\n<b>S\xF4nia se despede com uma piscadela encorajadora.</b>"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
     characterMood: 1
     characterKey: 0
   disablesSelfOTF: 1
@@ -966,7 +1153,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  LevelUpAfter: 0
+  LevelUpAfter: 1
 --- !u!1 &179746021
 GameObject:
   m_ObjectHideFlags: 0
@@ -1136,7 +1323,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1020, y: 605}
+  m_AnchoredPosition: {x: 1020, y: 630}
   m_SizeDelta: {x: 352, y: 344}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &184218958
@@ -1233,6 +1420,223 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 184218956}
   m_CullTransparentMesh: 1
+--- !u!1 &194007427
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 194007428}
+  - component: {fileID: 194007429}
+  m_Layer: 0
+  m_Name: Dialogo Segredo Medio Draculauro (5)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &194007428
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 194007427}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 406739435}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &194007429
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 194007427}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 601a0cea4bd604c46aafe72f6ab33eea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterManager: {fileID: 11400000, guid: a4e284afea3ff1c40a426fc5e4ac6e3a, type: 2}
+  dialogueList:
+  - text: "<b>Dorian</b>\r\n\nAcho que est\xE1 bom. Mas esperava que a bebida me
+      deixasse mais apaixonado\u2026"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 1
+  - text: "<b>Voc\xEA</b>\r\n\nPoxa\u2026 vou me esfor\xE7ar mais da pr\xF3xima vez."
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 1
+  - text: "<b>Voc\xEA</b>\r\n\nSentimentos podem ser confusos, principalmente quando
+      \xE9 para traduzir em uma bebida."
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 1
+  - text: '<b>Dorian</b>
+
+
+      Eu imagino, querido.'
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 1
+  - text: '<b>Dorian</b>
+
+
+      Mas estou me sentindo um pouco mais animado.'
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 1
+  - text: "<b>Dorian</b>\r\n\nN\xE3o \xE9 o que eu esperava, mas n\xE3o me desagrada."
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 1
+  - text: "<b>Voc\xEA</b>\r\n\nQue bom!!"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 1
+  - text: "<b>Voc\xEA</b>\r\n\nE a\xED, como est\xE1 a sua rela\xE7\xE3o com o seu
+      amigo?"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 1
+  - text: "<b>Narrador</b>\r\n\n<b>Dorian parece um pouco avermelhado quando voc\xEA
+      faz a pergunta. Mas pode ser s\xF3 a luz do ambiente\u2026</b>"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 1
+  - text: '<b>Dorian</b>
+
+
+      Bom...'
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 1
+  - text: "<b>Dorian</b>\r\n\nN\xF3s\u2026 meio que conversamos\u2026"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 1
+  - text: "<b>Dorian</b>\r\n\nE\u2026 aconteceram algumas coisas\u2026"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 1
+  - text: "<b>Voc\xEA</b>\r\n\nEita!!"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 1
+  - text: "<b>Voc\xEA</b>\r\n\nO que aconteceu??"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 1
+  - text: "<b>Voc\xEA</b>\r\n\nSe quiser contar, claro\u2026"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 1
+  - text: "<b>Dorian</b>\r\n\nA conversa foi boa, esclarecemos algumas coisas e\u2026"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 1
+  - text: '<b>Dorian</b>
+
+
+      Acabei me confessando.'
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 1
+  - text: "<b>Dorian</b>\r\n\nHaha, no final\u2026 ele achava que j\xE1 t\xEDnhamos
+      algo\u2026"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 1
+  - text: "<b>Dorian</b>\r\n\nO amor pode ser bem besta, n\xE9?"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 1
+  - text: "<b>Voc\xEA</b>\r\n\nSim! Mas \xE9 bem gostoso amar, n\xE9? \xC9 um sentimento
+      bem leve."
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 1
+  - text: "<b>Dorian</b>\r\n\nAaah, nem me fala!! \xC9 t\xE3o bom n\xE3o viver naquela
+      agonia toda\u2026"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 1
+  - text: "<b>Dorian</b>\r\n\nAgora temos at\xE9 um encontro marcado \xE0 luz das
+      estrelas."
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 1
+  - text: "<b>Dorian</b>\r\n\nInclusive, j\xE1 est\xE1 quase na hora!"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 1
+  - text: "<b>Dorian</b>\r\n\nTenho que ir, querido! At\xE9!"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 1
+  - text: '<b>Narrador</b>
+
+
+      <b>Ele sai muito feliz do bar, realmente o amor
+      muda as pessoas.</b>'
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 3
+  disablesSelfOTF: 1
+  hidesImageOnDisable: 0
+  OnTextFinished:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 889212163}
+        m_TargetAssemblyTypeName: FinalDrinkPosClean, Assembly-CSharp
+        m_MethodName: CleanChildren
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  LevelUpAfter: 1
 --- !u!1 &223035702
 GameObject:
   m_ObjectHideFlags: 0
@@ -1290,7 +1694,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 2a1354bd3429aea46aaa90629891ee57, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8f357861b5d479148b24bab66008bf05, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1650,23 +2054,140 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterManager: {fileID: 11400000, guid: a4e284afea3ff1c40a426fc5e4ac6e3a, type: 2}
   dialogueList:
-  - text: 'IIIIIIIIIIIIIIIIIIAAAAA
+  - text: '<b>Dorian</b>
 
-      ;'
-    typingDelaySpeed: 0.1
+
+      Aaaah, que saboroso!'
+    typingDelaySpeed: 0.05
     hasBackground: 0
     characterMood: 0
     characterKey: 1
-  - text: AAAAAAAAAAA
-    typingDelaySpeed: 0.5
+  - text: "<b>Dorian</b>\r\n\nEstou me sentindo \xF3timo agora! Sabia que podia contar
+      com voc\xEA, querido!"
+    typingDelaySpeed: 0.05
     hasBackground: 0
     characterMood: 0
     characterKey: 1
-  - text: ;)
-    typingDelaySpeed: 0.1
-    hasBackground: 1
+  - text: "<b>Voc\xEA</b>\r\n\nMuito obrigado, Dorian!"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
     characterMood: 0
     characterKey: 1
+  - text: "<b>Voc\xEA</b>\r\n\nE a\xED? O que estamos comemorando?"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 1
+  - text: '<b>Dorian</b>
+
+
+      Estamos comemorando o amor!'
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 1
+  - text: "<b>Dorian</b>\r\n\nTenho boas novas, querido\u2026\r\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 1
+  - text: "<b>Dorian</b>\r\n\nEu e meu amigo conversamos! Isso, tomei coragem e o
+      chamei para conversar.\r\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 1
+  - text: "<b>Voc\xEA</b>\r\n\nOh! Que \xF3timo!"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 1
+  - text: "<b>Voc\xEA</b>\r\n\nFoi boa a conversa?\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 1
+  - text: "<b>Dorian</b>\r\n\nFoi \xF3tima!"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 1
+  - text: "<b>Dorian</b>\r\n\r\nExpliquei para ele as minhas inseguran\xE7as, e como
+      eu estava me sentindo em rela\xE7\xE3o a ele nos \xFAltimos tempos. "
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 1
+  - text: "<b>Dorian</b>\r\n\r\nNo final, ele me disse que achava que j\xE1 t\xEDnhamos
+      um caso!"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 1
+  - text: "<b>Dorian</b>\r\n\r\nEu fiquei embasbacado, sentindo que me passei por
+      bobo\u2026 e bem, isso fere bastante meu ego. "
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 1
+  - text: "<b>Dorian</b>\r\n\r\nMas, quando ele me disse achava que j\xE1 t\xEDnhamos
+      algo\u2026 ah! Eu fiquei muito t\xEDmido! Senti o sangue fluir para minha barriga\u2026
+      acho que \xE9 a sensa\xE7\xE3o que chamam de \u201Cborboletas no est\xF4mago\u201D?"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 1
+  - text: "<b>Dorian</b>\r\n\r\nEu fiquei t\xE3o feliz, que eu n\xE3o me contive!
+      Demos um beijo e\u2026 bem, agora estamos namorando!\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 1
+  - text: "<b>Voc\xEA</b>\r\n\r\nCaramba, Dorian!! \r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 1
+  - text: "<b>Voc\xEA</b>\r\n\r\nFico muito feliz por voc\xEAs! Felicidades ao casal!\r\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 1
+  - text: '<b>Dorian</b>
+
+
+
+      Hahaha! Muito obrigado!'
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 1
+  - text: "<b>Dorian</b>\r\n\r\nInclusive, temos um encontro agora sob a luz do luar\u2026"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 1
+  - text: "<b>Dorian</b>\r\n\r\nPreciso me despedir, querido! Obrigado por hoje!\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 1
+  - text: "<b>Dorian</b>\r\n\r\nAt\xE9 mais!\r\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 1
+  - text: "<b>Voc\xEA</b>\r\n\r\n<i>O amor \xE9 muito bonito mesmo\u2026 e combina
+      com o Dorian!</i>\r.\r\r\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 3
+  - text: "<b>Voc\xEA</b>\r\n\r\n<i>Espero saber mais dele nos pr\xF3ximos dias!</i>\r.\r\r\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 3
   disablesSelfOTF: 1
   hidesImageOnDisable: 0
   OnTextFinished:
@@ -1714,15 +2235,15 @@ RectTransform:
   m_GameObject: {fileID: 334002402}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1046030603}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -840, y: -75}
-  m_SizeDelta: {x: 150, y: 150}
+  m_AnchoredPosition: {x: -840, y: 45}
+  m_SizeDelta: {x: 2048, y: 1448}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &334002404
 MonoBehaviour:
@@ -1778,7 +2299,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 5.979187, y: -126.560196}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -1789,7 +2310,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 315.25208, y: 600.2617}
   m_EdgeRadius: 0
 --- !u!114 &334002406
 MonoBehaviour:
@@ -1804,14 +2325,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.23137255, g: 0.23137255, b: 0.23137255, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 050a9481745633941bf85ad5504b6704, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1935,7 +2456,13 @@ RectTransform:
   m_Children:
   - {fileID: 1240194673}
   - {fileID: 1386210341}
+  - {fileID: 2122188159}
+  - {fileID: 194007428}
+  - {fileID: 793843766}
   - {fileID: 507710686}
+  - {fileID: 155458334}
+  - {fileID: 1646915761}
+  - {fileID: 1222805840}
   m_Father: {fileID: 1685361561}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -1943,6 +2470,81 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &419179540
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 419179541}
+  - component: {fileID: 419179543}
+  - component: {fileID: 419179542}
+  m_Layer: 5
+  m_Name: Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &419179541
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 419179540}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 1065212419}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 456.58298, y: 145.38}
+  m_SizeDelta: {x: 1008.8, y: 591.75}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &419179542
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 419179540}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 13ce7a7494c2a8540b5f2503dca2e387, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &419179543
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 419179540}
+  m_CullTransparentMesh: 1
 --- !u!1 &440992566
 GameObject:
   m_ObjectHideFlags: 0
@@ -2451,8 +3053,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1201398451}
+  m_Children: []
   m_Father: {fileID: 1842531950}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -2529,7 +3130,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 1, b: 0.0408051, a: 0.1764706}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2659,15 +3260,15 @@ RectTransform:
   m_GameObject: {fileID: 543187918}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 51049761}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1080, y: -75}
-  m_SizeDelta: {x: 150, y: 150}
+  m_AnchoredPosition: {x: 1080, y: 22}
+  m_SizeDelta: {x: 2048, y: 1448}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &543187920
 MonoBehaviour:
@@ -2721,7 +3322,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -13.078033, y: -144.94623}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -2732,7 +3333,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 278.73035, y: 429.12592}
   m_EdgeRadius: 0
 --- !u!114 &543187922
 MonoBehaviour:
@@ -2754,7 +3355,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: dced3aebba18d064bb941fe6335259ec, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3183,15 +3784,15 @@ RectTransform:
   m_GameObject: {fileID: 623350405}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1046030603}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -600, y: -75}
-  m_SizeDelta: {x: 150, y: 150}
+  m_AnchoredPosition: {x: -600, y: 48}
+  m_SizeDelta: {x: 2048, y: 1448}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &623350407
 MonoBehaviour:
@@ -3247,7 +3848,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 4.982712, y: -230.20009}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -3258,7 +3859,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 297.31436, y: 416.89883}
   m_EdgeRadius: 0
 --- !u!114 &623350409
 MonoBehaviour:
@@ -3273,14 +3874,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.83137256, g: 0.83137256, b: 0.83137256, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 92a50f28609f4b04e9e2cf26132b372f, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3298,6 +3899,254 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 623350405}
   m_CullTransparentMesh: 1
+--- !u!1 &697145976
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 697145977}
+  - component: {fileID: 697145978}
+  m_Layer: 0
+  m_Name: Dialogo Segredo Bom Sonia (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &697145977
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 697145976}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1240194673}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &697145978
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 697145976}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 601a0cea4bd604c46aafe72f6ab33eea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterManager: {fileID: 11400000, guid: a4e284afea3ff1c40a426fc5e4ac6e3a, type: 2}
+  dialogueList:
+  - text: "<b>S\xF4nia</b> \r\n\nEtaaaaaa, que trem gostoso!!"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 0
+  - text: "<b>S\xF4nia</b> \r\n\nCaramba, mocin. Voc\xEA t\xE1 miorando cada dia
+      mais, parab\xE9ns proc\xEA!"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 0
+  - text: "<b>Voc\xEA</b> \r\n\n<i>Ai!! Que bom que ela gostou!</i>"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 0
+  - text: "<b>Voc\xEA</b> \r\n\nMuito obrigado S\xF4nia! Te devo muito!"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 0
+  - text: "<b>Voc\xEA</b> \r\n\nSem voc\xEA, talvez eu n\xE3o tivesse conseguido
+      algumas coisas."
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 0
+  - text: "<b>S\xF4nia</b> \r\n\nHehe, que bom oc\xEA reconhece meus dotes culin\xE1rios!"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 0
+  - text: "<b>S\xF4nia</b> \r\n\nVamo l\xE1, hoje oc\xEA descobre meu segredo."
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 0
+  - text: "<b>S\xF4nia</b> \r\n\nEnt\xE3o\u2026 \xE9 bem mais besta do que voc\xEA
+      acha."
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 0
+  - text: "<b>S\xF4nia</b> \r\n\nNa verdade, eu sempre quis abrir um bar\u2026"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 0
+  - text: "<b>S\xF4nia</b> \r\n\nMas n\xE3o consegui.. na verdade, n\xE3o deu tempo.
+      Acabei tendo que servir nosso reino na guerra, e foi bem quando eu tava juntando
+      as minhas economias pra comprar um barzin de esquina.\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 2
+    characterKey: 0
+  - text: "<b>S\xF4nia</b> \r\n\nEnfim, agora esse sonho ficou no passado.\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 0
+  - text: "<b>Voc\xEA</b> \r\n\nMas, S\xF4nia, ainda d\xE1 tempo de voc\xEA realizar
+      esse sonho!\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 0
+  - text: "<b>Voc\xEA</b> \r\n\nImagino que a guerra tenha sido bem traum\xE1tica,
+      por\xE9m desistir do seu sonho por conta disso\u2026 \xE9 bobeira!\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 0
+  - text: "<b>Voc\xEA</b> \r\n\nSe a vida n\xE3o \xE9 sobre realizar sonhos, ent\xE3o\u2026
+      para que viver?\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 0
+  - text: "<b>S\xF4nia</b> \r\n\nAaah, mocin\u2026 oc\xEA \xE9 muito novinho ainda\u2026\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 0
+  - text: "<b>S\xF4nia</b> \r\n\n\xC9 bom ver o brilho nos seus olhos falando isso\u2026\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 0
+  - text: "<b>S\xF4nia</b> \r\n\nMas, talvez\u2026 s\xF3 talvez\u2026 eu deveria
+      te escutar.\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 0
+  - text: "<b>S\xF4nia</b> \r\n\nHaha! Oc\xEA \xE9 bem ligeiro memo!\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 0
+  - text: "<b>S\xF4nia</b> \r\n\nJ\xE1 pensou, se eu abro um bar e viro sua concorr\xEAncia?\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 0
+  - text: "<b>Voc\xEA</b> \r\n\nHahahaha, seria uma honra!!\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 0
+  - text: "<b>Voc\xEA</b> \r\n\n\xC9 o pupilo contra o mestre!\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 0
+  - text: "<b>Voc\xEA</b> \r\n\n<i>\u2026Ser\xE1 que eu conseguiria superar a S\xF4nia?</i>\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 0
+  - text: "<b>Voc\xEA</b> \r\n\n<i>Agora fiquei com medo\u2026</i>\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 0
+  - text: "<b>S\xF4nia</b> \r\n\nHahaha!\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 0
+  - text: "<b>S\xF4nia</b> \r\n\nOc\xEA n\xE3o perde por esperar, mocin!\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 0
+  - text: "<b>S\xF4nia</b> \r\n\nAgora tenho que ir, muito obrigada pelos seus conselhos!\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 0
+  - text: "<b>S\xF4nia</b> \r\n\nInt\xE9!\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 0
+  - text: "<b>Voc\xEA</b> \r\n\n<i>Fico realmente feliz de ajudar a S\xF4nia! Ela
+      me ajudou bastante nesses \xFAltimos tr\xEAs dias.</i>\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 3
+  - text: "<b>Voc\xEA</b> \r\n\nMas\u2026 ser\xE1 que eu deveria me preocupar com
+      uma concorr\xEAncia?\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 3
+  - text: "<b>Voc\xEA</b> \r\n\nEu poderia ter chamado ela para o Mystic Flavor\u2026
+      mas a\xED n\xE3o seria a realiza\xE7\xE3o do sonho dela!\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 3
+  - text: "<b>Voc\xEA</b> \r\n\nBom, eu que lute!! O que importa \xE9 ver a S\xF4nia
+      feliz!\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 3
+  disablesSelfOTF: 1
+  hidesImageOnDisable: 0
+  OnTextFinished:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 889212163}
+        m_TargetAssemblyTypeName: FinalDrinkPosClean, Assembly-CSharp
+        m_MethodName: CleanChildren
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2117013002}
+        m_TargetAssemblyTypeName: Assets.Scripts.Bartending.Client, Assembly-CSharp
+        m_MethodName: CheckSecret
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  LevelUpAfter: 1
 --- !u!1 &705864084
 GameObject:
   m_ObjectHideFlags: 0
@@ -3708,21 +4557,38 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterManager: {fileID: 11400000, guid: a4e284afea3ff1c40a426fc5e4ac6e3a, type: 2}
   dialogueList:
-  - text: gosto.d.alio
-    typingDelaySpeed: 0.1
+  - text: "<b>Dorian</b>\n\r\nIsso \xE9 pra me deixar apaixonado ou enojado?"
+    typingDelaySpeed: 0.05
     hasBackground: 0
     characterMood: 2
     characterKey: 1
-  - text: eu vou litealmente morrer agroa
-    typingDelaySpeed: 0.1
+  - text: "<b>Dorian</b>\n\r\nEstou bem triste com voc\xEA, querido. Achei que hoje
+      seria um \xF3timo dia para comemorar aqui com voc\xEA\u2026"
+    typingDelaySpeed: 0.05
     hasBackground: 0
     characterMood: 2
     characterKey: 1
-  - text: eba
-    typingDelaySpeed: 0.1
+  - text: "<b>Voc\xEA</b>\n\r\nAaah, Dorian.. Desculpa!! Acho que fiquei ansioso
+      demais\u2026"
+    typingDelaySpeed: 0.05
     hasBackground: 0
-    characterMood: 0
+    characterMood: 2
     characterKey: 1
+  - text: "<b>Dorian</b>\n\r\nInfelizmente esse foi a gota de sangue! N\xE3o acho
+      que vou querer voltar aqui depois dessa bebida."
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 2
+    characterKey: 1
+  - text: '<b>Narrador</b>
+
+
+
+      <b>O vampiro sai do estabelecimento aborrecido.</b>'
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 2
+    characterKey: 3
   disablesSelfOTF: 1
   hidesImageOnDisable: 0
   OnTextFinished:
@@ -3903,6 +4769,7 @@ MonoBehaviour:
   minProximityLevel2Snitch: 4
   responsesParent: {fileID: 1818456083}
   secretResponse: []
+  ultimaFase: 0
 --- !u!1 &760875228
 GameObject:
   m_ObjectHideFlags: 0
@@ -3970,15 +4837,15 @@ RectTransform:
   m_GameObject: {fileID: 765802595}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 51049761}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 360, y: -75}
-  m_SizeDelta: {x: 150, y: 150}
+  m_AnchoredPosition: {x: 360, y: 17}
+  m_SizeDelta: {x: 2048, y: 1448}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &765802597
 MonoBehaviour:
@@ -4033,7 +4900,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -33.222107, y: -97.59015}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -4044,7 +4911,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 432.22174, y: 569.2633}
   m_EdgeRadius: 0
 --- !u!114 &765802599
 MonoBehaviour:
@@ -4059,14 +4926,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.39607844, g: 0.77254903, b: 0.41568628, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: b00d8144e642ad044a7f7780d99f4ee2, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4084,6 +4951,208 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 765802595}
   m_CullTransparentMesh: 1
+--- !u!1 &793843765
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 793843766}
+  - component: {fileID: 793843767}
+  m_Layer: 0
+  m_Name: Dialogo Segredo Bom Draculauro (6)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &793843766
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 793843765}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 406739435}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &793843767
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 793843765}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 601a0cea4bd604c46aafe72f6ab33eea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterManager: {fileID: 11400000, guid: a4e284afea3ff1c40a426fc5e4ac6e3a, type: 2}
+  dialogueList:
+  - text: '<b>Dorian</b>
+
+
+      Aaaah, que saboroso!'
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 1
+  - text: "<b>Dorian</b>\r\n\nEstou me sentindo \xF3timo agora! Sabia que podia contar
+      com voc\xEA, querido!"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 1
+  - text: "<b>Voc\xEA</b>\r\n\nMuito obrigado, Dorian!"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 1
+  - text: "<b>Voc\xEA</b>\r\n\nE a\xED? O que estamos comemorando?"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 1
+  - text: '<b>Dorian</b>
+
+
+      Estamos comemorando o amor!'
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 1
+  - text: "<b>Dorian</b>\r\n\nTenho boas novas, querido\u2026\r\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 1
+  - text: "<b>Dorian</b>\r\n\nEu e meu amigo conversamos! Isso, tomei coragem e o
+      chamei para conversar.\r\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 1
+  - text: "<b>Voc\xEA</b>\r\n\nOh! Que \xF3timo!"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 1
+  - text: "<b>Voc\xEA</b>\r\n\nFoi boa a conversa?\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 1
+  - text: "<b>Dorian</b>\r\n\nFoi \xF3tima!"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 1
+  - text: "<b>Dorian</b>\r\n\r\nExpliquei para ele as minhas inseguran\xE7as, e como
+      eu estava me sentindo em rela\xE7\xE3o a ele nos \xFAltimos tempos. "
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 1
+  - text: "<b>Dorian</b>\r\n\r\nNo final, ele me disse que achava que j\xE1 t\xEDnhamos
+      um caso!"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 1
+  - text: "<b>Dorian</b>\r\n\r\nEu fiquei embasbacado, sentindo que me passei por
+      bobo\u2026 e bem, isso fere bastante meu ego. "
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 1
+  - text: "<b>Dorian</b>\r\n\r\nMas, quando ele me disse achava que j\xE1 t\xEDnhamos
+      algo\u2026 ah! Eu fiquei muito t\xEDmido! Senti o sangue fluir para minha barriga\u2026
+      acho que \xE9 a sensa\xE7\xE3o que chamam de \u201Cborboletas no est\xF4mago\u201D?"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 1
+  - text: "<b>Dorian</b>\r\n\r\nEu fiquei t\xE3o feliz, que eu n\xE3o me contive!
+      Demos um beijo e\u2026 bem, agora estamos namorando!\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 1
+  - text: "<b>Voc\xEA</b>\r\n\r\nCaramba, Dorian!! \r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 1
+  - text: "<b>Voc\xEA</b>\r\n\r\nFico muito feliz por voc\xEAs! Felicidades ao casal!\r\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 1
+  - text: '<b>Dorian</b>
+
+
+
+      Hahaha! Muito obrigado!'
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 1
+  - text: "<b>Dorian</b>\r\n\r\nInclusive, temos um encontro agora sob a luz do luar\u2026"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 1
+  - text: "<b>Dorian</b>\r\n\r\nPreciso me despedir, querido! Obrigado por hoje!\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 1
+  - text: "<b>Dorian</b>\r\n\r\nAt\xE9 mais!\r\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 1
+  - text: "<b>Voc\xEA</b>\r\n\r\n<i>O amor \xE9 muito bonito mesmo\u2026 e combina
+      com o Dorian!</i>\r.\r\r\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 3
+  - text: "<b>Voc\xEA</b>\r\n\r\n<i>Espero saber mais dele nos pr\xF3ximos dias!</i>\r.\r\r\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 3
+  disablesSelfOTF: 1
+  hidesImageOnDisable: 0
+  OnTextFinished:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 889212163}
+        m_TargetAssemblyTypeName: FinalDrinkPosClean, Assembly-CSharp
+        m_MethodName: CleanChildren
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  LevelUpAfter: 1
 --- !u!1 &823766470
 GameObject:
   m_ObjectHideFlags: 0
@@ -4134,21 +5203,71 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterManager: {fileID: 11400000, guid: a4e284afea3ff1c40a426fc5e4ac6e3a, type: 2}
   dialogueList:
-  - text: <i>eu adoro comer gesso</i>
-    typingDelaySpeed: 0.1
+  - text: "<b>Dorian</b>\r\n\nAcho que est\xE1 bom. Mas esperava que a bebida me
+      deixasse mais apaixonado\u2026"
+    typingDelaySpeed: 0.05
     hasBackground: 0
     characterMood: 1
     characterKey: 1
-  - text: <b>eu vou comer gesso</b>
-    typingDelaySpeed: 0.5
-    hasBackground: 1
+  - text: "<b>Voc\xEA</b>\r\n\nPoxa\u2026 vou me esfor\xE7ar mais da pr\xF3xima vez."
+    typingDelaySpeed: 0.05
+    hasBackground: 0
     characterMood: 1
     characterKey: 1
-  - text: ;)
-    typingDelaySpeed: 0.1
-    hasBackground: 1
+  - text: "<b>Voc\xEA</b>\r\n\nSentimentos podem ser confusos, principalmente quando
+      \xE9 para traduzir em uma bebida."
+    typingDelaySpeed: 0.05
+    hasBackground: 0
     characterMood: 1
     characterKey: 1
+  - text: '<b>Dorian</b>
+
+
+      Eu imagino, querido.'
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 1
+  - text: '<b>Dorian</b>
+
+
+      Mas estou me sentindo um pouco mais animado.'
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 1
+  - text: "<b>Dorian</b>\r\n\nN\xE3o \xE9 o que eu esperava, mas n\xE3o me desagrada."
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 1
+  - text: "<b>Voc\xEA</b>\r\n\nQue bom!!"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 1
+  - text: "<b>Dorian</b>\r\n\nAaah, querido\u2026"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 1
+  - text: "<b>Dorian</b>\r\n\nAt\xE9 queria poder ficar mais tempo com voc\xEA, mas
+      tenho um compromisso importante agora a noite."
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 1
+  - text: "<b>Dorian</b>\r\n\nPreciso ir. At\xE9!"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 1
+  - text: "<b>Voc\xEA</b>\r\n\n<i>O Dorian parecia bem feliz\u2026 espero que as
+      coisas estejam dando certo para ele!!</i>"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 3
   disablesSelfOTF: 1
   hidesImageOnDisable: 0
   OnTextFinished:
@@ -4494,15 +5613,15 @@ RectTransform:
   m_GameObject: {fileID: 865617279}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 51049761}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 840, y: -75}
-  m_SizeDelta: {x: 150, y: 150}
+  m_AnchoredPosition: {x: 840, y: 11}
+  m_SizeDelta: {x: 2048, y: 1448}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &865617281
 MonoBehaviour:
@@ -4556,7 +5675,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -2.0763855, y: -147.42339}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -4567,7 +5686,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 361.62445, y: 394.8467}
   m_EdgeRadius: 0
 --- !u!114 &865617283
 MonoBehaviour:
@@ -4582,14 +5701,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.5372549, g: 0, b: 0.5058824, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: f12fb9f30b1471044a5fb96774d9365e, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4864,23 +5983,174 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterManager: {fileID: 11400000, guid: a4e284afea3ff1c40a426fc5e4ac6e3a, type: 2}
   dialogueList:
-  - text: 'IIIIIIIIIIIIIIIIIIAAAAA
-
-      ;'
-    typingDelaySpeed: 0.1
+  - text: "<b>S\xF4nia</b> \r\n\nEtaaaaaa, que trem gostoso!!"
+    typingDelaySpeed: 0.05
     hasBackground: 0
     characterMood: 0
     characterKey: 0
-  - text: AAAAAAAAAAA
-    typingDelaySpeed: 0.5
+  - text: "<b>S\xF4nia</b> \r\n\nCaramba, mocin. Voc\xEA t\xE1 miorando cada dia
+      mais, parab\xE9ns proc\xEA!"
+    typingDelaySpeed: 0.05
     hasBackground: 0
     characterMood: 0
     characterKey: 0
-  - text: ;)
-    typingDelaySpeed: 0.1
-    hasBackground: 1
+  - text: "<b>Voc\xEA</b> \r\n\n<i>Ai!! Que bom que ela gostou!</i>"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
     characterMood: 0
     characterKey: 0
+  - text: "<b>Voc\xEA</b> \r\n\nMuito obrigado S\xF4nia! Te devo muito!"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 0
+  - text: "<b>Voc\xEA</b> \r\n\nSem voc\xEA, talvez eu n\xE3o tivesse conseguido
+      algumas coisas."
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 0
+  - text: "<b>S\xF4nia</b> \r\n\nHehe, que bom oc\xEA reconhece meus dotes culin\xE1rios!"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 0
+  - text: "<b>S\xF4nia</b> \r\n\nVamo l\xE1, hoje oc\xEA descobre meu segredo."
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 0
+  - text: "<b>S\xF4nia</b> \r\n\nEnt\xE3o\u2026 \xE9 bem mais besta do que voc\xEA
+      acha."
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 0
+  - text: "<b>S\xF4nia</b> \r\n\nNa verdade, eu sempre quis abrir um bar\u2026"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 0
+  - text: "<b>S\xF4nia</b> \r\n\nMas n\xE3o consegui.. na verdade, n\xE3o deu tempo.
+      Acabei tendo que servir nosso reino na guerra, e foi bem quando eu tava juntando
+      as minhas economias pra comprar um barzin de esquina.\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 2
+    characterKey: 0
+  - text: "<b>S\xF4nia</b> \r\n\nEnfim, agora esse sonho ficou no passado.\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 0
+  - text: "<b>Voc\xEA</b> \r\n\nMas, S\xF4nia, ainda d\xE1 tempo de voc\xEA realizar
+      esse sonho!\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 0
+  - text: "<b>Voc\xEA</b> \r\n\nImagino que a guerra tenha sido bem traum\xE1tica,
+      por\xE9m desistir do seu sonho por conta disso\u2026 \xE9 bobeira!\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 0
+  - text: "<b>Voc\xEA</b> \r\n\nSe a vida n\xE3o \xE9 sobre realizar sonhos, ent\xE3o\u2026
+      para que viver?\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 0
+  - text: "<b>S\xF4nia</b> \r\n\nAaah, mocin\u2026 oc\xEA \xE9 muito novinho ainda\u2026\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 0
+  - text: "<b>S\xF4nia</b> \r\n\n\xC9 bom ver o brilho nos seus olhos falando isso\u2026\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 0
+  - text: "<b>S\xF4nia</b> \r\n\nMas, talvez\u2026 s\xF3 talvez\u2026 eu deveria
+      te escutar.\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 0
+  - text: "<b>S\xF4nia</b> \r\n\nHaha! Oc\xEA \xE9 bem ligeiro memo!\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 0
+  - text: "<b>S\xF4nia</b> \r\n\nJ\xE1 pensou, se eu abro um bar e viro sua concorr\xEAncia?\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 0
+  - text: "<b>Voc\xEA</b> \r\n\nHahahaha, seria uma honra!!\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 0
+  - text: "<b>Voc\xEA</b> \r\n\n\xC9 o pupilo contra o mestre!\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 0
+  - text: "<b>Voc\xEA</b> \r\n\n<i>\u2026Ser\xE1 que eu conseguiria superar a S\xF4nia?</i>\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 0
+  - text: "<b>Voc\xEA</b> \r\n\n<i>Agora fiquei com medo\u2026</i>\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 0
+  - text: "<b>S\xF4nia</b> \r\n\nHahaha!\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 0
+  - text: "<b>S\xF4nia</b> \r\n\nOc\xEA n\xE3o perde por esperar, mocin!\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 0
+  - text: "<b>S\xF4nia</b> \r\n\nAgora tenho que ir, muito obrigada pelos seus conselhos!\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 0
+  - text: "<b>S\xF4nia</b> \r\n\nInt\xE9!\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 0
+  - text: "<b>Voc\xEA</b> \r\n\n<i>Fico realmente feliz de ajudar a S\xF4nia! Ela
+      me ajudou bastante nesses \xFAltimos tr\xEAs dias.</i>\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 3
+  - text: "<b>Voc\xEA</b> \r\n\nMas\u2026 ser\xE1 que eu deveria me preocupar com
+      uma concorr\xEAncia?\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 3
+  - text: "<b>Voc\xEA</b> \r\n\nEu poderia ter chamado ela para o Mystic Flavor\u2026
+      mas a\xED n\xE3o seria a realiza\xE7\xE3o do sonho dela!\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 3
+  - text: "<b>Voc\xEA</b> \r\n\nBom, eu que lute!! O que importa \xE9 ver a S\xF4nia
+      feliz!\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 3
   disablesSelfOTF: 1
   hidesImageOnDisable: 0
   OnTextFinished:
@@ -4910,7 +6180,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  LevelUpAfter: 0
+  LevelUpAfter: 1
 --- !u!1 &900365220
 GameObject:
   m_ObjectHideFlags: 0
@@ -4966,9 +6236,10 @@ MonoBehaviour:
   minProximityLevel2Snitch: 4
   responsesParent: {fileID: 1699626400}
   secretResponse:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 2122188158}
+  - {fileID: 194007427}
+  - {fileID: 793843765}
+  ultimaFase: 1
 --- !u!1 &930371100
 GameObject:
   m_ObjectHideFlags: 0
@@ -4999,8 +6270,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1240800308}
+  m_Children: []
   m_Father: {fileID: 1842531950}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -5077,7 +6347,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0, b: 0, a: 0.18039216}
+  m_Color: {r: 1, g: 0, b: 0, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -5176,6 +6446,81 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &947571902
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 947571903}
+  - component: {fileID: 947571905}
+  - component: {fileID: 947571904}
+  m_Layer: 5
+  m_Name: Fundo Botao
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &947571903
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 947571902}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 1065212419}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 946, y: 647}
+  m_SizeDelta: {x: 1740, y: 856}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &947571904
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 947571902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: ba506dd9325b21a488ab6ed22e4500ee, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &947571905
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 947571902}
+  m_CullTransparentMesh: 1
 --- !u!1 &980598201
 GameObject:
   m_ObjectHideFlags: 0
@@ -5436,6 +6781,8 @@ RectTransform:
   m_Children:
   - {fileID: 223035703}
   - {fileID: 2122881494}
+  - {fileID: 947571903}
+  - {fileID: 419179541}
   - {fileID: 1752605144}
   - {fileID: 555466389}
   - {fileID: 1279947801}
@@ -5714,6 +7061,240 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!1 &1127908276
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1127908277}
+  - component: {fileID: 1127908278}
+  m_Layer: 0
+  m_Name: Dialogo Segredo Medio Sonia (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1127908277
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1127908276}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1240194673}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1127908278
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1127908276}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 601a0cea4bd604c46aafe72f6ab33eea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterManager: {fileID: 11400000, guid: a4e284afea3ff1c40a426fc5e4ac6e3a, type: 2}
+  dialogueList:
+  - text: "<b>S\xF4nia</b>\n\nN\xE3o vou mentir proc\xEA, n\xE3o\u2026 Podia t\xE1
+      mior, viu!"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 0
+  - text: "<b>Voc\xEA</b>\n\nAi, s\xE9rio?"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 0
+  - text: "<b>Voc\xEA</b>\n\nPoxa, eu ainda tenho muito o que melhorar\u2026"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 0
+  - text: "<b>S\xF4nia</b>\n\n\xC9\u2026 mas a vida \xE9 um aprendizado, mocin. A
+      gente sempre tem o que melhorar."
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 0
+  - text: "<b>S\xF4nia</b>\n\nMas num se esquenta n\xE3o! Vou te contar meu segredo,
+      acho que oc\xEA t\xE1 merecendo!"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 0
+  - text: "<b>S\xF4nia</b>\n\nEnt\xE3o\u2026 \xE9 bem mais besta do que voc\xEA acha."
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 0
+  - text: "<b>S\xF4nia</b>\n\nNa verdade, eu sempre quis abrir um bar\u2026"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 0
+  - text: "<b>S\xF4nia</b>\n\nMas n\xE3o consegui.. na verdade, n\xE3o deu tempo.
+      Acabei tendo que servir nosso pa\xEDs na guerra, e foi bem quando eu tava juntando
+      as minhas economias pra comprar um barzin de esquina."
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 2
+    characterKey: 0
+  - text: "<b>S\xF4nia</b>\n\nEnfim, agora esse sonho ficou no passado."
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 0
+  - text: "<b>Voc\xEA</b> \r\n\nMas, S\xF4nia, ainda d\xE1 tempo de voc\xEA realizar
+      esse sonho!\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 0
+  - text: "<b>Voc\xEA</b> \r\n\nImagino que a guerra tenha sido bem traum\xE1tica,
+      por\xE9m desistir do seu sonho por conta disso\u2026 \xE9 bobeira!\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 0
+  - text: "<b>Voc\xEA</b> \r\n\nSe a vida n\xE3o \xE9 sobre realizar sonhos, ent\xE3o\u2026
+      para que viver?\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 0
+  - text: "<b>S\xF4nia</b> \r\n\nAaah, mocin\u2026 oc\xEA \xE9 muito novinho ainda\u2026\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 0
+  - text: "<b>S\xF4nia</b> \r\n\n\xC9 bom ver o brilho nos seus olhos falando isso\u2026\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 0
+  - text: "<b>S\xF4nia</b> \r\n\nMas, talvez\u2026 s\xF3 talvez\u2026 eu deveria
+      te escutar.\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 0
+  - text: "<b>S\xF4nia</b> \r\n\nHaha! Oc\xEA \xE9 bem ligeiro memo! E se abrir um
+      bar e virar suas concorr\xEAncia?\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 0
+  - text: "<b>Voc\xEA</b> \r\n\nHahahaha, seria uma honra!!\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 0
+  - text: "<b>Voc\xEA</b> \r\n\n\xC9 o pupilo contra o mestre!\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 0
+  - text: "<b>Voc\xEA</b> \r\n\n<i>\u2026Ser\xE1 que eu conseguiria superar a S\xF4nia?</i>\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 0
+  - text: "<b>Voc\xEA</b> \r\n\n<i>Agora fiquei com medo\u2026</i>\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 0
+  - text: "<b>S\xF4nia</b> \r\n\nHahaha!\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 0
+  - text: "<b>S\xF4nia</b> \r\n\nOc\xEA n\xE3o perde por espera, mocin!\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 0
+  - text: "<b>S\xF4nia</b> \r\n\nAgora tenho que ir, muito obrigada pelos seus conselhos!\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 0
+  - text: "<b>S\xF4nia</b> \r\n\nInt\xE9!\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 0
+  - text: "<b>Voc\xEA</b> \r\n\n<i>Fico realmente feliz de ajudar a S\xF4nia! Ela
+      me ajudou bastante nesses \xFAltimos tr\xEAs dias. </i>\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 3
+  - text: "<b>Voc\xEA</b> \r\n\nMas\u2026 ser\xE1 que eu deveria me preocupar com
+      uma concorr\xEAncia?\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 3
+  - text: "<b>Voc\xEA</b> \r\n\nEu poderia ter chamado ela para o Mystic Flavor\u2026
+      mas a\xED n\xE3o seria a realiza\xE7\xE3o do sonho dela!\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 3
+  - text: "<b>Voc\xEA</b> \r\n\nBom, eu que lute!! O que importa \xE9 ver a S\xF4nia
+      feliz!\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 3
+  disablesSelfOTF: 1
+  hidesImageOnDisable: 0
+  OnTextFinished:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 889212163}
+        m_TargetAssemblyTypeName: FinalDrinkPosClean, Assembly-CSharp
+        m_MethodName: CleanChildren
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2117013002}
+        m_TargetAssemblyTypeName: Assets.Scripts.Bartending.Client, Assembly-CSharp
+        m_MethodName: CheckSecret
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  LevelUpAfter: 1
 --- !u!1 &1137940307
 GameObject:
   m_ObjectHideFlags: 0
@@ -5764,12 +7345,112 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterManager: {fileID: 11400000, guid: a4e284afea3ff1c40a426fc5e4ac6e3a, type: 2}
   dialogueList:
-  - text: "Dama misteriosa</b>\n\r\nVoc\xEA fez uma bebida e tanto! Essa ficou bem
-      gostosa, talvez mais que as outras dos dias anteriores!\r"
+  - text: "<b>Dama Misteriosa</b>\n\r\nVoc\xEA fez uma bebida e tanto! Essa ficou
+      bem gostosa, talvez mais que as outras dos dias anteriores!\r"
     typingDelaySpeed: 0.05
     hasBackground: 0
     characterMood: 0
     characterKey: 2
+  - text: "<b>Dama Misteriosa</b>\n\r\nJ\xE1 estou at\xE9 me sentindo mais leve!
+      Hahahaha!\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 2
+  - text: "<b>Voc\xEA</b>\n\r\nSim! O Bobo da Corte d\xE1 esse efeito \xE0s vezes\u2026\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 2
+  - text: "<b>Dama Misteriosa</b>\n\r\nHahahahahahahah.\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 2
+  - text: "<b>Dama Misteriosa</b>\n\r\nAHAHAHHAHAHAHAHAHAH!\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 2
+  - text: "<b>Dama Misteriosa</b>\n\r\nHAHAHAHAHAHAHHAHAHAHAHAHAH!!!\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 2
+  - text: "<b>Voc\xEA</b>\n\r\n... desculpa?\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 2
+  - text: "<b>Voc\xEA</b>\n\r\nEu fiz algo engra\xE7ado?\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 2
+  - text: "<b>Dama Misteriosa</b>\n\r\nHahahahaha!!! \xC9 que\u2026 aiaiai\u2026\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 2
+  - text: "<b>Dama Misteriosa</b>\n\r\nVoc\xEA falou de um jeito muito engra\xE7ado!!
+      Hahahahahah\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 2
+  - text: "<b>Voc\xEA</b>\n\r\nAh...\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 2
+  - text: "<b>Voc\xEA</b>\n\r\nHahahaha\u2026\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 2
+  - text: "<b>Voc\xEA</b>\n\r\n\xC9\u2026 acho que exagerei um pouco no p\xF3 de
+      fada\u2026\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 2
+  - text: "<b>Dama Misteriosa</b>\n\r\nHahahahahahahah!! Ai, eu preciso ir!!\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 2
+  - text: "<b>Dama Misteriosa</b>\n\r\nFoi muito bom!! Caramba! Voc\xEA \xE9 um bartender
+      e tanto!!\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 2
+  - text: "<b>Narrador</b>\n\r\n<b>A mo\xE7a vai se retirando do bar, cambaleando.
+      Provavelmente rir tanto a deixou um pouco mole\u2026</b>\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 2
+  - text: "<b>Voc\xEA</b>\n\n\rEi!! Espera!! E a dica??\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 3
+  - text: "<b>Voc\xEA</b>\n\n\rEi!!!\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 3
+  - text: "<b>Voc\xEA</b>\n\n\rDroga...\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 3
+  - text: "<b>Voc\xEA</b>\n\n\rSer\xE1 que vou v\xEA-la de novo?\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 3
   disablesSelfOTF: 1
   hidesImageOnDisable: 0
   OnTextFinished:
@@ -5838,153 +7519,83 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterManager: {fileID: 11400000, guid: a4e284afea3ff1c40a426fc5e4ac6e3a, type: 2}
   dialogueList:
-  - text: cu  do draculauro 3
-    typingDelaySpeed: 0
-    hasBackground: 1
+  - text: '<b>Narrador</b>
+
+
+      <b>Na mesma noite, novamente um rosto familiar
+      aparece.</b>'
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 3
+  - text: "<b>Narrador</b>\n\n<b>Dessa vez, Dorian n\xE3o est\xE1 com o jeito desanimado..</b>"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 3
+  - text: '<b>Dorian</b>
+
+
+      Boa noite, querido!'
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 1
+  - text: "<b>Voc\xEA</b>\n\nUau, voc\xEA t\xE1 animado hoje. Que novidade."
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 1
+  - text: "<b>Dorian</b>\n\n\xC9, aconteceram coisas incr\xEDveis! Vim aqui comemorar
+      bebendo alguma coisa."
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 1
+  - text: "<b>Voc\xEA</b>\n\nS\xE9rio?? \xC9 \xF3timo te ver feliz, Dorian!"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 1
+  - text: "<b>Voc\xEA</b>\n\nQual seria a bebida?"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 1
+  - text: '<b>Dorian</b>
+
+
+      Vou te deixar ser criativo, querido.'
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 1
+  - text: "<b>Dorian</b>\n\nS\xF3 me traga algo que me fa\xE7a sentir <i>desenvolto
+      para algu\xE9m apaixonado!</i>"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
     characterMood: 0
     characterKey: 1
   disablesSelfOTF: 1
   hidesImageOnDisable: 0
   OnTextFinished:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1049693286}
+        m_TargetAssemblyTypeName: Assets.Scripts.UIManager, Assembly-CSharp
+        m_MethodName: SwitchBrewingScreen
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   LevelUpAfter: 0
   orderingCharacter: 1
   orderIndex: 2
---- !u!1 &1201398450
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1201398451}
-  - component: {fileID: 1201398453}
-  - component: {fileID: 1201398452}
-  m_Layer: 5
-  m_Name: Text (TMP)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1201398451
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1201398450}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 506018454}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1201398452
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1201398450}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_text: Deliver
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_fontSharedMaterials: []
-  m_fontMaterial: {fileID: 0}
-  m_fontMaterials: []
-  m_fontColor32:
-    serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
-  m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
-  m_tintAllSprites: 0
-  m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
-  m_overrideHtmlColors: 0
-  m_faceColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
-  m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_HorizontalAlignment: 2
-  m_VerticalAlignment: 512
-  m_textAlignment: 65535
-  m_characterSpacing: 0
-  m_wordSpacing: 0
-  m_lineSpacing: 0
-  m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
-  m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
-  m_linkedTextComponent: {fileID: 0}
-  parentLinkedComponent: {fileID: 0}
-  m_enableKerning: 1
-  m_enableExtraPadding: 0
-  checkPaddingRequired: 0
-  m_isRichText: 1
-  m_parseCtrlCharacters: 1
-  m_isOrthographic: 1
-  m_isCullingEnabled: 0
-  m_horizontalMapping: 0
-  m_verticalMapping: 0
-  m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
-  m_IsTextObjectScaleStatic: 0
-  m_VertexBufferAutoSizeReduction: 0
-  m_useMaxVisibleDescender: 1
-  m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
-  m_isUsingLegacyAnimationComponent: 0
-  m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
-  m_baseMaterial: {fileID: 0}
-  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!222 &1201398453
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1201398450}
-  m_CullTransparentMesh: 1
 --- !u!1 &1203075803
 GameObject:
   m_ObjectHideFlags: 0
@@ -6054,6 +7665,201 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   orderList: []
   currentOrderDialogue: {fileID: 0}
+--- !u!1 &1222805839
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1222805840}
+  - component: {fileID: 1222805841}
+  m_Layer: 0
+  m_Name: Dialogo Segredo Bom Morte (7)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1222805840
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1222805839}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 406739435}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1222805841
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1222805839}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 601a0cea4bd604c46aafe72f6ab33eea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterManager: {fileID: 11400000, guid: a4e284afea3ff1c40a426fc5e4ac6e3a, type: 2}
+  dialogueList:
+  - text: "<b>Dama Misteriosa</b>\n\r\nVoc\xEA fez uma bebida e tanto! Essa ficou
+      bem gostosa, talvez mais que as outras dos dias anteriores!"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 2
+  - text: "<b>Dama Misteriosa</b>\n\r\nComo comprometido, a \xFAltima dica \xE9 um
+      pouco mais \xF3bvia. As pessoas n\xE3o valorizam o meu trabalho, na verdade,
+      muitos odeiam o que eu fa\xE7o e ficam com raiva quando eu estrago uma data
+      especial, ou atrapalho algum compromisso importante. Mas, para aqueles que
+      moram na mis\xE9ria, meus servi\xE7os os deixam esperan\xE7osos."
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 2
+  - text: "<b>Dama Misteriosa</b>\n\r\nE a\xED, agora t\xE1 \xF3bvio?"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 2
+  - text: "<b>Voc\xEA</b>\n\r\nHmmm\u2026."
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 2
+  - text: "<b>Voc\xEA</b>\n\r\nVoc\xEA \xE9 a...\t"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 2
+  - text: "<b>Voc\xEA</b>\n\r\nMorte?"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 2
+  - text: "<b>Narrador</b>\n\r\n<b>Ap\xF3s a sua resposta, ela parece impressionada
+      e um pouco sem jeito. Ela solta mais uma gargalhada, dessa vez mais alta. Mas
+      voc\xEA n\xE3o sabe dizer se \xE9 genu\xEDno, ou se a bebida j\xE1 fez efeito.</b>"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 2
+  - text: "<b>Morte</b>\n\r\nHahahahahaha! Caramba! Voc\xEA \xE9 \xF3timo!!"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 2
+  - text: "<b>Voc\xEA</b>\n\r\nCalma\u2026 isso \xE9 s\xE9rio??\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 2
+  - text: "<b>Voc\xEA</b>\n\r\nVoc\xEA \xE9 realmente a Morte?\r\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 2
+  - text: "<b>Narrador</b>\n\r\n<b>Aparentemente a bebida fez efeito mesmo, ela n\xE3o
+      para de dar risada e sorrir.</b>\r\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 2
+  - text: "<b>Morte</b>\n\r\nHahahahahaha! Aiaiai\u2026\r\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 2
+  - text: "<b>Morte</b>\n\r\nEnfim, eu preciso voltar agora! Caramba, acho que nunca
+      tomei um Bobo da Corte t\xE3o bom na minha vida! Ironicamente.\r\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 2
+  - text: "<b>Morte</b>\n\r\nMuito obrigada!\r\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 2
+  - text: "<b>Voc\xEA</b>\n\r\nN\xE3o! Espera!\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 2
+  - text: "<b>Voc\xEA</b>\n\n\rVoc\xEA \xE9 realmente a Morte??\r\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 2
+  - text: "<b>Voc\xEA</b>\n\n\rEi!!\r\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 2
+  - text: "<b>Narrador</b>\n\n\r<b>Ela vai saindo, sem te dar ouvidos. Ela realmente
+      pareceu mais leve e feliz.</b>\r\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 3
+  - text: "<b>Voc\xEA</b>\n\n\rCaramba\u2026\r\r\r\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 3
+  - text: "<b>Voc\xEA</b>\n\nSer\xE1 que ela \xE9 realmente a Morte? Eu tava conversando
+      com a Morte todo esse tempo?\r\r\r\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 3
+  - text: "<b>Voc\xEA</b>\n\nSer\xE1 que ela \xE9 realmente a Morte? Eu tava conversando
+      com a Morte todo esse tempo?\r\r\r\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 3
+  - text: "<b>Voc\xEA</b>\n\nSer\xE1 que um dia eu vou ver ela de novo?\r\r\r\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 3
+  - text: "<b>Voc\xEA</b>\n\nNossa, nem sei como vou dormir hoje a noite.\r\r\r\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 3
+  disablesSelfOTF: 1
+  hidesImageOnDisable: 0
+  OnTextFinished:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 889212163}
+        m_TargetAssemblyTypeName: FinalDrinkPosClean, Assembly-CSharp
+        m_MethodName: CleanChildren
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  LevelUpAfter: 1
 --- !u!1 &1234422508
 GameObject:
   m_ObjectHideFlags: 0
@@ -6229,6 +8035,8 @@ RectTransform:
   - {fileID: 517467202}
   - {fileID: 1369378243}
   - {fileID: 1724071566}
+  - {fileID: 1127908277}
+  - {fileID: 697145977}
   m_Father: {fileID: 406739435}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -6236,140 +8044,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1 &1240800307
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1240800308}
-  - component: {fileID: 1240800310}
-  - component: {fileID: 1240800309}
-  m_Layer: 5
-  m_Name: Text (TMP)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1240800308
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1240800307}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 930371101}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1240800309
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1240800307}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_text: Discard
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_fontSharedMaterials: []
-  m_fontMaterial: {fileID: 0}
-  m_fontMaterials: []
-  m_fontColor32:
-    serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
-  m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
-  m_tintAllSprites: 0
-  m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
-  m_overrideHtmlColors: 0
-  m_faceColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
-  m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_HorizontalAlignment: 2
-  m_VerticalAlignment: 512
-  m_textAlignment: 65535
-  m_characterSpacing: 0
-  m_wordSpacing: 0
-  m_lineSpacing: 0
-  m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
-  m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
-  m_linkedTextComponent: {fileID: 0}
-  parentLinkedComponent: {fileID: 0}
-  m_enableKerning: 1
-  m_enableExtraPadding: 0
-  checkPaddingRequired: 0
-  m_isRichText: 1
-  m_parseCtrlCharacters: 1
-  m_isOrthographic: 1
-  m_isCullingEnabled: 0
-  m_horizontalMapping: 0
-  m_verticalMapping: 0
-  m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
-  m_IsTextObjectScaleStatic: 0
-  m_VertexBufferAutoSizeReduction: 0
-  m_useMaxVisibleDescender: 1
-  m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
-  m_isUsingLegacyAnimationComponent: 0
-  m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
-  m_baseMaterial: {fileID: 0}
-  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!222 &1240800310
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1240800307}
-  m_CullTransparentMesh: 1
 --- !u!1 &1259479274
 GameObject:
   m_ObjectHideFlags: 0
@@ -6707,15 +8381,15 @@ RectTransform:
   m_GameObject: {fileID: 1314040733}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 51049761}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 600, y: -75}
-  m_SizeDelta: {x: 150, y: 150}
+  m_AnchoredPosition: {x: 600, y: 1}
+  m_SizeDelta: {x: 2048, y: 1448}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1314040735
 MonoBehaviour:
@@ -6770,7 +8444,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 8.305634, y: -18.687424}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -6781,7 +8455,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 398.9994, y: 644.0133}
   m_EdgeRadius: 0
 --- !u!114 &1314040737
 MonoBehaviour:
@@ -6796,14 +8470,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.050980393, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: f0ec8caa7656ab34a8bdacb40a3329f8, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -6876,6 +8550,7 @@ MonoBehaviour:
   minProximityLevel2Snitch: 4
   responsesParent: {fileID: 440992566}
   secretResponse: []
+  ultimaFase: 0
 --- !u!1 &1340986222
 GameObject:
   m_ObjectHideFlags: 0
@@ -7444,6 +9119,7 @@ MonoBehaviour:
   minProximityLevel2Snitch: 4
   responsesParent: {fileID: 760875228}
   secretResponse: []
+  ultimaFase: 0
 --- !u!1 &1454055498
 GameObject:
   m_ObjectHideFlags: 0
@@ -7620,7 +9296,13 @@ MonoBehaviour:
     hasBackground: 0
     characterMood: 1
     characterKey: 0
-  - text: "<b>S\xF4nia</b>\n\r\nPode usar esse caldeir\xE3o a\xED mesmo pra misturar."
+  - text: "<b>S\xF4nia</b>\n\r\nPega os ingredientes que oc\xEA quer usar e coloca
+      eles nesses c\xEDrculo rosa em cima da mesa."
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 0
+  - text: "<b>S\xF4nia</b>\n\r\nDepois s\xF3 joga nesse caldeir\xE3o e mistura bem!"
     typingDelaySpeed: 0.05
     hasBackground: 0
     characterMood: 1
@@ -7689,7 +9371,7 @@ MonoBehaviour:
   LevelUpAfter: 0
   orderingCharacter: 0
   orderIndex: 0
---- !u!1 &1461122585
+--- !u!1 &1459757155
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -7697,86 +9379,73 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1461122586}
-  - component: {fileID: 1461122587}
+  - component: {fileID: 1459757156}
+  - component: {fileID: 1459757158}
+  - component: {fileID: 1459757157}
   m_Layer: 5
-  m_Name: Square
+  m_Name: Fundo Botao Ferm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &1461122586
+--- !u!224 &1459757156
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1461122585}
+  m_GameObject: {fileID: 1459757155}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 26.779999, y: 22.106009, z: 25}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
+  m_ConstrainProportionsScale: 1
   m_Children: []
-  m_Father: {fileID: 1752605144}
+  m_Father: {fileID: 43000078}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -9.837067, y: -5.440979}
-  m_SizeDelta: {x: 2047, y: 1445}
+  m_AnchoredPosition: {x: 1020, y: 647}
+  m_SizeDelta: {x: 2048, y: 828}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!212 &1461122587
-SpriteRenderer:
+--- !u!114 &1459757157
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1461122585}
+  m_GameObject: {fileID: 1459757155}
   m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 13ce7a7494c2a8540b5f2503dca2e387, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.5921569}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 32804a71b717ea844a3c5594a3381438, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1459757158
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1459757155}
+  m_CullTransparentMesh: 1
 --- !u!1 &1475061458
 GameObject:
   m_ObjectHideFlags: 0
@@ -8300,140 +9969,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1 &1540503189
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1540503190}
-  - component: {fileID: 1540503192}
-  - component: {fileID: 1540503191}
-  m_Layer: 5
-  m_Name: Text (TMP)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1540503190
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1540503189}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 114142235}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1540503191
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1540503189}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_text: Finish Drink
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_fontSharedMaterials: []
-  m_fontMaterial: {fileID: 0}
-  m_fontMaterials: []
-  m_fontColor32:
-    serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
-  m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
-  m_tintAllSprites: 0
-  m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
-  m_overrideHtmlColors: 0
-  m_faceColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
-  m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_HorizontalAlignment: 2
-  m_VerticalAlignment: 512
-  m_textAlignment: 65535
-  m_characterSpacing: 0
-  m_wordSpacing: 0
-  m_lineSpacing: 0
-  m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
-  m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
-  m_linkedTextComponent: {fileID: 0}
-  parentLinkedComponent: {fileID: 0}
-  m_enableKerning: 1
-  m_enableExtraPadding: 0
-  checkPaddingRequired: 0
-  m_isRichText: 1
-  m_parseCtrlCharacters: 1
-  m_isOrthographic: 1
-  m_isCullingEnabled: 0
-  m_horizontalMapping: 0
-  m_verticalMapping: 0
-  m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
-  m_IsTextObjectScaleStatic: 0
-  m_VertexBufferAutoSizeReduction: 0
-  m_useMaxVisibleDescender: 1
-  m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
-  m_isUsingLegacyAnimationComponent: 0
-  m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
-  m_baseMaterial: {fileID: 0}
-  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!222 &1540503192
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1540503189}
-  m_CullTransparentMesh: 1
 --- !u!1 &1544536211
 GameObject:
   m_ObjectHideFlags: 0
@@ -8689,6 +10224,194 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1646915760
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1646915761}
+  - component: {fileID: 1646915762}
+  m_Layer: 0
+  m_Name: Dialogo Segredo Medio Morte (6)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1646915761
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1646915760}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 406739435}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1646915762
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1646915760}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 601a0cea4bd604c46aafe72f6ab33eea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterManager: {fileID: 11400000, guid: a4e284afea3ff1c40a426fc5e4ac6e3a, type: 2}
+  dialogueList:
+  - text: "<b>Dama Misteriosa</b>\n\r\n\xC9..."
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 2
+  - text: "<b>Dama Misteriosa</b>\n\r\nJ\xE1 tomei bebidas melhores..."
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 2
+  - text: '<b>Dama Misteriosa</b>
+
+
+
+      Bom, achei que vir aqui hoje me ajudaria
+      um pouco mais do que me afundar no trabalho. '
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 2
+  - text: "<b>Dama Misteriosa</b>\n\r\nMas, vou te contar a dica, mesmo assim. Para
+      que o seu esfor\xE7o tenha valido de algo!"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 2
+  - text: "<b>Voc\xEA</b>\n\r\n<i>Droga\u2026 deveria ter me esfor\xE7ado mais.</i>"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 2
+  - text: "<b>Dama Misteriosa</b>\n\r\nFalando a verdade, as pessoas n\xE3o valorizam
+      o meu trabalho, na verdade, muitos odeiam o que eu fa\xE7o e ficam com raiva
+      quando eu estrago uma data especial, ou atrapalho algum compromisso importante.
+      Mas, para aqueles que moram na mis\xE9ria, meus servi\xE7os os deixam esperan\xE7osos."
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 2
+  - text: "<b>Dama Misteriosa</b>\n\r\nBom, isso \xE9 tudo."
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 2
+  - text: "<b>Voc\xEA</b>\n\r\nHmmm\u2026"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 2
+  - text: "<b>Voc\xEA</b>\n\n\rEspera!"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 2
+  - text: "<b>Voc\xEA</b>\n\n\rVoc\xEA \xE9 a..."
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 2
+  - text: "<b>Voc\xEA</b>\n\n\rMorte?"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 2
+  - text: "<b>Narrador</b>\n\n\r<b>Ela est\xE1 sorrindo como das outras vezes, mas
+      dessa vez parece mais melanc\xF3lica.</b>"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 2
+  - text: "<b>Morte</b>\n\n\r\xC9... Acho que \xE9 mais ou menos por a\xED."
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 2
+  - text: "<b>Morte</b>\n\n\rEnfim, acho que j\xE1 te contei demais. De qualquer
+      forma esse \xE9 o meu \xFAltimo dia aqui, preciso fazer uma visita na cidade
+      pr\xF3xima."
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 2
+  - text: "<b>Morte</b>\n\n\rQuem sabe um dia eu volte aqui."
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 2
+  - text: "<b>Voc\xEA</b>\n\n\rEspera!! Isso \xE9 s\xE9rio???\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 3
+  - text: "<b>Voc\xEA</b>\n\n\rEi, de verdade mesmo??\r\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 3
+  - text: "<b>Narrador</b>\n\n\r<b>Infelizmente essa mo\xE7a que \xE9 supostamente
+      a Morte, n\xE3o ficou para responder suas perguntas. Ela te deixou sozinho,
+      apenas com as suas d\xFAvidas.</b>\r\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 3
+  - text: "<b>Voc\xEA</b>\n\n\rCaramba, n\xE3o acredito que isso aconteceu\u2026\r\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 3
+  - text: "<b>Voc\xEA</b>\n\n\rComo pode\u2026 todo esse tempo conversando a pr\xF3pria
+      Morte\u2026\r\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 3
+  - text: "<b>Voc\xEA</b>\n\n\rSer\xE1 que um dia ela vai voltar?\r\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 3
+  disablesSelfOTF: 1
+  hidesImageOnDisable: 0
+  OnTextFinished:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 889212163}
+        m_TargetAssemblyTypeName: FinalDrinkPosClean, Assembly-CSharp
+        m_MethodName: CleanChildren
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  LevelUpAfter: 1
 --- !u!1 &1648062154
 GameObject:
   m_ObjectHideFlags: 0
@@ -8718,15 +10441,15 @@ RectTransform:
   m_GameObject: {fileID: 1648062154}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1046030603}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1080, y: -75}
-  m_SizeDelta: {x: 150, y: 150}
+  m_AnchoredPosition: {x: -1080, y: 29}
+  m_SizeDelta: {x: 2048, y: 1448}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1648062156
 MonoBehaviour:
@@ -8741,14 +10464,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.83137256, g: 0.8235294, b: 0.5921569, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: a971e494217c928419ddf640a0978dc8, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -8819,7 +10542,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -47.26082, y: -148.7579}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -8830,7 +10553,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 349.74722, y: 528.9582}
   m_EdgeRadius: 0
 --- !u!1 &1659646764
 GameObject:
@@ -8887,9 +10610,10 @@ MonoBehaviour:
   minProximityLevel2Snitch: 4
   responsesParent: {fileID: 243212866}
   secretResponse:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 155458333}
+  - {fileID: 1646915760}
+  - {fileID: 1222805839}
+  ultimaFase: 0
 --- !u!1 &1685361560
 GameObject:
   m_ObjectHideFlags: 0
@@ -9221,7 +10945,7 @@ GameObject:
   - component: {fileID: 1724071566}
   - component: {fileID: 1724071567}
   m_Layer: 0
-  m_Name: Dialogo Segredo Sonia (1)
+  m_Name: Dialogo Segredo Ruim Sonia (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9260,12 +10984,159 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterManager: {fileID: 11400000, guid: a4e284afea3ff1c40a426fc5e4ac6e3a, type: 2}
   dialogueList:
-  - text: "<b>S\xF4nia</b>\n\r\nVou voltar amanh\xE3 pra ver o quanto oc\xEA aprendeu
-      e beber mais uns gor\xF3, claro."
-    typingDelaySpeed: 0.1
+  - text: "<b>S\xF4nia</b>\n\nNossa! Mas tudo que eu te falei entrou em um ouvido
+      e saiu pelo outro??"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 2
+    characterKey: 0
+  - text: "<b>Voc\xEA</b>\n\nPoxa, S\xF4nia..."
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 2
+    characterKey: 0
+  - text: "<b>Voc\xEA</b>\n\nEu to me esfor\xE7ando!! Juro!"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 2
+    characterKey: 0
+  - text: "<b>S\xF4nia</b>\n\nNossinhora, imagina se n\xE3o tivesse!"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 2
+    characterKey: 0
+  - text: "<b>S\xF4nia</b>\n\nBom, mas to com d\xF3 doc\xEA. Ent\xE3o vou te contar
+      o meu segredo mesmo assim\u2026"
+    typingDelaySpeed: 0.05
     hasBackground: 0
     characterMood: 1
     characterKey: 0
+  - text: "<b>S\xF4nia</b>\n\nEnt\xE3o\u2026 \xE9 bem mais besta do que voc\xEA acha."
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 0
+  - text: "<b>S\xF4nia</b>\n\nNa verdade, eu sempre quis abrir um bar\u2026"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 0
+  - text: "<b>S\xF4nia</b>\n\nMas n\xE3o consegui.. na verdade, n\xE3o deu tempo.
+      Acabei tendo que servir nosso pa\xEDs na guerra, e foi bem quando eu tava juntando
+      as minhas economias pra comprar um barzin de esquina."
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 2
+    characterKey: 0
+  - text: "<b>S\xF4nia</b>\n\nEnfim, agora esse sonho ficou no passado."
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 0
+  - text: "<b>Voc\xEA</b> \r\n\nMas, S\xF4nia, ainda d\xE1 tempo de voc\xEA realizar
+      esse sonho!\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 0
+  - text: "<b>Voc\xEA</b> \r\n\nImagino que a guerra tenha sido bem traum\xE1tica,
+      por\xE9m desistir do seu sonho por conta disso\u2026 \xE9 bobeira!\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 0
+  - text: "<b>Voc\xEA</b> \r\n\nSe a vida n\xE3o \xE9 sobre realizar sonhos, ent\xE3o\u2026
+      para que viver?\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 0
+  - text: "<b>S\xF4nia</b> \r\n\nAaah, mocin\u2026 oc\xEA \xE9 muito novinho ainda\u2026\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 0
+  - text: "<b>S\xF4nia</b> \r\n\n\xC9 bom ver o brilho nos seus olhos falando isso\u2026\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 0
+  - text: "<b>S\xF4nia</b> \r\n\nMas, talvez\u2026 s\xF3 talvez\u2026 eu deveria
+      te escutar.\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 0
+  - text: "<b>S\xF4nia</b> \r\n\nHaha! Oc\xEA \xE9 bem ligeiro memo! E se abrir um
+      bar e virar suas concorr\xEAncia?\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 0
+  - text: "<b>Voc\xEA</b> \r\n\nHahahaha, seria uma honra!!\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 0
+  - text: "<b>Voc\xEA</b> \r\n\n\xC9 o pupilo contra o mestre!\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 0
+  - text: "<b>Voc\xEA</b> \r\n\n<i>\u2026Ser\xE1 que eu conseguiria superar a S\xF4nia?</i>\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 0
+  - text: "<b>Voc\xEA</b> \r\n\n<i>Agora fiquei com medo\u2026</i>\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 0
+  - text: "<b>S\xF4nia</b> \r\n\nHahaha!\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 0
+  - text: "<b>S\xF4nia</b> \r\n\nOc\xEA n\xE3o perde por espera, mocin!\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 0
+  - text: "<b>S\xF4nia</b> \r\n\nAgora tenho que ir, muito obrigada pelos seus conselhos!\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 0
+  - text: "<b>S\xF4nia</b> \r\n\nInt\xE9!\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 0
+  - text: "<b>Voc\xEA</b> \r\n\n<i>Fico realmente feliz de ajudar a S\xF4nia! Ela
+      me ajudou bastante nesses \xFAltimos tr\xEAs dias. </i>\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 3
+  - text: "<b>Voc\xEA</b> \r\n\nMas\u2026 ser\xE1 que eu deveria me preocupar com
+      uma concorr\xEAncia?\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 3
+  - text: "<b>Voc\xEA</b> \r\n\nEu poderia ter chamado ela para o Mystic Flavor\u2026
+      mas a\xED n\xE3o seria a realiza\xE7\xE3o do sonho dela!\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 3
+  - text: "<b>Voc\xEA</b> \r\n\nBom, eu que lute!! O que importa \xE9 ver a S\xF4nia
+      feliz!\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 3
   disablesSelfOTF: 1
   hidesImageOnDisable: 0
   OnTextFinished:
@@ -9274,6 +11145,18 @@ MonoBehaviour:
       - m_Target: {fileID: 889212163}
         m_TargetAssemblyTypeName: FinalDrinkPosClean, Assembly-CSharp
         m_MethodName: CleanChildren
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2117013002}
+        m_TargetAssemblyTypeName: Assets.Scripts.Bartending.Client, Assembly-CSharp
+        m_MethodName: CheckSecret
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9350,17 +11233,16 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1752605143}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children:
-  - {fileID: 1461122586}
   - {fileID: 1772578715}
   m_Father: {fileID: 1065212419}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 511.837, y: 151.441}
+  m_AnchoredPosition: {x: 464, y: 151.441}
   m_SizeDelta: {x: 976.412, y: 579.617}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1752605145
@@ -9379,7 +11261,7 @@ MonoBehaviour:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
+  m_Maskable: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -9829,7 +11711,7 @@ MonoBehaviour:
   m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
+  m_Maskable: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -10096,7 +11978,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1175, y: 605}
+  m_AnchoredPosition: {x: 1175, y: 630}
   m_SizeDelta: {x: 332, y: 332}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1792197472
@@ -10321,15 +12203,15 @@ RectTransform:
   m_GameObject: {fileID: 1878650189}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1046030603}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -360, y: -75}
-  m_SizeDelta: {x: 150, y: 150}
+  m_AnchoredPosition: {x: -360, y: 33}
+  m_SizeDelta: {x: 2048, y: 1448}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1878650191
 MonoBehaviour:
@@ -10385,7 +12267,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.00015258789, y: -108.16063}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -10396,7 +12278,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 356.88147, y: 586.7223}
   m_EdgeRadius: 0
 --- !u!114 &1878650193
 MonoBehaviour:
@@ -10411,14 +12293,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.5764706, g: 0.35686275, b: 0.29411766, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 226df9ed0f2ce514aa46cc4692e60a42, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -10552,18 +12434,29 @@ MonoBehaviour:
     hasBackground: 0
     characterMood: 2
     characterKey: 0
-  - text: "<b>S\xF4nia</b>\n\r\nBom, mas to com d\xF3 doc\xEA. Ent\xE3o vou te contar
-      o meu segredo mesmo assim\u2026"
+  - text: "<b>S\xF4nia</b>\n\r\n\xD3ia, sei que oc\xEA t\xE1 tentando, mas vai precisar
+      se esfor\xE7ar cada vez mais!"
     typingDelaySpeed: 0.05
     hasBackground: 0
-    characterMood: 2
+    characterMood: 1
     characterKey: 0
-  - text: "<b>S\xF4nia</b>\n\r\nBom, mas to com d\xF3 doc\xEA. Ent\xE3o vou te contar
-      o meu segredo mesmo assim\u2026"
+  - text: "<b>S\xF4nia</b>\n\r\nFaz corpo mole n\xE3o, com o tempo c\xEA pega o jeito."
     typingDelaySpeed: 0.05
     hasBackground: 0
-    characterMood: 2
+    characterMood: 1
     characterKey: 0
+  - text: "<b>Narrador</b>\n\r\n<b>S\xF4nia se despede com um joinha e sai pela porta
+      do bar.</b>"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 3
+  - text: "<b>Narrador</b>\n\r\n<b>Voc\xEA sente que, mesmo decepcionada, ela ainda
+      acredita que no seu potencial.</b>"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 3
   disablesSelfOTF: 1
   hidesImageOnDisable: 0
   OnTextFinished:
@@ -10593,7 +12486,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  LevelUpAfter: 0
+  LevelUpAfter: 1
 --- !u!1 &1906868840
 GameObject:
   m_ObjectHideFlags: 0
@@ -10762,7 +12655,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 865, y: 605}
+  m_AnchoredPosition: {x: 865, y: 630}
   m_SizeDelta: {x: 340, y: 333}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1920728349
@@ -10934,94 +12827,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1939430292}
   m_CullTransparentMesh: 1
---- !u!1 &1970947292
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1970947293}
-  - component: {fileID: 1970947294}
-  m_Layer: 5
-  m_Name: Square (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1970947293
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1970947292}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 59.32, y: 10.3928995, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 43000078}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -568}
-  m_SizeDelta: {x: 2047, y: 1445}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!212 &1970947294
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1970947292}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 13ce7a7494c2a8540b5f2503dca2e387, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.35686275}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
 --- !u!1 &1980494910
 GameObject:
   m_ObjectHideFlags: 0
@@ -11077,6 +12882,7 @@ MonoBehaviour:
   minProximityLevel2Snitch: 4
   responsesParent: {fileID: 517467201}
   secretResponse: []
+  ultimaFase: 0
 --- !u!1 &1990851924
 GameObject:
   m_ObjectHideFlags: 0
@@ -11379,6 +13185,34 @@ MonoBehaviour:
     hasBackground: 0
     characterMood: 1
     characterKey: 2
+  - text: "<b>Voc\xEA</b>\n\nAah\u2026 Desculpa."
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 2
+  - text: "<b>Dama Misteriosa</b>\n\nMelhor n\xE3o. Ainda tenho muito trabalho para
+      fazer."
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 2
+  - text: "<b>Dama Misteriosa</b>\n\nMelhor n\xE3o. Ainda tenho muito trabalho para
+      fazer."
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 2
+  - text: "<b>Narrador</b>\n\n<b>Cansada, a Mulher Misteriosa p\xF5e seu chap\xE9u
+      de volta e sai do bar, ainda exausta.</b>"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 3
+  - text: "<b>Voc\xEA</b>\n\nDroga, eu n\xE3o dou uma dentro..."
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 3
   disablesSelfOTF: 1
   hidesImageOnDisable: 0
   OnTextFinished:
@@ -11452,6 +13286,7 @@ MonoBehaviour:
   minProximityLevel2Snitch: 4
   responsesParent: {fileID: 114888120}
   secretResponse: []
+  ultimaFase: 0
 --- !u!1 &2073956060
 GameObject:
   m_ObjectHideFlags: 0
@@ -11509,7 +13344,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 0a923726484343b4783a0c6f20ebfd7b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1a129b0099c4cef4ea9a97489e28d488, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -11843,9 +13678,10 @@ MonoBehaviour:
   minProximityLevel2Snitch: 4
   responsesParent: {fileID: 1369378242}
   secretResponse:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1724071565}
+  - {fileID: 1127908276}
+  - {fileID: 697145976}
+  ultimaFase: 1
 --- !u!1 &2118586905
 GameObject:
   m_ObjectHideFlags: 0
@@ -11896,7 +13732,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -11921,6 +13757,213 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2118586905}
   m_CullTransparentMesh: 1
+--- !u!1 &2122188158
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2122188159}
+  - component: {fileID: 2122188160}
+  m_Layer: 0
+  m_Name: Dialogo Segredo Ruim Draculauro (4)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &2122188159
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2122188158}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 406739435}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2122188160
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2122188158}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 601a0cea4bd604c46aafe72f6ab33eea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterManager: {fileID: 11400000, guid: a4e284afea3ff1c40a426fc5e4ac6e3a, type: 2}
+  dialogueList:
+  - text: "<b>Dorian</b>\r\n\nIsso \xE9 pra me deixar apaixonado ou enojado?"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 2
+    characterKey: 1
+  - text: "<b>Dorian</b>\r\n\nEstou bem triste com voc\xEA, querido. Achei que hoje
+      seria um \xF3timo dia para comemorar aqui com voc\xEA\u2026"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 2
+    characterKey: 1
+  - text: "<b>Voc\xEA</b>\r\n\nAaah, Dorian.. Desculpa!! Acho que fiquei ansioso
+      demais\u2026"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 2
+    characterKey: 1
+  - text: "<b>Dorian</b>\r\n\nEstou realmente desapontado! Logo em um dia t\xE3o
+      especial..."
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 1
+  - text: "<b>Dorian</b>\r\n\r\nVoc\xEA j\xE1 me serviu melhor, querido. Mas antes
+      de ir, vou ao menos te contar o que vim comemorar.\r.\r\r\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 1
+  - text: '<b>Dorian</b>
+
+
+      Eu vim celebrar o amor!'
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 1
+  - text: "<b>Dorian</b>\r\n\nTenho boas novas, querido\u2026\r\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 1
+  - text: "<b>Dorian</b>\r\n\nEu e meu amigo conversamos! Isso, tomei coragem e o
+      chamei para conversar.\r\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 1
+  - text: "<b>Voc\xEA</b>\r\n\nOh! Que \xF3timo!"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 1
+  - text: "<b>Voc\xEA</b>\r\n\nFoi boa a conversa?\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 1
+  - text: "<b>Dorian</b>\r\n\nFoi \xF3tima!"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 1
+  - text: "<b>Dorian</b>\r\n\r\nExpliquei para ele as minhas inseguran\xE7as, e como
+      eu estava me sentindo em rela\xE7\xE3o a ele nos \xFAltimos tempos. "
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 1
+  - text: "<b>Dorian</b>\r\n\r\nNo final, ele me disse que achava que j\xE1 t\xEDnhamos
+      um caso!"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 1
+  - text: "<b>Dorian</b>\r\n\r\nEu fiquei embasbacado, sentindo que me passei por
+      bobo\u2026 e bem, isso fere bastante meu ego. "
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 1
+  - text: "<b>Dorian</b>\r\n\r\nMas, quando ele me disse achava que j\xE1 t\xEDnhamos
+      algo\u2026 ah! Eu fiquei muito t\xEDmido! Senti o sangue fluir para minha barriga\u2026
+      acho que \xE9 a sensa\xE7\xE3o que chamam de \u201Cborboletas no est\xF4mago\u201D?"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 1
+  - text: "<b>Dorian</b>\r\n\r\nEu fiquei t\xE3o feliz, que eu n\xE3o me contive!
+      Demos um beijo e\u2026 bem, agora estamos namorando!\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 1
+  - text: "<b>Voc\xEA</b>\r\n\r\nCaramba, Dorian!! \r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 1
+  - text: "<b>Voc\xEA</b>\r\n\r\nFico muito feliz por voc\xEAs! Felicidades ao casal!\r\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 1
+  - text: '<b>Dorian</b>
+
+
+
+      Hahaha! Muito obrigado!'
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 1
+  - text: "<b>Dorian</b>\r\n\r\nInclusive, temos um encontro agora sob a luz do luar\u2026"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 1
+  - text: "<b>Dorian</b>\r\n\r\nPreciso me despedir, querido! Obrigado por hoje!\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 1
+  - text: "<b>Dorian</b>\r\n\r\nAt\xE9 mais!\r\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 0
+    characterKey: 1
+  - text: "<b>Voc\xEA</b>\r\n\r\n<i>O amor \xE9 muito bonito mesmo\u2026 e combina
+      com o Dorian!</i>\r.\r\r\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 3
+  - text: "<b>Voc\xEA</b>\r\n\r\n<i>Espero saber mais dele nos pr\xF3ximos dias!</i>\r.\r\r\r"
+    typingDelaySpeed: 0.05
+    hasBackground: 0
+    characterMood: 1
+    characterKey: 3
+  disablesSelfOTF: 1
+  hidesImageOnDisable: 0
+  OnTextFinished:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 889212163}
+        m_TargetAssemblyTypeName: FinalDrinkPosClean, Assembly-CSharp
+        m_MethodName: CleanChildren
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  LevelUpAfter: 1
 --- !u!1 &2122881493
 GameObject:
   m_ObjectHideFlags: 0
