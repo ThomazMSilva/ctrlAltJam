@@ -5989,7 +5989,7 @@ MonoBehaviour:
   musicSlider: {fileID: 8121316621044856573}
   voicesAudioSlider: {fileID: 8974019631043860783}
   generalSlider: {fileID: 6907914733789445973}
-  buttonClip: {fileID: 8300000, guid: dc43491a690a4214fb7575ae62ece5ae, type: 3}
+  buttonClip: {fileID: 8300000, guid: 63d844491d4dd014e93b507d60609e72, type: 3}
   poppingClip: {fileID: 8300000, guid: ab9cc9c5e880cb14c8c2ceb715701ad3, type: 3}
   discardClip: {fileID: 8300000, guid: 135ecf30945bb66479f01fdec606c41f, type: 3}
   deliverClip: {fileID: 8300000, guid: 0691cefaa87df0d4180b348693604d60, type: 3}
@@ -6003,7 +6003,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 91ceabe441c5d20448403b478db53da0, type: 3}
   - {fileID: 8300000, guid: ca4267265d302e54f8802dae05425897, type: 3}
   - {fileID: 8300000, guid: fa14b4e2c327d2e4489591f0ef1dfeb2, type: 3}
-  musicMenu: {fileID: 8300000, guid: a58b84f0e5d09724ca2aa3816a168d6a, type: 3}
+  musicMenu: {fileID: 8300000, guid: 77ca3e2e0cf2e6247adfd7bbaa424866, type: 3}
   musicGame: {fileID: 8300000, guid: bf20671475adb9f43ace10341280364d, type: 3}
 --- !u!1 &6429399327358668519
 GameObject:
@@ -6686,14 +6686,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: dafcd62b08dd3b34a8ed808dbc8cd1d8, type: 3}
+  m_Sprite: {fileID: 0}
   m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1

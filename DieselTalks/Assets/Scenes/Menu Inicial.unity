@@ -1260,6 +1260,10 @@ PrefabInstance:
       propertyPath: m_hasFontAssetChanged
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9195554977000624205, guid: 9b37f6488d8c0d84786507bea56e3d76, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 77ca3e2e0cf2e6247adfd7bbaa424866, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 3637536995991527929, guid: 9b37f6488d8c0d84786507bea56e3d76, type: 3}
