@@ -649,21 +649,21 @@ MonoBehaviour:
   baseSprite: {fileID: 21300000, guid: 135d41a72e6865e4fa1d4a2d0730c0dd, type: 3}
   drinkSprites:
   - {fileID: 21300000, guid: e5d51ad21a1b90643986b82f1baf81ea, type: 3}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 21300000, guid: 66d859d488fc9d640a157ec838dde451, type: 3}
+  - {fileID: 21300000, guid: 4f7e94408a147d24083dc4e9224cf766, type: 3}
+  - {fileID: 21300000, guid: 238585baa870ba44ba7a1327a0646a43, type: 3}
+  - {fileID: 21300000, guid: 685656c9b2e8f384cbf5cd82ee73652c, type: 3}
+  - {fileID: 21300000, guid: fbd772bd7cb3a0d4ea34be26294a2ff0, type: 3}
+  - {fileID: 21300000, guid: 096963384f2e217448fbc94bb2926a3f, type: 3}
+  - {fileID: 21300000, guid: a07a6ce0217d31d408e407219fc15f0e, type: 3}
+  - {fileID: 21300000, guid: 83e41e8e3c63bd34b8043fc26c33140a, type: 3}
+  - {fileID: 21300000, guid: bcea155c427d678439bdc31092915e9b, type: 3}
+  - {fileID: 21300000, guid: add55e4335ac86a499d04305cb307ff5, type: 3}
+  - {fileID: 21300000, guid: 5949677d8052e7f4d86f9f114463f121, type: 3}
+  - {fileID: 21300000, guid: 9d98b170623b89641bccd64043a6d89e, type: 3}
+  - {fileID: 21300000, guid: 291f98f0efba19b44b0b02903c4fc257, type: 3}
+  - {fileID: 21300000, guid: b39c29b2b3bc2984a81739434664f3fc, type: 3}
+  - {fileID: 21300000, guid: b16d0d134b694db45afb8f3d7a3934c8, type: 3}
   drinkNames:
   - Remela de Orfeu
   - "Tor\xF3 de Ideias"
