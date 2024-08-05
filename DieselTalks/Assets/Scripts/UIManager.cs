@@ -12,19 +12,16 @@ namespace Assets.Scripts
             brewingScreen;
 
         //[SerializeField] ImageFade brewingBackground;
-        
+
         //[SerializeField] private GameObject recipeScreen;
         private bool
             isPaused = false,
-            isBrewing = false,
-            isRecipeOpen = false;
+            isBrewing = false;
         //private bool isOpened;
 
         public void SwitchRecipeBook()
         {
-            isRecipeOpen = !isRecipeOpen;
-            //recipeScreen.SetActive(isRecipeOpen);
-            GameManager.Instance.recipeBook.recipeScreen.SetActive(isRecipeOpen);
+            GameManager.Instance.SwitchRecipeBook();
         }
 
         public void SaveGame() 

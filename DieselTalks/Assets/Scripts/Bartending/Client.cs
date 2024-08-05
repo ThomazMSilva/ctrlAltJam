@@ -18,19 +18,19 @@ namespace Assets.Scripts.Bartending
         public GameObject[] secretResponse;
         private CharacterManager characterManager;
         public bool ultimaFase = false;
-        private bool correctTexture = false, correctTaste = false;
+        //private bool correctTexture = false, correctTaste = false;
         private int i = 0;
 
         public void ChangeEnjoymentLevel(Texture tex, Taste tas)
         {
             if (tex == desiredTexture) 
             {
-                correctTexture = true;
+                //correctTexture = true;
                 i++; 
             }
             if (tas == desiredTaste) 
             { 
-                correctTaste = true;
+                //correctTaste = true;
                 i++; 
             }
 

@@ -6,7 +6,25 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    public static GameManager Instance;
+    private static GameManager _Instance;
+    public static GameManager Instance
+    {
+        get
+        {
+            if (!_Instance)
+            {
+                Debug.Log("Criou gms");
+                var prefab = Resources.Load<GameObject>("Prefabs/-_GameManager_-");
+
+                var inScene = Instantiate(prefab);
+
+                _Instance = inScene.GetComponentInChildren<GameManager>();
+                if (!_Instance) _Instance = inScene.AddComponent<GameManager>();
+                DontDestroyOnLoad(_Instance.transform.root.gameObject);
+            }
+            return _Instance;
+        }
+    }
 
     [Space(8f), Header("Administradores"), Space(5f)]
     public LevelManager LevelManager;
@@ -17,22 +35,12 @@ public class GameManager : MonoBehaviour
 
     private void Awake()
     {
-        if (Instance == null)
-        {
-            Instance = this;
-            DontDestroyOnLoad(this.gameObject);
-        }
-        else
-        {
-            Debug.LogError("Ja existe uma instancia de GameManager e ta tentando instanciar uma no Awake");
-            Destroy(gameObject);
-        }
         LevelManager.OnLevelUp += Fade;
 
         originalColor = transitionScreen.color;
     }
 
-    private void Update()
+    /*private void Update()
     {
         if (Input.GetKeyDown(KeyCode.N))
         {
@@ -46,7 +54,7 @@ public class GameManager : MonoBehaviour
         {
             LoadGame();
         }
-    }
+    }*/
 
 
     [Space(8f)/*, Header("Menu Configurações"), Space(5f)*/]
@@ -55,6 +63,7 @@ public class GameManager : MonoBehaviour
 
     public void SwitchOptionsScreen() => pauseScreen.SetActive(!pauseScreen.activeSelf);
     public void SwitchCreditsScreen() => creditsScreen.SetActive(!creditsScreen.activeSelf);
+    public void SwitchRecipeBook() => recipeBook.recipeScreen.SetActive(!recipeBook.recipeScreen.activeSelf);
 
     [Space(8f), Header("Transição em Fade"), Space(5f)]
     [SerializeField] UnityEngine.UI.Image transitionScreen;

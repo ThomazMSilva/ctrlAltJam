@@ -165,6 +165,7 @@ public class DialogueBehaviour : MonoBehaviour
 
         //audioSource.clip = currentCharacter.characterVoiceAudioClip;
         audioSource.pitch = 1 + Random.Range(-characterToSpeak.voicePitchVariation, characterToSpeak.voicePitchVariation);
+        Debug.Log($"Played {characterToSpeak.characterVoiceAudioClip}");
         audioSource.PlayOneShot(characterToSpeak.characterVoiceAudioClip);
     }
 

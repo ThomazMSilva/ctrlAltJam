@@ -11,7 +11,8 @@ public class TextMeshProHandler : MonoBehaviour, IPointerClickHandler
 
     public void OnPointerClick(PointerEventData eventData)
     {
-        OnTextClickedEvent?.Invoke();
+        if (eventData.button == PointerEventData.InputButton.Left)
+            OnTextClickedEvent?.Invoke();
     }
 /*
     private void OnEnable()

@@ -14,11 +14,13 @@ namespace Assets.Scripts.Bartending
         [SerializeField] Transform parent;
         [TextArea, SerializeField] string ingredientDescription = "a";
         [SerializeField] TextMeshProUGUI textMeshProUGUI;
+        private Canvas canvas;
 
         private void Start()
         {
             rectTransform = GetComponent<RectTransform>();
             transformScale = rectTransform.localScale;
+            canvas = FindObjectOfType<CanvasReference>().canvas;
         }
 
 
@@ -38,9 +40,18 @@ namespace Assets.Scripts.Bartending
 
         public void OnPointerDown(PointerEventData eventData)
         {
+            RectTransform canvasRect = canvas.GetComponent<RectTransform>();
+            RectTransformUtility.ScreenPointToLocalPointInRectangle
+                (
+                    canvasRect,
+                    Input.mousePosition,
+                    Camera.main,
+                    out Vector2 pointerScreenPointToCanvas
+                );
+
             GameManager.Instance.AudioManager.PlayPoppingSound();
             parent.gameObject.SetActive(false);
-            Instantiate(ingredientPrefab, parent);
+            Instantiate(ingredientPrefab, pointerScreenPointToCanvas, Quaternion.identity, parent);
             parent.gameObject.SetActive(true);
         }
     }
